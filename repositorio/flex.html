@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <link rel="stylesheet/less" type="text/css" href="styles.less" />
+    <script src="https://cdn.jsdelivr.net/npm/less" ></script>
+    <title>Document</title>
+    <style type="text/css">
+        p { max-width: 400px; }
+        main {
+            background-color: #cdf6ff;
+            //display: flex;
+            //flex-wrap: wrap;
+        }
+        #flex-container {
+            border: 2px solid black;
+            //height: 700px;
+            //flex-wrap: wrap;
+            flex-direction: row;
+        }
+        .flex-item {
+            flex-grow: 1;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            max-height: 100%;
+        }
+        .flex-item-1 {
+            background-color: rgb(195, 238, 209);
+        }
+        .flex-item-2 {
+            background-color: rgb(244, 185, 185);
+        }
+        .flex-item-3 {
+            background-color: lemonchiffon;
+        }
+    </style>
+</head>
+    <body>
+
+        <main class="m-0 p-3" style="min-height: 100%;">
+            <h1 class="p-0 m-0 w-100 d-none">Flex container below</h1>
+            <div id="flex-container" class="d-flex bg-white m-3">
+                <div class="p-3 flex-item flex-item-1">
+                    <h2 class="p-0 m-0"><a href="https://es.wikipedia.org/wiki/Reinado_de_Jos%C3%A9_I_de_Espa%C3%B1a">Reinado de José I de España</a></h2>
+                    <p>El reinado de José I Bonaparte, oficialmente José Napoleón I, conocido por los españoles que le negaban la legitimidad para ser el rey de España y las Indias como el «Rey Intruso», comenzó el 6 de junio de 1808 con la cesión de los derechos sobre la Corona española por parte de su hermano el emperador Napoleón Bonaparte, quien a su vez los había obtenido bajo presión de Fernando VII y Carlos IV en las llamadas «Abdicaciones de Bayona», no reconocidas por los «patriotas» que solo consideraban como su rey a Fernando VII, cautivo de Napoleón en el Château de Valençay —José Bonaparte tampoco fue reconocido en las colonias americanas y nunca consiguió reinar sobre todo el territorio español, con Cádiz como capital de la «España patriota»—. 
+                    </p><p> El reinado terminó oficialmente el 11 de diciembre de 1813 con la firma del Tratado de Valençay por el que Napoleón «devolvía» los derechos de la Corona española a Fernando VII, aunque José I Bonaparte ya hacía seis meses que había abandonado España tras la derrota del ejército napoleónico en la batalla de Vitoria. Le habían acompañado los partidarios de la monarquía josefina conocidos como los «afrancesados», constituyendo así el primer exilio de la historia contemporánea de España. Durante todo ese tiempo se desarrolló la que sería conocida como la Guerra de la Independencia que «además de su carácter fundamental de lucha contra el ejército francés… fue también una guerra entre españoles… De un lado la España patriota… y del otro la Monarquía bonapartista encarnada en José I». </p>
+                </div>
+                <div class="p-3 flex-item flex-item-2">
+                    <h2 class="p-0 m-0"><a href="https://es.wikipedia.org/wiki/Wikipedia:Recurso_del_d%C3%ADa">Recurso del día</a></h2>
+                    <img alt="Ectophasia crassipennis reposada en una rama" src="//upload.wikimedia.org/wikipedia/commons/thumb/4/41/Ectophasia_crassipennis_male_-_Keila.jpg/400px-Ectophasia_crassipennis_male_-_Keila.jpg" decoding="async" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/4/41/Ectophasia_crassipennis_male_-_Keila.jpg/600px-Ectophasia_crassipennis_male_-_Keila.jpg 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/4/41/Ectophasia_crassipennis_male_-_Keila.jpg/800px-Ectophasia_crassipennis_male_-_Keila.jpg 2x" data-file-width="4000" data-file-height="5000" width="100%" height="auto" style="max-width:400px">
+                    <p>Ectophasia crassipennis es una especie de «mosca parásita» de la familia Tachinidae, y la subfamilia Phasiinae. En su etapa adulta puede alcanzar una longitud de aproximadamente cinco a nueve milímetros. Suele encontrarse en partes de Asia y Sudeste de Europa.</p>
+                </div>
+                <div class="p-3 flex-item flex-item-3">
+                    <h2 class="p-0 m-0"><a href="https://es.wikipedia.org/wiki/Juan_III_Ducas_Vatatz%C3%A9s">Juan III Ducas Vatatzés</a></h2>
+                    <p>Juan III Ducas Vatatzés (en griego: Ιωάννης Γ΄ Δούκας Βατάτζης, trans. Iōannēs III Doukas Vatatzēs; Didimótico, aprox. 1192-Ninfeo, 3 de noviembre de 1254) fue emperador de Nicea desde 1221 hasta 1254. Adquiriendo territorios fomentó el crecimiento económico y apoyó el renacimiento cultural de su capital en Nicea, allanando el camino para la recuperación de Constantinopla de los emperadores latinos y el restablecimiento del Imperio bizantino. </p>
+                </div>
+                
+            </div>
+        </main>
+
+    </body>
+</html>
