@@ -1,0 +1,73 @@
+:root {
+  --dBlue: #010512;
+  --dPurp: #06060d;
+}
+* {
+  font-family: 'Inter', sans-serif;
+}
+html, body, #root {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  overflow: hidden;
+  height: 100%;
+  background-color: var(--dPurp);
+}
+html::-webkit-scrollbar, body::-webkit-scrollbar {
+  display: none;
+}
+section {
+  position: relative;
+  z-index: 100;
+}
+header {
+  z-index: 101;
+}
+footer {
+  position: relative;
+  z-index: 101;
+}
+.App{
+  height: 100%;
+  -webkit-perspective: 100px;
+  perspective: 100px;
+
+  -webkit-perspective-origin: center;
+  perspective-origin: center;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+}
+#overlay {
+  transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+  -webkit-perspective: 100px;
+  perspective: 100px;
+
+}
+.parallax {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+}
+svg {
+  position: relative;
+}
+.p-far {
+  transform: translateZ(-70px) scale(2.4);
+  -webkit-transform: translateZ(-70px) scale(2.4);
+  -moz-transform: translateZ(-70px) scale(2.4);
+  -ms-transform: translateZ(-70px) scale(2.4);
+  -o-transform: translateZ(-70px) scale(2.4);
+  filter: blur(2px);
+  -webkit-filter: blur(2px);
+}
+.p-close {
+  filter: blur(4px);
+  -webkit-filter: blur(4px);
+  transform: translateZ(30px) scale(.4);
+  -webkit-transform: translateZ(30px) scale(.4);
+  -moz-transform: translateZ(30px) scale(.4);
+  -ms-transform: translateZ(30px) scale(.4);
+  -o-transform: translateZ(30px) scale(.4);
+}

@@ -26,130 +26,122 @@ const terapia = "rgba(239, 189, 195, .5)"
 const taller = "rgba(218, 224, 242, .5)"
 const curso = "rgba(216, 204, 245, .5)"
 const evento = "rgba(188, 232, 240, .5)"
-
-let numTarjetas = 0
+const INTERVALO = 5000
 let currentTarget = 0
+
+let arrayTarjetas
 const container = document.querySelector("#contenedor-actividades")
 async function llenarActividades() {
     let contenedor = document.querySelector('#contenedor-actividades');
     // parsear el excel y asignar los valores a variables
     const response = await fetch('datos.csv');
     const data = await response.text();
-    const table = data.split('\r\n').slice(1);
+    const table = data.split('\r\n').slice(1); //array donde cada fila es un elemento
     let colorCabecera
-    table.forEach(elt => {
-        const row = elt.split(';');
-        const tipo = row[0];
-        const titulo = row[1];
-        const descripcion = row[2];
-        const profesor = row[3];
-        const horario = row[4];
-        const precio = row[5];
-        switch (tipo) {
-            case "terapia": colorCabecera = terapia
+    let colorVar = 0
+
+    table.forEach(elt => { //navegamos el array
+        const row = elt.split(';'); //array donde cada campo es un elemento
+        const titulo = row[0];
+        const descripcion = row[1];
+        const profesor = row[2];
+        const horario = row[3];
+
+        switch (colorVar % 3) {
+            case 0: colorCabecera = terapia; colorVar++;
                 break
-            case "taller": colorCabecera = taller
+            case 1: colorCabecera = curso; colorVar++;
                 break
-            case "evento": colorCabecera = evento
-                break
-            case "curso": colorCabecera = curso
+            case 2: colorCabecera = evento; colorVar++;
                 break
         }
 
-        if(tipo == undefined || titulo == undefined) return;
+        if(titulo == undefined || titulo == '') return; //coger sólo filas válidas
         // armar las tarjetas y añadirlas al dom
         const tarjeta = document.createElement('div');
-        tarjeta.classList.add('p-0', 'pe-3', 'pb-4');
-        tarjeta.innerHTML = '<article class="actividad card border-white shadow background-white">' +
+        tarjeta.classList.add('d-none', 'actividad');
+        tarjeta.innerHTML = '<article class="card border-white shadow background-white">' +
                                 `<div class="card-header border-0" style="background-color:${colorCabecera}">` +
-                                    `<span class="tipo-actividad float-end">${tipo}</span>` +
-                                    `<span class="card-title nombre-actividad fs-4 fw-semibold">${titulo}</span>` +
+                                    `<p class="card-title nombre-actividad fs-4 fw-semibold">${titulo}</p>` +
                                 '</div>' +
-                                '<div class="card-body">' +
+                                '<div class="card-body d-flex flex-column justify-content-between">' +
                                     `<p class="card-text descripcion-actividad">${descripcion}</p>` +
-                                    `<p class="card-text horarios-actividad fw-semibold">${horario}</p>` +
-                                    `<p class="card-link profesor-actividad mb-0">${profesor}</p>` +
+                                    `<div class="info-actividad">` +
+                                        `<p class="card-text horarios-actividad fw-semibold mb-0">${horario}</p>` +
+                                        `<p class="card-link profesor-actividad mb-0">${profesor}</p>` +
+                                    `</div>` +
                                 '</div>' +
                             '</article>';
         contenedor.appendChild(tarjeta);
-        tarjeta.addEventListener('mouseenter', stopSlide)
+        tarjeta.addEventListener('mouseenter', stopSlide) //añadimos las funciones js
         tarjeta.addEventListener('mouseleave', inicioSlide)
-        ++numTarjetas
     })
 }
-function llenarIndicador() {
-    const lista = document.querySelector('#indicador-actividades ul')
-    for(i=0; i<numTarjetas; i++) {
-        const navElt = document.createElement('li')
-        navElt.appendChild(document.createElement('span'));
-        navElt.addEventListener('click', scrollToElement);
-        lista.appendChild(navElt)
-    }
-    const elementos = lista.querySelectorAll('li')
-    elementos[0].querySelector('span').classList.add('currentListElement')
-}
-function scrollToElement() {
-    const listaInd = document.querySelectorAll('#indicador-actividades span')
-    listaInd[currentTarget].classList.remove('currentListElement')
-    let child = this
-    var i = 0;
-    while( (child = child.previousElementSibling) != null ) i++; // get index of indicator
-    currentTarget = i;
-    listaInd[currentTarget].classList.add('currentListElement')
-    tarjetas = container.querySelectorAll('.actividad')
-    let objetivo = tarjetas[i]
-    container.scroll(objetivo.offsetLeft - container.offsetLeft, 0)
-    
-}
 
-
-
-
-
-
-
-function scrollLeft() {
-    const tarjetas = document.querySelectorAll('.actividad')
-    const indicadores = document.querySelectorAll('#indicador-actividades span')
-    indicadores[currentTarget].classList.remove('currentListElement')
-    if (currentTarget == 0) currentTarget = tarjetas.length -1
-    else --currentTarget
-    container.scroll(tarjetas[currentTarget].offsetLeft - container.offsetLeft, 0)
-    indicadores[currentTarget].classList.add('currentListElement')
-}
-function scrollRight() {
-    const tarjetas = document.querySelectorAll('.actividad')
-    const indicadores = document.querySelectorAll('#indicador-actividades span')
-    indicadores[currentTarget].classList.remove('currentListElement')
-    if (currentTarget == tarjetas.length -1) currentTarget = 0
-    else ++currentTarget
-    container.scroll(tarjetas[currentTarget].offsetLeft - container.offsetLeft, 0)
-    indicadores[currentTarget].classList.add('currentListElement')
-}
-// control para iniciar/terminar el movimiento automático del slider
 let actividadesInterval
 function inicioSlide() {
-    actividadesInterval = setInterval(scrollRight, 5000)
+    actividadesInterval = setInterval(scrollRight, INTERVALO)
 }
 function stopSlide() {
     clearInterval(actividadesInterval)
 }
+
+llenarActividades()
+.then(() => {
+    scrollToElement(currentTarget);
+})
+.then(() => {llenarIndicador()});
+inicioSlide()
+
+function scrollToElement(target) {
+    arrayTarjetas = document.querySelectorAll('.actividad');
+    arrayTarjetas.forEach(element => {
+        element.classList.replace("carousel-mid", "d-none")
+        element.classList.replace("carousel-left", "d-none")
+        element.classList.replace("carousel-right", "d-none")
+    });
+    let leftTarget = (currentTarget - 1 + arrayTarjetas.length) % arrayTarjetas.length;
+    let rightTarget = (currentTarget + 1) % arrayTarjetas.length;
+    arrayTarjetas[target].classList.replace("d-none", "carousel-mid");
+    arrayTarjetas[leftTarget].classList.replace("d-none", "carousel-left");
+    arrayTarjetas[rightTarget].classList.replace("d-none", "carousel-right");
+    console.log(arrayTarjetas[target])
+}
+function scrollLeft() {
+    let newTarget = (currentTarget - 1 + arrayTarjetas.length) % arrayTarjetas.length;
+    let leftTarget = (newTarget - 1 + arrayTarjetas.length) % arrayTarjetas.length;
+    let rightTarget = (newTarget + 1) % arrayTarjetas.length;
+    let overRigt = (rightTarget + 1) % arrayTarjetas.length;
+    arrayTarjetas[leftTarget].classList.replace("d-none", "carousel-left");
+    arrayTarjetas[newTarget].classList.replace("carousel-left", "carousel-mid");
+    arrayTarjetas[rightTarget].classList.replace("carousel-mid", "carousel-right");
+    arrayTarjetas[overRigt].classList.replace("carousel-right", "d-none")
+    currentTarget = newTarget;
+}
+function scrollRight() {
+    let newTarget = (currentTarget + 1) % arrayTarjetas.length;
+    let leftTarget = (newTarget - 1 + arrayTarjetas.length) % arrayTarjetas.length;
+    let rightTarget = (newTarget + 1) % arrayTarjetas.length;
+    let overLeft = (leftTarget - 1 + arrayTarjetas.length) % arrayTarjetas.length;
+    arrayTarjetas[overLeft].classList.replace("carousel-left", "d-none")
+    arrayTarjetas[leftTarget].classList.replace("carousel-mid", "carousel-left");
+    arrayTarjetas[newTarget].classList.replace("carousel-right", "carousel-mid");
+    arrayTarjetas[rightTarget].classList.replace("d-none", "carousel-right");
+    currentTarget = newTarget;
+}
+function llenarIndicador() {}
+
+
+// control para iniciar/terminar el movimiento automático del slider
 const scrollIz = document.querySelector("#scroll-actividades-iz");
 const scrollDe = document.querySelector("#scroll-actividades-de");
 scrollIz.addEventListener('click', scrollLeft);
 scrollIz.addEventListener('click', () => {stopSlide(); inicioSlide()});
 scrollDe.addEventListener('click', scrollRight);
 scrollDe.addEventListener('click', () => {stopSlide(); inicioSlide()});
-// ajustar el margen del último elemento para que el slider llegue a la última tarjeta
-llenarActividades()
-.then(() => {
-    const arrayTarjetas = document.querySelectorAll('.actividad');
-    const ultimaTarjeta = arrayTarjetas[arrayTarjetas.length - 1]
-    ultimaTarjeta.style.marginRight = '1000px'
-    container.scroll(0,0)
-})
-.then(() => {llenarIndicador()});
-inicioSlide()
+
+
+
 
 
 
@@ -228,7 +220,8 @@ window.addEventListener('resize', () => { reescalarDescripcion() })
 
 
 
-
+//slider de fotos
+/*
 let slides = document.querySelectorAll(".slide")
 let slider = document.querySelector("#carousel-body")
 
@@ -250,33 +243,36 @@ const carouselBack = document.querySelector("#carousel-back")
 const carouselForward = document.querySelector("#carousel-forward")
 carouselBack.addEventListener('click', slideLeft)
 carouselForward.addEventListener('click', slideRight)
-
-/*
-// slide ______________________________________________________________
-//controla las diapositivas
+*/
+let slides = document.querySelectorAll(".slide")
 let slider = document.querySelector("#carousel-body")
 let currentSlide = 0
-const numSlides = slider.querySelectorAll('.slide').length -1
+let secondSlide = 1
+let thirdSlide = 2
 
-function slideRight() {
-    let slides = document.querySelectorAll('.slide')
-    if (currentSlide == numSlides) currentSlide = 0
-    else ++currentSlide
-    slider.scroll(slides[currentSlide].offsetLeft - slider.offsetLeft, 0)
-}
 function slideLeft() {
-    let slides = document.querySelectorAll('.slide')
-    if (currentSlide == 0) currentSlide = numSlides
-    else --currentSlide
-    slider.scroll(slides[currentSlide].offsetLeft - slider.offsetLeft, 0)
+    slides[thirdSlide].classList.replace('order3', 'order4')
+    currentSlide = (currentSlide - 1 + slides.length) % slides.length
+    secondSlide = (secondSlide - 1 + slides.length) % slides.length
+    thirdSlide = (thirdSlide - 1 + slides.length) % slides.length
+    slides[currentSlide].classList.replace('order4', 'order1')
+    slides[secondSlide].classList.replace('order1', 'order2')
+    slides[thirdSlide].classList.replace('order2', 'order3')
+}
+function slideRight() {
+    slides[currentSlide].classList.replace('order1', 'order4')
+    currentSlide = (currentSlide + 1) % slides.length
+    secondSlide = (secondSlide + 1) % slides.length
+    thirdSlide = (thirdSlide + 1) % slides.length
+    slides[currentSlide].classList.replace('order2', 'order1')
+    slides[secondSlide].classList.replace('order3', 'order2')
+    slides[thirdSlide].classList.replace('order4', 'order3')
 }
 
 const carouselBack = document.querySelector("#carousel-back")
 const carouselForward = document.querySelector("#carousel-forward")
-
 carouselBack.addEventListener('click', slideLeft)
 carouselForward.addEventListener('click', slideRight)
-*/
 
 
 

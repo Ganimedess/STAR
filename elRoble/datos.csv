@@ -1,6 +1,6 @@
-TIPO;NOMBRE;DESCRIPCIÓN;PROFESOR;HORARIO;PRECIO SOCIOS;PRECIO NO SOCIOS
-taller;Reiki BIEN;Conecta con la energía universal que fluye dentro de todos los seres, a través del Reiki japonés.;Ana María Palomino;Mar 12:20 – 13:30;10€ / mes;15€ / mes
-curso;Eneagrama;Descubre tu tipo de personalidad, tus fortalezas y debilidades, gracias a esta herramienta de psicología aplicada.;Said Sel-lam;Lun 12:00 – 14:00, Mié 11:20 – 12:15;40,00 €;50,00 €
-evento;Excursión a Sierranevada;¡Vamos a hacer una visita por la naturaleza todos juntos! Habrá canto de mantras, cuencos tibetanos y meditación. Se recomienda traer comida y bebida.;Pedro Duque;Jue 25 marzo 10:00 am;gratis;5,00 €
-terapia;Constelaciones familiares;Descubre y transmuta el karma de tu familia a través de la magia psíquica de las constelaciones.;Joshua Carbonero;Lun 3 abril 12:20 – 13:30;25,00 €;35,00 €
-evento;Noche de San Juan;Vamos a celebrar la noche de San Juan con una tarde de actividades en el Parque Liana. Habrá actividades varias y, al final, haremos una ceremonia de San Juan para atraer la buena fortuna.;Ana María Palomino;Sab 8 abril 12:00;gratis;gratis
+NOMBRE;DESCRIPCIÓN;PROFESOR;HORARIO
+Reiki;Descubre el poder curativo de la energía universal y equilibra tu cuerpo, mente y espíritu.;Ana;Lun 19:00 – 21:00<br>Mie 11:00 – 13:00
+Yoga;Conecta con tu ser interior, mejora tu flexibilidad y encuentra la paz a través de posturas y respiración consciente.;Raquel;Mie, Jue 9:00 – 11:00<br>Lun, Mar, Mie 18:00 – 22:00
+Meditación;Encuentra calma en medio del caos, reduce el estrés y cultiva la claridad mental a través de la meditación guiada.;Alfonso;Sab 10:30
+Sanación;Experimenta la transformación personal y la sanación profunda a través de terapias holísticas y enfoques integrativos.;Alfonso;Dom 10:00 – 11:00
+TRE;Libera el estrés y el trauma acumulados en tu cuerpo a través de ejercicios simples y eficaces.;Ana;Lun 19:00 – 20:30
