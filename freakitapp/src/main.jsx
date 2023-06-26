@@ -1,6 +1,19 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
+import {
+  createBrowserRouter,
+  RouterProvider,
+} from "react-router-dom";
 import App from './App.jsx'
+import Ayuda from './components/Ayuda.jsx'
+import ConsejosSeguridad from './components/ConsejosSeguridad.jsx'
+import Personajes from './components/Personajes.jsx'
+import Personalidades from './components/Personalidades.jsx'
+import PoliticaPrivacidad from './components/PoliticaPrivacidad.jsx'
+import PreguntasFrecuentes from './components/PreguntasFrecuentes.jsx'
+import ReglasComunidad from './components/ReglasComunidad.jsx'
+import TerminosCondiciones from './components/TerminosCondiciones.jsx'
+
 import './index.css'
 import Header from './components/Header.jsx'
 import Footer from './components/Footer.jsx'
@@ -9,6 +22,44 @@ import instagram from './assets/images/iconos/insta.png'
 import gmail from './assets/images/iconos/mail.png'
 import logoFreakit from './assets/images/logo-freakit.png'
 
+const rutas = createBrowserRouter([
+  {
+    path: "/",
+    element: <App />,
+  },
+  {
+    path: "/personalidades",
+    element: <Personalidades />,
+  },
+  {
+    path: "/personajes",
+    element: <Personajes />,
+  },
+  {
+    path: "/ayuda",
+    element: <Ayuda />,
+  },
+  {
+    path: "/preguntas-frecuentes",
+    element: <PreguntasFrecuentes />,
+  },
+  {
+    path: "/consejos-de-seguridad",
+    element: <ConsejosSeguridad />,
+  },
+  {
+    path: "/reglas-comunidad",
+    element: <ReglasComunidad />,
+  },
+  {
+    path: "/terminos-y-condiciones",
+    element: <TerminosCondiciones />,
+  },
+  {
+    path: "/politica-privacidad",
+    element: <PoliticaPrivacidad />,
+  },
+]);
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
@@ -16,7 +67,9 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <input id="my-freak-drawer" type="checkbox" className="drawer-toggle btn" />
       <div className="drawer-content">
         <Header/>
-        <App />
+
+        <RouterProvider router={rutas} />
+
         <Footer />
       </div>
       <div className="drawer-side">

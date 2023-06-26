@@ -4,6 +4,7 @@ import tiktok from '../assets/images/iconos/tiktok.png'
 import instagram from '../assets/images/iconos/insta.png'
 import gmail from '../assets/images/iconos/mail.png'
 
+
 const Header = () => {
   return (
     <header className="bg-white opacity-80 fixed top-0 z-50 w-full">

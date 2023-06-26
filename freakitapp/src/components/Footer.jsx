@@ -14,13 +14,13 @@ const Footer = () => {
     <footer className="navbar bg-primary  text-white">
       <ul className="flex flex-wrap justify-center max-w-screen-lg m-auto my-5">
         <li className='hover:text-blueF leading-10 mx-5'><a href="/personajes">Personajes anime</a></li>
-        <li className='hover:text-blueF leading-10 mx-5'><a href="/personajes">Personalidades</a></li>
-        <li className='hover:text-blueF leading-10 mx-5'><a href="/personajes">Preguntas frecuentes</a></li>
-        <li className='hover:text-blueF leading-10 mx-5'><a href="/personajes">Ayuda</a></li>
-        <li className='hover:text-blueF leading-10 mx-5'><a href="/personajes">Consejos de seguridad</a></li>
-        <li className='hover:text-blueF leading-10 mx-5'><a href="/personajes">Reglas de la comunidad</a></li>
-        <li className='hover:text-blueF leading-10 mx-5'><a href="/personajes">Términos y condiciones de uso</a></li>
-        <li className='hover:text-blueF leading-10 mx-5'><a href="/personajes">Política de privacidad</a></li>
+        <li className='hover:text-blueF leading-10 mx-5'><a href="/personalidades">Personalidades</a></li>
+        <li className='hover:text-blueF leading-10 mx-5'><a href="/preguntas-frecuentes">Preguntas frecuentes</a></li>
+        <li className='hover:text-blueF leading-10 mx-5'><a href="/ayuda">Ayuda</a></li>
+        <li className='hover:text-blueF leading-10 mx-5'><a href="/consejos-de-seguridad">Consejos de seguridad</a></li>
+        <li className='hover:text-blueF leading-10 mx-5'><a href="/reglas-comunidad">Reglas de la comunidad</a></li>
+        <li className='hover:text-blueF leading-10 mx-5'><a href="/terminos-y-condiciones">Términos y condiciones de uso</a></li>
+        <li className='hover:text-blueF leading-10 mx-5'><a href="/politica-privacidad">Política de privacidad</a></li>
       </ul>
     </footer>
     </>
