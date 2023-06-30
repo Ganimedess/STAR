@@ -1,4 +1,5 @@
 import '../App.css'
+import { Link } from "react-router-dom";
 import logoFreakit from '../assets/images/logo-freakit.png'
 import tiktok from '../assets/images/iconos/tiktok.png'
 import instagram from '../assets/images/iconos/insta.png'
@@ -10,25 +11,25 @@ const Header = () => {
     <header className="bg-white opacity-80 fixed top-0 z-50 w-full">
       <nav className="navbar max-w-screen-xl mx-auto justify-between">
         <div>
-          <a href="/" className="">
+          <Link to="/" className="">
             <img src={logoFreakit} alt="logo freakit!" className="max-w-[148px]" />
-          </a>
+          </Link>
         </div>
         <div>
           <ul className="hidden md:flex">
             <li className="dropdown dropdown-hover">
               <label tabIndex={0} className="btn btn-ghost hover:bg-base-100 text-primary font-semibold text-lg normal-case">Personalidades</label>
               <ul tabIndex={0} className="dropdown-content rounded-md menu p-2 shadow bg-white">
-                <li><a href="/personalidades">16 personalidades</a></li>
-                <li><a href="/personajes">personajes anime</a></li>
+                <li><Link to="/personalidades">16 personalidades</Link></li>
+                <li><Link to="/personajes">personajes anime</Link></li>
               </ul>
             </li>
             <li className="dropdown dropdown-hover pl-3">
               <label tabIndex={0} className="btn btn-ghost hover:bg-base-100 text-primary font-semibold text-lg normal-case">Ayuda</label>
               <ul tabIndex={0} className="dropdown-content rounded-md menu p-2 shadow bg-white">
-                <li><a href="/ayuda">ayuda</a></li>
-                <li><a href="/preguntas-frecuentes">preguntas frecuentes</a></li>
-                <li><a href="/consejos-de-seguridad">consejos de seguridad</a></li>
+                <li><Link to="/ayuda">ayuda</Link></li>
+                <li><Link to="/preguntas-frecuentes">preguntas frecuentes</Link></li>
+                <li><Link to="/consejos-de-seguridad">consejos de seguridad</Link></li>
               </ul>
             </li>
             <li className="dropdown dropdown-hover pl-3">

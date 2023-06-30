@@ -1,0 +1,582 @@
+{
+    "personalidades": [
+        {
+            "tipo" : "ISFP",
+            "descripcion" : "Alegres, tranquilxs, espontánexs, cálidxs y muy atentxs con lxs demás. A este tipo de personas además les gusta vivir a su propio ritmo con tranquilidad buscando siempre aventuras nuevas. Tienden a ser artistas. Creativxs, imaginativxs, confiadxs, generosxs, curiosxs, flexibles, aventurerxs y optimistas.",
+            "personajes" : [
+                {
+                    "nombre" : "eren yaeger",
+                    "url" : "eren",
+                    "anime" : "_____"
+                },
+                {
+                    "nombre" : "dabi",
+                    "url" : "dabi",
+                    "anime" : "_____"
+                },
+                {
+                    "nombre" : "yūji itadori",
+                    "url" : "yuji",
+                    "anime" : "_____"
+                },
+                {
+                    "nombre" : "ai ohto",
+                    "url" : "ohto",
+                    "anime" : "_____"
+                },
+                {
+                    "nombre" : "aisaka taiga",
+                    "url" : "taiga",
+                    "anime" : "_____"
+                },
+                {
+                    "nombre" : "nana",
+                    "url" : "nana",
+                    "anime" : "_____"
+                }
+            ]
+        },
+        {
+            "tipo" : "ESFP",
+            "descripcion" : "Este tipo de personas suelen ser el alma de la fiesta. Divertidas, espontáneas, alegres, enérgicas y siempre con ganas de hacer cosas nuevas y creativas. Extrovertidxs, entusiastas, cálidxs, generosxs, flexibles, curiosxs y optimistas.",
+            "personajes" : [
+                {
+                    "nombre" : "goku",
+                    "url" : "goku",
+                    "anime" : "_____"
+                },
+                {
+                    "nombre" : "luffy",
+                    "url" : "luffy",
+                    "anime" : "_____"
+                },
+                {
+                    "nombre" : "eijiro kirishima",
+                    "url" : "eijiro",
+                    "anime" : "_____"
+                },
+                {
+                    "nombre" : "power",
+                    "url" : "power",
+                    "anime" : "_____"
+                },
+                {
+                    "nombre" : "sasha blouse",
+                    "url" : "sasha",
+                    "anime" : "_____"
+                },
+                {
+                    "nombre" : "misa amane",
+                    "url" : "misa",
+                    "anime" : "_____"
+                }
+            ]
+        },
+        {
+            "tipo" : "ESTP",
+            "descripcion" : "Personas inteligentes, llenas de energía, espontáneas, alegres y activas, además de ser muy carismáticas y perceptivas por lo que suelen asumir los papeles de líderes. Prácticxs y observadorxs, amantes de la diversión, emocionantes y espontánexs, audaces, ingeniosxs y adaptables, carismáticxs y divertidxs.",
+            "personajes" : [
+                {
+                    "nombre" : "inosuke hashibara",
+                    "url" : "inosuke",
+                    "anime" : "_____"
+                },
+                {
+                    "nombre" : "keisuke baji",
+                    "url" : "baji",
+                    "anime" : "_____"
+                },
+                {
+                    "nombre" : "akaza",
+                    "url" : "akaza",
+                    "anime" : "_____"
+                },
+                {
+                    "nombre" : "jolyne kujo",
+                    "url" : "jolyne",
+                    "anime" : "_____"
+                },
+                {
+                    "nombre" : "mai zenin",
+                    "url" : "mai",
+                    "anime" : "_____"
+                },
+                {
+                    "nombre" : "yumeko jabami",
+                    "url" : "yumeko",
+                    "anime" : "_____"
+                }
+            ]
+        },
+        {
+            "tipo" : "ISTP",
+            "descripcion" : "Si necesitas encontrar una solución a cualquier problema, esta es tu persona. Además son personas tranquilas y reservadas, pero también bastante espontáneas y observadoras. Prácticxs, observadorxs, audaces, ingeniosxs y adaptables, inteligentes y resolutivxs.",
+            "personajes" : [
+                {
+                    "nombre" : "roronoa zoro",
+                    "url" : "zoro",
+                    "anime" : "_____"
+                },
+                {
+                    "nombre" : "tomoe",
+                    "url" : "tomoe",
+                    "anime" : "_____"
+                },
+                {
+                    "nombre" : "levi ackerman",
+                    "url" : "levi",
+                    "anime" : "_____"
+                },
+                {
+                    "nombre" : "minene uryuu",
+                    "url" : "minene",
+                    "anime" : "_____"
+                },
+                {
+                    "nombre" : "annie leonhart",
+                    "url" : "annie",
+                    "anime" : "_____"
+                },
+                {
+                    "nombre" : "kyoka jiro",
+                    "url" : "kyoka",
+                    "anime" : "_____"
+                }
+            ]
+        },
+        {
+            "tipo" : "ENFP",
+            "descripcion" : "Este tipo de personas son altamente extrovertidas, prefieren realizar cualquier actividad rodeadxs de gente en vez de manera individual. Además, son de las personalidades con mayor pensamiento creativo en las artes, siendo de los más sociables y alegres. Carismaticxs, cooperativxs, amigables, enérgicos.",
+            "personajes" : [
+                {
+                    "nombre" : "naruto",
+                    "url" : "naruto",
+                    "anime" : "_____"
+                },
+                {
+                    "nombre" : "yosida haru",
+                    "url" : "yosida",
+                    "anime" : "_____"
+                },
+                {
+                    "nombre" : "howl",
+                    "url" : "howl",
+                    "anime" : "_____"
+                },
+                {
+                    "nombre" : "emi fukukado",
+                    "url" : "emi",
+                    "anime" : "_____"
+                },
+                {
+                    "nombre" : "narumi momose",
+                    "url" : "narumi",
+                    "anime" : "_____"
+                },
+                {
+                    "nombre" : "chika fujiwara",
+                    "url" : "chika",
+                    "anime" : "_____"
+                }
+            ]
+        },
+        {
+            "tipo" : "INFP",
+            "descripcion" : "Este tipo de personas buscan ayudar siempre a los demás e intentan comprender los sentimientos de lxs otrxs aun siendo reservadxs. Independientes, creativoxs, cooperativxds y amigables.",
+            "personajes" : [
+                {
+                    "nombre" : "mitsuri kanroji",
+                    "url" : "mitsuri",
+                    "anime" : "_____"
+                },
+                {
+                    "nombre" : "gaara",
+                    "url" : "gaara",
+                    "anime" : "_____"
+                },
+                {
+                    "nombre" : "chifuyu matsuno",
+                    "url" : "chifuyu",
+                    "anime" : "_____"
+                },
+                {
+                    "nombre" : "ken kaneki",
+                    "url" : "ken",
+                    "anime" : "_____"
+                },
+                {
+                    "nombre" : "mei misaki",
+                    "url" : "misaki",
+                    "anime" : "_____"
+                },
+                {
+                    "nombre" : "megumin",
+                    "url" : "megumin",
+                    "anime" : "_____"
+                }
+            ]
+        },
+        {
+            "tipo" : "ENFJ",
+            "descripcion" : "Este tipo de personas siempre buscarán tu bienestar, para ello se volcarán completamente en ayudarte. Leales, honestxs, confiables, creativxs, imaginativxs, siempre buscando nuevos desafíos.",
+            "personajes" : [
+                {
+                    "nombre" : "makima",
+                    "url" : "makima",
+                    "anime" : "_____"
+                },
+                {
+                    "nombre" : "sanji vinsmoke",
+                    "url" : "sanji",
+                    "anime" : "_____"
+                },
+                {
+                    "nombre" : "all might",
+                    "url" : "allmight",
+                    "anime" : "_____"
+                },
+                {
+                    "nombre" : "tanjiro kamado",
+                    "url" : "tanjiro",
+                    "anime" : "_____"
+                },
+                {
+                    "nombre" : "kanae kocho",
+                    "url" : "kanae",
+                    "anime" : "_____"
+                },
+                {
+                    "nombre" : "lucy heartfilia",
+                    "url" : "lucy",
+                    "anime" : "_____"
+                }
+            ]
+        },
+        {
+            "tipo" : "INFJ",
+            "descripcion" : "Este tipo de personas son excesivamente empáticas aunque un poco reservadas. Conocen los sentimientos de los demás y buscan ayudarlos siempre que puedan, por ello son muy sensibles y se mueven por unos ideales muy definidos. Intuitivxs, cálidxs, cariñosxs, organizadxs, cuidadosxs y pacientes.",
+            "personajes" : [
+                {
+                    "nombre" : "deku",
+                    "url" : "deku",
+                    "anime" : "_____"
+                },
+                {
+                    "nombre" : "armin arlert",
+                    "url" : "armin",
+                    "anime" : "_____"
+                },
+                {
+                    "nombre" : "itachi uchiha",
+                    "url" : "itachi",
+                    "anime" : "_____"
+                },
+                {
+                    "nombre" : "emilia",
+                    "url" : "emilia",
+                    "anime" : "_____"
+                },
+                {
+                    "nombre" : "komi shouko",
+                    "url" : "komi",
+                    "anime" : "_____"
+                },
+                {
+                    "nombre" : "ai hayasaka",
+                    "url" : "hayasaka",
+                    "anime" : "_____"
+                }
+            ]
+        },
+        {
+            "tipo" : "ESFJ",
+            "descripcion" : "Cooperadorxs, expresivxs, sociables, populares y consideradxs. Este tipo de personas siempre están dispuestx a ayudar a su círculo cercano, por esto mismo, y como buscan el bienestar de su círculo siempre intentan evitar las discusiones. Extrovertidxs, cálidxs, solidarixs, amigables, prácticxs, minuciosxs y constantes, organizadxs y responsables.",
+            "personajes" : [
+                {
+                    "nombre" : "asuna yuuki",
+                    "url" : "asuna",
+                    "anime" : "_____"
+                },
+                {
+                    "nombre" : "reiner braun",
+                    "url" : "reiner",
+                    "anime" : "_____"
+                },
+                {
+                    "nombre" : "goshiki tsumoko",
+                    "url" : "goshiki",
+                    "anime" : "_____"
+                },
+                {
+                    "nombre" : "leorio",
+                    "url" : "leorio",
+                    "anime" : "_____"
+                },
+                {
+                    "nombre" : "ochaco uraraka",
+                    "url" : "uraraka",
+                    "anime" : "_____"
+                },
+                {
+                    "nombre" : "sakura haruno",
+                    "url" : "sakura",
+                    "anime" : "_____"
+                }
+            ]
+        },
+        {
+            "tipo" : "ISFJ",
+            "descripcion" : "Atentxs, observadorxs, y cooperadorxs, estas personas siempre están dispuestas a defender a sus seres queridos y les hace tremendamente feliz ayudar a quien lo necesita. Cálidxs, solidarixs, amigables, prácticxs, minuciosxs, constantes, organizadxs y responsables.",
+            "personajes" : [
+                {
+                    "nombre" : "elizabeth liones",
+                    "url" : "elizabeth",
+                    "anime" : "_____"
+                },
+                {
+                    "nombre" : "koby",
+                    "url" : "koby",
+                    "anime" : "_____"
+                },
+                {
+                    "nombre" : "kyojuro rengoku",
+                    "url" : "rengoku",
+                    "anime" : "_____"
+                },
+                {
+                    "nombre" : "eiji okumura",
+                    "url" : "eiji",
+                    "anime" : "_____"
+                },
+                {
+                    "nombre" : "rem",
+                    "url" : "rem",
+                    "anime" : "_____"
+                },
+                {
+                    "nombre" : "yor forger",
+                    "url" : "yor",
+                    "anime" : "_____"
+                }
+            ]
+        },
+        {
+            "tipo" : "ESTJ",
+            "descripcion" : "A este tipo de personas le gusta tener el control de todo lo que sucede a su alrededor. Además son prácticxs, les gusta organizar y manejar las actividades que se le presenten. Decisivxs, eficientes, sistemáticxs, dedicadxs y responsables, obstinadxs, líderes naturales, organizadxs y eficientes, estables, comprometidxs, confiables y honestxs, entusiastas, extrovertidxs y amigables.",
+            "personajes" : [
+                {
+                    "nombre" : "nami",
+                    "url" : "nami",
+                    "anime" : "_____"
+                },
+                {
+                    "nombre" : "vegeta",
+                    "url" : "vegeta",
+                    "anime" : "_____"
+                },
+                {
+                    "nombre" : "jean kirschtein",
+                    "url" : "jean",
+                    "anime" : "_____"
+                },
+                {
+                    "nombre" : "tenyia ida",
+                    "url" : "tenyia",
+                    "anime" : "_____"
+                },
+                {
+                    "nombre" : "nobara",
+                    "url" : "nobara",
+                    "anime" : "_____"
+                },
+                {
+                    "nombre" : "erza",
+                    "url" : "erza",
+                    "anime" : "_____"
+                }
+            ]
+        },
+        {
+            "tipo" : "ISTJ",
+            "descripcion" : "Este tipo de personas son extremadamente lógicas y sistemáticas. Además tienen un alto sentido de la moralidad, por lo que siempre actuarán conforme a sus valores lo que les hace ser extremadamente confiables. Honestxs, directxs, decisivxs, sistemáticxs, eficientes, dedicadxs, responsables, organizadxs y comprometidos.",
+            "personajes" : [
+                {
+                    "nombre" : "aki hayakawa",
+                    "url" : "akihayakawa",
+                    "anime" : "_____"
+                },
+                {
+                    "nombre" : "kageyama tobio",
+                    "url" : "kageyama",
+                    "anime" : "_____"
+                },
+                {
+                    "nombre" : "kento nanami",
+                    "url" : "kento",
+                    "anime" : "_____"
+                },
+                {
+                    "nombre" : "mai sakurajima",
+                    "url" : "mai",
+                    "anime" : "_____"
+                },
+                {
+                    "nombre" : "mikasa ackerman",
+                    "url" : "mikasa",
+                    "anime" : "_____"
+                },
+                {
+                    "nombre" : "rei ayanami",
+                    "url" : "rei",
+                    "anime" : "_____"
+                }
+            ]
+        },
+        {
+            "tipo" : "ENTP",
+            "descripcion" : "Inovadorxs, curiosxs y con una agilidad mental excepcional. Les encanta enfrentarse a retos nuevos y resolverlos de maneras creativas e innovadoras. Extrovertidxs, pensadorxs, racionales, responsables, honestxs y confiables, creativxs y flexibles.",
+            "personajes" : [
+                {
+                    "nombre" : "hisoka",
+                    "url" : "hisoka",
+                    "anime" : "_____"
+                },
+                {
+                    "nombre" : "satoru gojo",
+                    "url" : "satoru",
+                    "anime" : "_____"
+                },
+                {
+                    "nombre" : "edward elric",
+                    "url" : "edward",
+                    "anime" : "_____"
+                },
+                {
+                    "nombre" : "zero two",
+                    "url" : "zerotwo",
+                    "anime" : "_____"
+                },
+                {
+                    "nombre" : "hange zoë",
+                    "url" : "hange",
+                    "anime" : "_____"
+                },
+                {
+                    "nombre" : "himiko toga",
+                    "url" : "himiko",
+                    "anime" : "_____"
+                }
+            ]
+        },
+        {
+            "tipo" : "INTP",
+            "descripcion" : "Este tipo de personas adoran reflexionar sobre cualquier tema, ya sea uno muy concreto, amplio o abstracto. Siempre andan cuestionando las cosas que suceden a su alrededor, haciendo así que se vuelvan perfeccionistas. Independientes, creativxs, buscan la autosuperación, pensadorxs, responsables, honestxs, confiables.",
+            "personajes" : [
+                {
+                    "nombre" : "l",
+                    "url" : "ldeathnote",
+                    "anime" : "_____"
+                },
+                {
+                    "nombre" : "kakashi hatake",
+                    "url" : "kakashi",
+                    "anime" : "_____"
+                },
+                {
+                    "nombre" : "hirotaka nifuji",
+                    "url" : "hirotaka",
+                    "anime" : "_____"
+                },
+                {
+                    "nombre" : "nico robin",
+                    "url" : "robin",
+                    "anime" : "_____"
+                },
+                {
+                    "nombre" : "pieck finger",
+                    "url" : "pieck",
+                    "anime" : "_____"
+                },
+                {
+                    "nombre" : "froppy",
+                    "url" : "froppy",
+                    "anime" : "_____"
+                }
+            ]
+        },
+        {
+            "tipo" : "ENTJ",
+            "descripcion" : "Líderes, amables, dierectxs, respetuosxs y con gran capacidad de liderazgo. Estas personas desempeñan un papel fundamental de adaptación de las situaciones al entorno cambiante. Carismáticxs, centradxs, determinadxs, decisivxs, eficientes, directxs, resolutivxs y planificadorxs.",
+            "personajes" : [
+                {
+                    "nombre" : "asuka langley",
+                    "url" : "asuka",
+                    "anime" : "_____"
+                },
+                {
+                    "nombre" : "sukuna",
+                    "url" : "sukuna",
+                    "anime" : "_____"
+                },
+                {
+                    "nombre" : "katsuki bakugo",
+                    "url" : "bakugo",
+                    "anime" : "_____"
+                },
+                {
+                    "nombre" : "kirari momobami",
+                    "url" : "kirari",
+                    "anime" : "_____"
+                },
+                {
+                    "nombre" : "crocodile",
+                    "url" : "crocodile",
+                    "anime" : "_____"
+                },
+                {
+                    "nombre" : "boa hanckoc",
+                    "url" : "boa",
+                    "anime" : "_____"
+                }
+            ]
+        },
+        
+        {
+            "tipo" : "INTJ",
+            "descripcion" : "Muy seguros de sí mismxs y de sus capacidades y criterio. Estas personas analizan la vida de una manera muy objetiva y analítica, esto hace que posiblemente, si se interesan por un ámbito de conocimiento muy específico se hagan expertxs en ello. Estratégicxs, independientes, innovadorxs, ingeniosxs, intuitivxs, adaptables , calmadxs y analíticxs.",
+            "personajes" : [
+                {
+                    "nombre" : "sasuke uchiha",
+                    "url" : "sasuke",
+                    "anime" : "_____"
+                },
+                {
+                    "nombre" : "kurapika",
+                    "url" : "kurapika",
+                    "anime" : "_____"
+                },
+                {
+                    "nombre" : "shoto todoroki",
+                    "url" : "shoto",
+                    "anime" : "_____"
+                },
+                {
+                    "nombre" : "shinobu kocho",
+                    "url" : "shinobu",
+                    "anime" : "_____"
+                },
+                {
+                    "nombre" : "kaguya shinomiya",
+                    "url" : "shinomiya",
+                    "anime" : "_____"
+                },
+                {
+                    "nombre" : "merlin",
+                    "url" : "merlin",
+                    "anime" : "_____"
+                }
+            ]
+        }
+        
+    ]
+}

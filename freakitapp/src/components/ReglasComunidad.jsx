@@ -1,7 +1,26 @@
 
 const ReglasComunidad = () => {
   return (
-    <div>ReglasComunidad</div>
+    <div>
+      <section className="textos-legales">
+            <h1>Reglas de la Comunidad</h1>
+            <p>
+                En Freakit! buscamos que toda la comunidad otaku se sienta segura, respetada, cómoda y en un ambiente que favorezca el desarrollo de relaciones personales. Para esto, además de los esfuerzos tecnológicos que hacemos desde Freakit! para que la plataforma sea un sitio seguro, necesitamos la colaboración de todxs lxs usuarixs para poder crear una comunidad de calidad. Si eres una persona respetuosa, amable, educada y con ganas de crear relaciones sanas dentro de la aplicación, ¡eres bienvenidx!. Si por el contrario entras en esta comunidad para únicamente crear toxicidad, generar negatividad o atentar contra lxs demás usuarixs, tu cuenta será rápidamente eliminada. Si infringes cualquiera de los términos y condiciones de Freakit!, serás automáticamente expulsadx de la comunidad, tu perfil será eliminado y no volverás a poder crearte otro. Piénsate las cosas antes de hacerlas. En Freakit! no admitimos bajo ningún concepto:
+
+                <ul>
+                    <li><b>Desnudos:</b> Que alguien tenga que ver tu cuerpo desnudo o alguna parte del mismo sin que se te haya pedido es acoso sexual. No pienses que por poner una foto tuya de alguna parte íntima de tu cuerpo en tu perfil va a hacer que este sea más atractivo, al contrario, puede resultar molesto, desagradable, grotesco e incluso insultante.</li>
+                    <li><b>Acoso:</b> El acoso queda completamente prohibido en Freakit!, da igual qué tipo sea, sexual, verbal, psicológico, racial, ciberacoso, cualquiera. En el momento en el que acoses a cualquier usuario de la comunidad o a lxs creadorxs de la misma, serás inmediatamente expulsadx.</li>
+                    <li><b>Violencia:</b> No está permitido que publiques fotos en tu perfil que puedan ser perturbadoras. Sangre, peleas, ataques físicos, ataques terroristas, desastres, guerras, etc, o cualquier imagen, comentario o conversación que pueda afectar a la sensibilidad de lxs demás usuarixs está completamente prohibida. Esto supondría la expulsión inmediata de tu perfil en Freakit!</li>
+                    <li><b>Incitación al odio:</b> Freakit! es un lugar seguro para todx lxs usuarixs. Cualquier tipo de incitación de odio en tu perfil, conversaciones o comentarios por discriminación racial, sexual, de género, religioso, por el físico o por cualquier otro motivo será sancionado con la expulsión inmediata.</li>
+                    <li><b>Spam:</b> Freakit! no es una plataforma de publicidad. No hagas spam de otras páginas web, aplicaciones, proyectos, etc. No creemos que a lxs demás usuarixs les haga demasiada gracia, puede resultar incluso pesado y molesto.</li>
+                    <li><b>Perfiles falsos:</b> Si tu perfil es falso, por cualquier motivo como que no seas tu quien dice ser, eres menor de edad pero has modificado la fecha de nacimiento, mientes sobre tu vida, estás suplantando la identidad de otra persona o simplemente no aparece nada sobre ti, serás automáticamente eliminadx.</li>
+                    <li><b>Ofrecimiento de servicios:</b> Freakit! no es una plataforma de búsqueda de empleo ni de búsqueda de inversorxs. Por supuesto que puedes hablar a tus matches sobre tus proyectos, pero no uses esta aplicación con el único fin de encontrar financiación o para ofrecer tus servicios profesionales (del tipo que sean).</li>
+                    <li><b>Prostitución o trata de personas:</b> Freakit! no es un mercado de personas. Freakit! no es un catálogo humano. Freakit! PROHÍBE el uso de la aplicación para captar a personas con el fin de prostituirlas u obtener cualquier beneficio de las mismas a través de aprovecharse de su cuerpo o ser. No solamente se eliminará tu perfil si realizas alguno de estos actos, también serás denunciadx inmediatamente a las autoridades legales pertinentes.</li>
+                    <li><b>Estafas:</b> ¿Quieres ganarte un dinerillo extra con tu super estafa? Vete a otro sitio, Freakit! no es el lugar. Cualquier intento de estafa a cualquier usuarix de la comunidad será sancionado de manera inmediata con la expulsión.</li>
+                </ul>
+            </p>
+        </section>
+    </div>
   )
 }
 

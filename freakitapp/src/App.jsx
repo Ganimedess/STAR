@@ -5,6 +5,7 @@ import ball from './assets/images/ball.png'
 import mockup from './assets/images/mockup.png'
 import apple from './assets/images/Apple-App-Store-Logo.png'
 import googleps from './assets/images/google-play-badge.png'
+import banderas from './assets/images/banderas.png'
 import flower from './assets/images/flower.png'
 import brain from './assets/images/brain.png'
 import planet from './assets/images/planet.png'
@@ -79,7 +80,7 @@ function App() {
   return (
     <div className="overflow-hidden">
 
-      <section id='hero' className="hero min-h-screen relative text-white">
+      <section id='hero' className="hero h-screen min-h-[800px] relative text-white">
         <div className="absolute w-full h-full herobg">
           <img src={ball} alt="gráficos decorativos" className='absolute min-w-fit top-[-50%] right-[-500px]' />
           <img src={heart} alt="gráficos decorativos" className='absolute min-w-fit top-[-10%] heartHero' />
@@ -106,7 +107,7 @@ function App() {
           </div>
           <div className='bg-white rounded-[40px] shadow-xl shadow-primary/30 w-fit px-5 lg:px-7 card-second m-auto md:ml-0'>
             <p className='py-6 text-lg text-center'><b>¡Ya disponible en 4 paises!</b><br />España, México, Chile y Colombia <br />
-            <span className='text-5xl tracking-[10px] leading-snug'>🇪🇸🇲🇽🇨🇱🇨🇴</span>
+            <img className='max-w-[250px] w-full m-auto mt-0' src={banderas} alt="banderas de España, México, Chile y Colombia" />
             </p>
           </div>
         </div>
@@ -204,7 +205,7 @@ function App() {
         </div>
         <h3 className='text-3xl mb-12'>Equipo:</h3>
         <div className='flex flex-wrap max-md:flex-col md:flex-nowrap justify-center md:justify-between max-md:items-center'>
-          <div className="card max-w-[250px] lg:max-w-[300px] shadow-xl shadow-primary/30 mr-3 bg-base-100">
+          <div className="card max-w-[250px] lg:max-w-[300px] shadow-xl shadow-primary/30 mr-3 bg-base-100/90">
             <figure><img src={amanda} alt="avatar de Amanda"className='w-full' /></figure>
             <div className="card-body">
               <h4 className="card-title">Alba</h4>
@@ -212,7 +213,7 @@ function App() {
               <p className='text-sm'>`Hazlo o no lo hagas, pero no lo intentes`</p>
             </div>
           </div>
-          <div className="card max-w-[250px] lg:max-w-[300px] shadow-xl shadow-primary/30 mr-3 bg-base-100 my-5 md:my-0">
+          <div className="card max-w-[250px] lg:max-w-[300px] shadow-xl shadow-primary/30 mr-3 bg-base-100/90 my-5 md:my-0">
             <figure><img src={alba} alt="avatar de Alba"className='w-full' /></figure>
             <div className="card-body">
               <h4 className="card-title">Alba</h4>
@@ -220,7 +221,7 @@ function App() {
               <p className='text-sm'>`No importa qué tan difícil o imposible sea, no pierdas de vista tu objetivo`</p>
             </div>
           </div>
-          <div className="card max-w-[250px] lg:max-w-[300px] shadow-xl shadow-primary/30 bg-base-100">
+          <div className="card max-w-[250px] lg:max-w-[300px] shadow-xl shadow-primary/30 bg-base-100/90">
             <figure><img src={jon} alt="avatar de Jon"className='w-full' /></figure>
             <div className="card-body">
               <h4 className="card-title">Jon</h4>

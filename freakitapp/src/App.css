@@ -1,103 +1,126 @@
 :root {
-    --purpleF: '#66539D';
-    --blueF: '#88BAD2';
-    --blackF: '#262039';
-    --lightF: '#F5F3FF';
-    --redF: '#FF6969';
+  --purpleF: '#66539D';
+  --blueF: '#88BAD2';
+  --blackF: '#262039';
+  --lightF: '#F5F3FF';
+  --redF: '#FF6969';
 }
 *, *::after, *::before {
-    font-family: 'Rubik', sans-serif;
-}
-
-.heartHero {
-    left: calc(50% - 700px)
-}
-.heroCaja {
-    transform: translateX(50px);
-    -webkit-transform: translateX(50px);
-    -moz-transform: translateX(50px);
-    -ms-transform: translateX(50px);
-    -o-transform: translateX(50px);
-}
-.heroImg {
-    transform: translateX(-50px);
-    -webkit-transform: translateX(-50px);
-    -moz-transform: translateX(-50px);
-    -ms-transform: translateX(-50px);
-    -o-transform: translateX(-50px);
-}
-.bi {
-    width: 60px;
-    fill: #88BAD2;
-}
-
-@media  (max-width: 1024px) {
-    .heroCaja {
-        transform: translateX(0px);
-        -webkit-transform: translateX(0px);
-        -moz-transform: translateX(0px);
-        -ms-transform: translateX(0px);
-        -o-transform: translateX(0px);
-    }
-    .heroImg {
-        transform: translateX(0px);
-        -webkit-transform: translateX(0px);
-        -moz-transform: translateX(0px);
-        -ms-transform: translateX(0px);
-        -o-transform: translateX(0px);
-    }
-    .bi {
-        width: 50px;
-        fill: #88BAD2;
-    }
-    .camera {
-        width: 100px !important;
-        height: 22px !important;
-        top: -3px !important;
-    }
+  font-family: 'Rubik', sans-serif;
 }
 
 .herobg {
-    overflow-x: hidden;
-    overflow-y: visible;
+  overflow-y: hidden !important;
+}
+.heartHero {
+  left: calc(50% - 700px)
+}
+.heroCaja {
+  transform: translateX(50px);
+  -webkit-transform: translateX(50px);
+  -moz-transform: translateX(50px);
+  -ms-transform: translateX(50px);
+  -o-transform: translateX(50px);
+}
+.heroImg {
+  transform: translateX(-50px);
+  -webkit-transform: translateX(-50px);
+  -moz-transform: translateX(-50px);
+  -ms-transform: translateX(-50px);
+  -o-transform: translateX(-50px);
+}
+.bi {
+  width: 60px;
+  fill: #88BAD2;
+}
+
+@media  (max-width: 1024px) {
+  .heroCaja {
+      transform: translateX(0px);
+      -webkit-transform: translateX(0px);
+      -moz-transform: translateX(0px);
+      -ms-transform: translateX(0px);
+      -o-transform: translateX(0px);
+  }
+  .heroImg {
+      transform: translateX(0px);
+      -webkit-transform: translateX(0px);
+      -moz-transform: translateX(0px);
+      -ms-transform: translateX(0px);
+      -o-transform: translateX(0px);
+  }
+  .bi {
+      width: 50px;
+      fill: #88BAD2;
+  }
+  .camera {
+      width: 100px !important;
+      height: 22px !important;
+      top: -3px !important;
+  }
+}
+
+.herobg {
+  overflow-x: hidden;
+  overflow-y: visible;
 }
 
 .atras {
-    z-index: -1;
+  z-index: -1;
 }
 
 .grid-second {
-    grid-template-columns: 1fr;
-    grid-template-areas:
-    "texto"
-    "foto"
-    "tarjeta";
+  grid-template-columns: 1fr;
+  grid-template-areas:
+  "texto"
+  "foto"
+  "tarjeta";
 }
 .img-second {
-    grid-area: foto;
+  grid-area: foto;
 }
 .text-second {
-    grid-area: texto;
+  grid-area: texto;
 }
 .card-second {
-    grid-area: tarjeta;
+  grid-area: tarjeta;
 }
 @media (min-width: 768px) {
-    .grid-second {
-        grid-template-columns: 1fr 1fr;
-        grid-template-areas:
-        "foto texto"
-        "foto tarjeta";
-    }
-    .img-second {
-        grid-area: foto;
-    }
-    .text-second {
-        grid-area: texto;
-        align-self: end;
-    }
-    .card-second {
-        grid-area: tarjeta;
-        align-self: start;
-    }
+  .grid-second {
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas:
+      "foto texto"
+      "foto tarjeta";
+  }
+  .img-second {
+      grid-area: foto;
+  }
+  .text-second {
+      grid-area: texto;
+      align-self: end;
+  }
+  .card-second {
+      grid-area: tarjeta;
+      align-self: start;
+  }
+}
+
+.textos-legales {
+  max-width: 1200px;
+  padding: 100px 3% 0 3%;
+  margin: auto;
+}
+.textos-legales p {
+  margin-top: 25px;
+}
+.textos-legales h1 {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.textos-legales li {
+  margin-top: 15px;
+}
+.textos-legales img {
+  display: inline;
+  max-width: 20px;
 }
