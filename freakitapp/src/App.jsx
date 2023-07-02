@@ -80,10 +80,10 @@ function App() {
   return (
     <div className="overflow-hidden">
 
-      <section id='hero' className="hero h-screen min-h-[800px] relative text-white">
+      <section id='hero' className="hero md:h-screen min-h-screen md:min-h-[800px] relative text-white">
         <div className="absolute w-full h-full herobg">
           <img src={ball} alt="gráficos decorativos" className='absolute min-w-fit top-[-50%] right-[-500px]' />
-          <img src={heart} alt="gráficos decorativos" className='absolute min-w-fit top-[-10%] heartHero' />
+          <img src={heart} alt="gráficos decorativos" className='absolute min-w-fit md:top-[-10%] heartHero' />
         </div>
         <div className="hero-content flex-col-reverse md:flex-row-reverse max-w-screen-lg p-10 lg:p-0">
           <img src={heroImage} alt='captura de pantalla app' className="max-w-sm rounded-lg heroImg z-40" />
@@ -208,7 +208,7 @@ function App() {
           <div className="card max-w-[250px] lg:max-w-[300px] shadow-xl shadow-primary/30 mr-3 bg-base-100/90">
             <figure><img src={amanda} alt="avatar de Amanda"className='w-full' /></figure>
             <div className="card-body">
-              <h4 className="card-title">Alba</h4>
+              <h4 className="card-title">Amanda</h4>
               <p>co-founder</p>
               <p className='text-sm'>`Hazlo o no lo hagas, pero no lo intentes`</p>
             </div>
