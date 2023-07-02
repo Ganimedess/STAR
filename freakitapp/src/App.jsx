@@ -79,12 +79,11 @@ function App() {
 
   return (
     <div className="overflow-hidden">
-
-      <section id='hero' className="hero md:h-screen min-h-screen md:min-h-[800px] relative text-white">
         <div className="absolute w-full h-full herobg">
-          <img src={ball} alt="gráficos decorativos" className='absolute min-w-fit top-[-50%] right-[-500px]' />
-          <img src={heart} alt="gráficos decorativos" className='absolute min-w-fit md:top-[-10%] heartHero' />
+          <img src={ball} alt="gráficos decorativos" className='absolute min-w-fit h-auto top-[-200px] right-[-500px]' />
+          <img src={heart} alt="gráficos decorativos" className='absolute min-w-fit h-auto md:top-[-50px] heartHero' />
         </div>
+      <section id='hero' className="hero md:h-screen min-h-screen md:min-h-[800px] relative text-white">
         <div className="hero-content flex-col-reverse md:flex-row-reverse max-w-screen-lg p-10 lg:p-0">
           <img src={heroImage} alt='captura de pantalla app' className="max-w-sm rounded-lg heroImg z-40" />
           <div className="lg:bg-white/30 lg:rounded-[40px] pt-24 lg:p-11 lg:pr-32 heroCaja mb-10">
@@ -210,7 +209,7 @@ function App() {
             <div className="card-body">
               <h4 className="card-title">Amanda</h4>
               <p>co-founder</p>
-              <p className='text-sm'>`Hazlo o no lo hagas, pero no lo intentes`</p>
+              <p className='text-sm'>`No importa qué tan difícil o imposible sea, no pierdas de vista tu objetivo`</p>
             </div>
           </div>
           <div className="card max-w-[250px] lg:max-w-[300px] shadow-xl shadow-primary/30 mr-3 bg-base-100/90 my-5 md:my-0">
@@ -218,7 +217,7 @@ function App() {
             <div className="card-body">
               <h4 className="card-title">Alba</h4>
               <p>co-founder</p>
-              <p className='text-sm'>`No importa qué tan difícil o imposible sea, no pierdas de vista tu objetivo`</p>
+              <p className='text-sm'>`Hazlo o no lo hagas, pero no lo intentes`</p>
             </div>
           </div>
           <div className="card max-w-[250px] lg:max-w-[300px] shadow-xl shadow-primary/30 bg-base-100/90">
@@ -235,9 +234,9 @@ function App() {
       <section id='media' className="max-w-screen-lg m-auto mt-12 lg:mt-40 relative max-lg:p-10">
         <h3 className='text-3xl mb-12'>Freakit en los medios:</h3>
         <div className="flex max-sm:flex-wrap justify-center sm:justify-between">
-          <div><a href=""><img src={vid1} alt="vídeo Comedy-Con Youtube" /></a></div>
-          <div className="sm:mx-2 max-sm:my-7"><a href=""><img src={vid2} alt="vídeo UPM Youtube" /></a></div>
-          <div><a href=""><img src={vid3} alt="vídeo Radio Nakama Youtube" /></a></div>
+          <div><a target="_blank" rel="noreferrer" href="https://www.youtube.com/watch?v=0PtjKPdrDFs"><img src={vid1} alt="vídeo Comedy-Con Youtube" /></a></div>
+          <div className="sm:mx-2 max-sm:my-7"><a target="_blank" rel="noreferrer" href="https://www.youtube.com/watch?v=ozQK7hjm5oQ"><img src={vid2} alt="vídeo UPM Youtube" /></a></div>
+          <div><a target="_blank" rel="noreferrer" href="https://www.youtube.com/watch?v=IX3zq1dwmcQ&t=2218s"><img src={vid3} alt="vídeo Radio Nakama Youtube" /></a></div>
         </div>
         <div className='grid grid-cols-2 md:grid-cols-3 max-w-lg gap-10 m-auto mt-10 justify-items-center'>
           <div className='bg-white rounded p-2 aspect-square flex items-center max-w-[145px]'><img src={logo1} alt="logo flooxer" /></div>

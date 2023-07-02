@@ -14,7 +14,7 @@ const PoliticaPrivacidad = () => {
                     <p className="text-2xl font-bold">Principios clave</p>
                     <p>
                         En Freakit! estamos comprometidoss con prestar nuestros servicios con el más alto grado de calidad, lo que incluye tratar sus datos con seguridad y transparencia. Nuestros principios son:
-                        <ul>
+                        <ul className="list-disc">
                             <li><b>Legalidad:</b> Solo recopilaremos sus Datos personales para fines específicos, explícitos y legítimos.</li>
                             <li><b>Minimización de datos: </b>Limitamos la recogida de datos de carácter personal a lo que es estrictamente relevante y necesario para los fines para los que se han recopilado.</li>
                             <li><b>Limitación de la Finalidad: </b>Solo recogeremos sus datos personales para los fines declarados.</li>
@@ -35,7 +35,7 @@ const PoliticaPrivacidad = () => {
                             Datos de carácter identificativo. Para el uso correcto y para poder disfrutar del Servicio de una manera óptima, los datos que Freakit! solicitará al usuario serán los siguientes: nombre, correo, fecha de nacimiento, género, orientación sexual, acceso a las imágenes del dispositivo móvil y localización.
                         </li></ul>
                         También recogemos de forma automática datos sobre su visita a nuestro sitio web según se describe en la política de cookies. Siempre que solicitemos sus Datos personales, le informaremos con claridad de qué datos personales recogemos y con qué fin. En general, recogemos y tratamos sus datos personales con el propósito de:
-                        <ul>
+                        <ul className="list-disc">
                             <li>Proporcionar información, servicios, productos, información relevante y novedades en el sector.</li>
                             <li>Envío de comunicaciones.</li>
                         </ul>
@@ -46,7 +46,7 @@ const PoliticaPrivacidad = () => {
                     <p className="text-2xl font-bold">Legitimidad</p>
                     <p>
                         De acuerdo con la normativa de protección de datos aplicable, sus datos personales podrán tratarse siempre que:
-                        <ul>
+                        <ul className="list-disc">
                             <li>Nos ha dado su consentimiento a los efectos del tratamiento. Por supuesto podrá retirar su consentimiento en cualquier momento.</li>
                             <li>Por requerimiento legal.
                             </li>
@@ -63,7 +63,7 @@ const PoliticaPrivacidad = () => {
                     <p className="text-2xl font-bold">Sus derechos</p>
                     <p>
                         En relación con la recogida y tratamiento de sus datos personales, puede ponerse en contacto con nosotros en cualquier momento para:
-                        <ul>
+                        <ul className="list-disc">
                             <li>Acceder a sus datos personales y a cualquier otra información indicada en el Artículo 15.1 del RGPD.</li>
                             <li>Rectificar sus datos personales que sean inexactos o estén incompletos de acuerdo con el Artículo 16 del RGPD.</li>
                             <li>Suprimir sus datos personales de acuerdo con el Artículo 17 del RGPD.</li>

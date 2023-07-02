@@ -8,7 +8,7 @@ import gmail from '../assets/images/iconos/mail.png'
 
 const Header = () => {
   return (
-    <header className="bg-white opacity-80 fixed top-0 z-50 w-full">
+    <header className="bg-white/80 fixed top-0 z-50 w-full">
       <nav className="navbar max-w-screen-xl mx-auto justify-between">
         <div>
           <Link to="/" className="">

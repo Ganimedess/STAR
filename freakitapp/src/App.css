@@ -9,8 +9,8 @@
   font-family: 'Rubik', sans-serif;
 }
 
-.herobg {
-  overflow-y: hidden !important;
+#hero, .herobg {
+  overflow-y: visible !important;
 }
 .heartHero {
   left: calc(50% - 700px)
@@ -116,6 +116,7 @@
 .textos-legales h1 {
   font-weight: bold;
   text-transform: uppercase;
+  font-size: 2rem;
 }
 .textos-legales li {
   margin-top: 15px;

@@ -9,7 +9,7 @@ const TerminosCondiciones = () => {
                 <li>
                     <p className="text-2xl font-bold">Acuerdo entre el/la usuario/a y Freakit!</p>
                     <p>
-                        <ul>
+                        <ul className="list-disc">
                             <li>Las presentes Condiciones de servicio (las «Condiciones«) rigen su adquisición y uso de servicios en nuestra aplicación móvil Freakit!. Al crear una cuenta en Freakit! el/la usuario/a acepta de manera automática los Términos Condiciones de Uso.</li>
                             <li>Las presentes Condiciones fueron actualizadas por última vez el 06 de marzo de 2023 y son vigentes entre usted y Freakit! a partir de la fecha en que registra una cuenta en Freakit!. Freakit! se reserva el derecho de modificar estas Condiciones en cualquier momento. Si dichas modificaciones se consideran sustanciales, Freakit!  informará a los usuarios registrados en relación con las mismas por correo electrónico y entrarán en vigor un mes después del envío de dicho correo electrónico. El uso continuado de nuestra aplicación web o servicios por parte de usted después de dichas modificaciones constituirá un reconocimiento y una aceptación de las Condiciones modificadas.</li>
                             <li>Al aceptar las Condiciones, usted además acepta la Política de Privacidad, la Política de cookies, los Consejos de Seguridad y las Reglas de la Comunidad, todo esto quedará reflejado más adelante en este Acuerdo.</li>
@@ -19,7 +19,7 @@ const TerminosCondiciones = () => {
                 <li>
                     <p className="text-2xl font-bold">Condiciones del/la usuarix para poder crear una cuenta en Freakit!</p>
                     <p>
-                        <ul>
+                        <ul className="list-disc">
                             <li>Tener al menos 18 años de edad.</li>
                             <li>En el caso de tener más de 18 años de edad, pero no poder actuar bajo cuenta propia por el motivo que sea, se exige el consentimiento y supervisión de un tutor legal.</li>
                             <li>Si usted no tiene la edad legal requerida (+18) para utilizar la aplicación y ha falseado dichos datos, Freakit! no se hace responsable del uso que haga de la aplicación.</li>
@@ -73,7 +73,7 @@ const TerminosCondiciones = () => {
                         Usted tiene, por tanto, derecho al uso y disfrute de todas las funcionalidades que ofrece Freakit!.
                         <br/>
                         En lo que usted NO dispone derecho es en lo siguiente:
-                        <ul>
+                        <ul className="list-disc">
                             <li>Actuar en nombre de Freakit!.</li>
                             <li>Actuar bajo el nombre de Freakit!.</li>
                             <li>Suplantar a Freakit! de ninguna manera, incluída la comercial.</li>
@@ -127,7 +127,7 @@ const TerminosCondiciones = () => {
                 <li>
                     <p className="text-2xl font-bold">Reglas de la Comunidad</p>
                     <p>
-                        <ul>
+                        <ul className="list-disc">
                             <li>Aceptar este Acuerdo.</li>
                             <li>Aceptar la Política de Privacidad.</li>
                             <li>Aceptar las Reglas de la Comunidad.</li>

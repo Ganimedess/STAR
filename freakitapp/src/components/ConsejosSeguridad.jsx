@@ -10,7 +10,7 @@ const ConsejosSeguridad = () => {
             <p className="text-2xl font-bold">
                 Seguridad en línea
             </p>
-            <p><ul>
+            <p><ul className="list-disc">
                 <li>Protege tu información personal. Nunca debes compartir datos como tu número de la seguridad social, la dirección de tu casa o el trabajo o detalles sobre tus costumbres diarias con gente que no conozcas. Si tienes hijxs o algún familiar menor, limita la información sobre estxs en tu perfil y en las primeras conversaciones. Evita información de estxs menores como a qué escuela van, cuantos años tienen o su nombre.</li>
                 <li>No compartas información financiera.</li>
                 <li>Nunca envíes dinero, sobre todo, si es a través de una transferencia bancaria. No compartas información que se pudiese usar para acceder a tus cuentas financieras aunque la persona que te pida el dinero diga que es una emergencia. En caso de que una persona te pida dinero notifícalo en el emoticono de denuncia que aparece en cada perfil o en cada sala de chat, este icono te llevará directamente a nuestro correo (<a href="mailto:freakitapp@gmail.com" target="_blank">freakitapp@gmail.com</a>).</li>
@@ -19,7 +19,7 @@ const ConsejosSeguridad = () => {
             <p className="text-2xl font-bold">
                 Conocerse en persona
             </p>
-            <p><ul>
+            <p><ul className="list-disc">
                 <li>Tomate tu tiempo para conocer a la persona con la que estás hablando antes de quedar con ella físicamente. Nunca tengas miedo de hacer las preguntas necesarias para sentirte segurx. Una buena herramienta es una llamada de teléfono o mejor una videollamada.</li>
                 <li>Las primeras veces que quedéis, hacedlo en un sitio público, concurrido y en el que haya gente.  Nunca lo hagas en tu casa, en casa de la otra persona  ni en ningún otro lugar sin gente o privado. Si la otra persona insiste en ir a un lugar privado o sin gente termina con la cita.</li>
                 <li>Siempre avisa a un/a conocido/a de confianza de donde vas a estar, con quién y qué vais a hacer. Asegúrate de que tu móvil esté cargado y siempre en tu poder.</li>
@@ -38,7 +38,7 @@ const ConsejosSeguridad = () => {
             <p className="text-2xl font-bold">
                 Salud sexual y consentimiento
             </p>
-            <p><ul>
+            <p><ul className="list-disc">
                 <li>Utiliza siempre protección durante las relaciones sexuales como el preservativo. Esto puede reducir considerablemente la transmisión de enfermedades como el VIH y embarazos no deseados.</li>
                 <li>Mantén tu salud cuidada periódicamente. Muchas de las enfermedades que existen de transmisión sexual no muestran síntomas e incluso algunas como el herpes no solo se transmiten por las relaciones sexuales.</li>
                 <li>Comunicar a la otra persona que quieres que os hagáis pruebas de enfermedades de trasmisión sexual no es nada malo. La comunicación y tu seguridad es lo primero y en Freakit! queremos que tu salud sexual sea lo más importante antes de tener relaciones sexuales.</li>
