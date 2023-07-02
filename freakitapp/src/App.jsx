@@ -80,8 +80,8 @@ function App() {
   return (
     <div className="overflow-hidden">
         <div className="absolute w-full h-full herobg">
-          <img src={ball} alt="gráficos decorativos" className='absolute min-w-fit max-sm:aspect-square h-auto top-[-200px] right-[-500px]' />
-          <img src={heart} alt="gráficos decorativos" className='absolute min-w-fit max-sm:aspect-square h-auto md:top-[-50px] heartHero' />
+          <img src={ball} alt="gráficos decorativos" className='absolute min-w-fit max-sm:min-h-screen top-[-200px] right-[-500px]' />
+          <img src={heart} alt="gráficos decorativos" className='absolute min-w-fit max-sm:min-h-screen md:top-[-50px] heartHero' />
         </div>
       <section id='hero' className="hero md:h-screen min-h-screen md:min-h-[800px] relative text-white">
         <div className="hero-content flex-col-reverse md:flex-row-reverse max-w-screen-lg p-10 lg:p-0">
