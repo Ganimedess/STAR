@@ -1,5 +1,5 @@
 import './App.css'
-import heroImage from './assets/images/heroimg.png'
+import heroImage from './assets/images/gifHero.gif'
 import heart from './assets/images/heart.png'
 import ball from './assets/images/ball.png'
 import mockup from './assets/images/mockup.png'
@@ -85,7 +85,7 @@ function App() {
         </div>
       <section id='hero' className="hero md:h-screen min-h-screen md:min-h-[800px] relative text-white">
         <div className="hero-content flex-col-reverse md:flex-row-reverse max-w-screen-lg p-10 lg:p-0">
-          <img src={heroImage} alt='captura de pantalla app' className="max-w-sm rounded-lg heroImg z-40" />
+          <img src={heroImage} alt='captura de pantalla app' className="max-w-sm rounded-[30px] heroImg z-40 max-h-[550px]" />
           <div className="lg:bg-white/30 lg:rounded-[40px] pt-24 lg:p-11 lg:pr-32 heroCaja mb-10">
             <h1 className="text-5xl font-bold">La aplicación más popular para conocer otakus</h1>
             <p className="py-6 text-xl">Conoce gente, haz amigos, encuentra el amor.<br/>Descubre la mayor comunidad de otakus en español.</p>
