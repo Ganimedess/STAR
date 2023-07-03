@@ -1,10 +1,10 @@
-@fondo : rgb(184, 233, 193);
+@fondo : rgb(180, 238, 169);
 @raiz_size : 50vw;
-@raiz_color : #d7eba4;
+@raiz_color : #d7eba4c6;
 @corazon_size : 25vw;
-@corazon_color : #acefbd;
+@corazon_color : #acefbdc8;
 @garganta_size : 28vw;
-@garganta_color : #9ee2d2;
+@garganta_color : #9ee2d2bf;
 
 @negro : #0b0014;
 @blanco50 : rgba(255, 255, 255, 0.5);
@@ -137,13 +137,13 @@ body, main {
 .carousel-left {
     position: absolute;
     transform: translateX(-50%) scale(.9);
-    filter: blur(2px);
+    filter: blur(1px);
     transition: transform .5s, filter .5s;
 }
 .carousel-right {
     position: absolute;
     transform: translateX(50%) scale(.9);
-    filter: blur(2px);
+    filter: blur(1px);
     transition: transform .5s, filter .5s;
 }
 .actividad article {
@@ -263,7 +263,7 @@ body, main {
 
 #carousel {
     position: relative;
-
+    min-height: 800px;
     .controles-carousel {
         img {
             width: 32px;
@@ -294,6 +294,9 @@ body, main {
         }
     }
     @media (max-width: 768px) {
+        & {
+            min-height: 650px;
+        }
         .controles-carousel {
             img {
                 width: 24px;
@@ -316,47 +319,47 @@ body, main {
 .slide {
     div{
         background-color: white;
-        border-radius: 0 0 5px 5px
+        border-radius: 0 0 15px 15px
     }
     img {
         object-fit: cover;
-        border-radius: 5px 5px 0 0;
+        border-radius: 15px 15px 0 0;
     }
 }
-.order1 { order: 1; }
-.order2 { order: 2; }
-.order3 { order: 3; }
-.order4 { order: 4; }
-/*
-#carousel-body {
-    /* SCROLLBARS
-    /* Works on Firefox
-    scrollbar-width: 0px;
-    -ms-overflow-style: none; /* for Internet Explorer, Edge
-    scrollbar-width: none; /* for Firefox
-    /* Works on Chrome, Edge, and Safari
-    &::-webkit-scrollbar {
-        display: none;
-    }
-
-    position: relative;
-    flex-wrap: nowrap;
-    overflow-x: scroll;
-    scroll-behavior: smooth;
-    scroll-snap-type: x mandatory;
-    scroll-padding-left: 10px;
-    article {
-        scroll-snap-align: start;
-        display: flex;
-        margin-left: 20px;
-        img {
-            object-fit: cover;
-            border-radius: 10px 10px 0 0;
-        }
-    }
-
+.sliderMid {
+    position: static;
+    transition: transform 0.3s ease-in-out;
+    -webkit-transition: transform 0.3s ease-in-out;
+    -moz-transition: transform 0.3s ease-in-out;
+    -ms-transition: transform 0.3s ease-in-out;
+    -o-transition: transform 0.3s ease-in-out;
 }
-*/
+.sliderLeft {
+    position: absolute;
+    transform: translateX(-105%);
+    -webkit-transform: translateX(-105%);
+    -moz-transform: translateX(-105%);
+    -ms-transform: translateX(-105%);
+    -o-transform: translateX(-105%);
+    transition: transform 0.3s ease-in-out;
+    -webkit-transition: transform 0.3s ease-in-out;
+    -moz-transition: transform 0.3s ease-in-out;
+    -ms-transition: transform 0.3s ease-in-out;
+    -o-transition: transform 0.3s ease-in-out;
+}
+.sliderRight {
+    position: absolute;
+    transform: translateX(105%);
+    -webkit-transform: translateX(105%);
+    -moz-transform: translateX(105%);
+    -ms-transform: translateX(105%);
+    -o-transform: translateX(105%);
+    transition: transform 0.3s ease-in-out;
+    -webkit-transition: transform 0.3s ease-in-out;
+    -moz-transition: transform 0.3s ease-in-out;
+    -ms-transition: transform 0.3s ease-in-out;
+    -o-transition: transform 0.3s ease-in-out;
+}
 
 
 @keyframes rotar {

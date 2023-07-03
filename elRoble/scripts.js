@@ -27,7 +27,7 @@ const taller = "rgba(218, 224, 242, .5)"
 const curso = "rgba(216, 204, 245, .5)"
 const evento = "rgba(188, 232, 240, .5)"
 const INTERVALO = 5000
-let currentTarget = 0
+let carouselTarget = 0
 
 let arrayTarjetas
 const container = document.querySelector("#contenedor-actividades")
@@ -88,7 +88,7 @@ function stopSlide() {
 
 llenarActividades()
 .then(() => {
-    scrollToElement(currentTarget);
+    scrollToElement(carouselTarget);
 })
 .then(() => {llenarIndicador()});
 inicioSlide()
@@ -100,15 +100,15 @@ function scrollToElement(target) {
         element.classList.replace("carousel-left", "d-none")
         element.classList.replace("carousel-right", "d-none")
     });
-    let leftTarget = (currentTarget - 1 + arrayTarjetas.length) % arrayTarjetas.length;
-    let rightTarget = (currentTarget + 1) % arrayTarjetas.length;
+    let leftTarget = (carouselTarget - 1 + arrayTarjetas.length) % arrayTarjetas.length;
+    let rightTarget = (carouselTarget + 1) % arrayTarjetas.length;
     arrayTarjetas[target].classList.replace("d-none", "carousel-mid");
     arrayTarjetas[leftTarget].classList.replace("d-none", "carousel-left");
     arrayTarjetas[rightTarget].classList.replace("d-none", "carousel-right");
     console.log(arrayTarjetas[target])
 }
 function scrollLeft() {
-    let newTarget = (currentTarget - 1 + arrayTarjetas.length) % arrayTarjetas.length;
+    let newTarget = (carouselTarget - 1 + arrayTarjetas.length) % arrayTarjetas.length;
     let leftTarget = (newTarget - 1 + arrayTarjetas.length) % arrayTarjetas.length;
     let rightTarget = (newTarget + 1) % arrayTarjetas.length;
     let overRigt = (rightTarget + 1) % arrayTarjetas.length;
@@ -116,10 +116,10 @@ function scrollLeft() {
     arrayTarjetas[newTarget].classList.replace("carousel-left", "carousel-mid");
     arrayTarjetas[rightTarget].classList.replace("carousel-mid", "carousel-right");
     arrayTarjetas[overRigt].classList.replace("carousel-right", "d-none")
-    currentTarget = newTarget;
+    carouselTarget = newTarget;
 }
 function scrollRight() {
-    let newTarget = (currentTarget + 1) % arrayTarjetas.length;
+    let newTarget = (carouselTarget + 1) % arrayTarjetas.length;
     let leftTarget = (newTarget - 1 + arrayTarjetas.length) % arrayTarjetas.length;
     let rightTarget = (newTarget + 1) % arrayTarjetas.length;
     let overLeft = (leftTarget - 1 + arrayTarjetas.length) % arrayTarjetas.length;
@@ -127,7 +127,7 @@ function scrollRight() {
     arrayTarjetas[leftTarget].classList.replace("carousel-mid", "carousel-left");
     arrayTarjetas[newTarget].classList.replace("carousel-right", "carousel-mid");
     arrayTarjetas[rightTarget].classList.replace("d-none", "carousel-right");
-    currentTarget = newTarget;
+    carouselTarget = newTarget;
 }
 function llenarIndicador() {}
 
@@ -246,27 +246,28 @@ carouselForward.addEventListener('click', slideRight)
 */
 let slides = document.querySelectorAll(".slide")
 let slider = document.querySelector("#carousel-body")
+slider.scroll(1000, 1000)
 let currentSlide = 0
-let secondSlide = 1
-let thirdSlide = 2
 
 function slideLeft() {
-    slides[thirdSlide].classList.replace('order3', 'order4')
     currentSlide = (currentSlide - 1 + slides.length) % slides.length
-    secondSlide = (secondSlide - 1 + slides.length) % slides.length
-    thirdSlide = (thirdSlide - 1 + slides.length) % slides.length
-    slides[currentSlide].classList.replace('order4', 'order1')
-    slides[secondSlide].classList.replace('order1', 'order2')
-    slides[thirdSlide].classList.replace('order2', 'order3')
+    leftSlide = (currentSlide - 1 + slides.length) % slides.length
+    rightSlide = (currentSlide + 1) % slides.length
+    overRight = (rightSlide + 1) % slides.length
+    slides[currentSlide].classList.replace('sliderLeft', 'sliderMid')
+    slides[leftSlide].classList.replace('d-none', 'sliderLeft')
+    slides[rightSlide].classList.replace('sliderMid', 'sliderRight')
+    slides[overRight].classList.replace('sliderRight', 'd-none')
 }
 function slideRight() {
-    slides[currentSlide].classList.replace('order1', 'order4')
     currentSlide = (currentSlide + 1) % slides.length
-    secondSlide = (secondSlide + 1) % slides.length
-    thirdSlide = (thirdSlide + 1) % slides.length
-    slides[currentSlide].classList.replace('order2', 'order1')
-    slides[secondSlide].classList.replace('order3', 'order2')
-    slides[thirdSlide].classList.replace('order4', 'order3')
+    leftSlide = (currentSlide - 1 + slides.length) % slides.length
+    rightSlide = (currentSlide + 1) % slides.length
+    overLeft = (leftSlide - 1 + slides.length) % slides.length
+    slides[currentSlide].classList.replace('sliderRight', 'sliderMid')
+    slides[leftSlide].classList.replace('sliderMid', 'sliderLeft')
+    slides[rightSlide].classList.replace('d-none', 'sliderRight')
+    slides[overLeft].classList.replace('sliderLeft', 'd-none')
 }
 
 const carouselBack = document.querySelector("#carousel-back")

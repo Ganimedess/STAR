@@ -13,7 +13,7 @@ const PreguntasFrecuentes = () => {
             <p className="text-2xl font-bold">¿Se puede utilizar Freakit! para buscar amistad?</p>
             <p>Sí, Freakit! es una aplicación destinada a que otakus se conozcan entre si, tú puedes decidir qué buscas (amistad, relación, etc…)</p>
             <p className="text-2xl font-bold">Me aparece que el aforo está completo.</p>
-            <p>Esto puede ser por diferentes motivos como por ejemplo problemas de conexión o por tu dispositivo móvil.</p>
+            <p>Esto se debe a que Freakit! está disponible para versiones de Android 10 en adelante.</p>
             <p className="text-2xl font-bold">No está disponible para mi dispositivo o no me aparece en la PlayStore.</p>
             <p>
                 Esto puede deberse a varias razones:

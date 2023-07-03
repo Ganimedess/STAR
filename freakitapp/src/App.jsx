@@ -234,17 +234,17 @@ function App() {
       <section id='media' className="max-w-screen-lg m-auto mt-12 lg:mt-40 relative max-lg:p-10">
         <h3 className='text-3xl mb-12'>Freakit en los medios:</h3>
         <div className="flex max-sm:flex-wrap justify-center sm:justify-between">
-          <div><a target="_blank" rel="noreferrer" href="https://www.youtube.com/watch?v=0PtjKPdrDFs"><img src={vid1} alt="vídeo Comedy-Con Youtube" /></a></div>
-          <div className="sm:mx-2 max-sm:my-7"><a target="_blank" rel="noreferrer" href="https://www.youtube.com/watch?v=ozQK7hjm5oQ"><img src={vid2} alt="vídeo UPM Youtube" /></a></div>
-          <div><a target="_blank" rel="noreferrer" href="https://www.youtube.com/watch?v=IX3zq1dwmcQ&t=2218s"><img src={vid3} alt="vídeo Radio Nakama Youtube" /></a></div>
+          <div className='overflow-hidden'><a target="_blank" rel="noreferrer" href="https://www.youtube.com/watch?v=0PtjKPdrDFs"><img className='upScaleOnHover' src={vid1} alt="vídeo Comedy-Con Youtube" /></a></div>
+          <div className="overflow-hidden sm:mx-2 max-sm:my-7"><a target="_blank" rel="noreferrer" href="https://www.youtube.com/watch?v=ozQK7hjm5oQ"><img className='upScaleOnHover' src={vid2} alt="vídeo UPM Youtube" /></a></div>
+          <div className='overflow-hidden'><a target="_blank" rel="noreferrer" href="https://www.youtube.com/watch?v=IX3zq1dwmcQ&t=2218s"><img className='upScaleOnHover' src={vid3} alt="vídeo Radio Nakama Youtube" /></a></div>
         </div>
         <div className='grid grid-cols-2 md:grid-cols-3 max-w-lg gap-10 m-auto mt-10 justify-items-center'>
-          <div className='bg-white rounded p-2 aspect-square flex items-center max-w-[145px]'><img src={logo1} alt="logo flooxer" /></div>
-          <div className='bg-white rounded p-2 aspect-square flex items-center max-w-[145px]'><img src={logo2} alt="logo notizie" /></div>
-          <div className='bg-white rounded p-2 aspect-square flex items-center max-w-[145px]'><img src={logo3} alt="logo anime2you" /></div>
-          <div className='bg-white rounded p-2 aspect-square flex items-center max-w-[145px]'><img src={logo4} alt="logo el confidencial" /></div>
-          <div className='bg-white rounded p-2 aspect-square flex items-center max-w-[145px]'><img src={logo5} alt="logo 20 minutos" /></div>
-          <div className='bg-white rounded p-2 aspect-square flex items-center max-w-[145px]'><img src={logo6} alt="logo el comercio" /></div>
+          <a target="_blank" rel="noreferrer" href="https://www.flooxernow.com/noticias/freakit-app-ligar-otakus-que-saturado-enorme-volumen-descargas_2022101263467b7c71418d000155f1d3.html"><div className='upScaleOnHover bg-white rounded p-2 aspect-square flex items-center max-w-[145px]'><img src={logo1} alt="logo flooxer" /></div></a>
+          <a target="_blank" rel="noreferrer" href="https://notiziein.it/freakit-tinder-otaku-237368"><div className='upScaleOnHover bg-white rounded p-2 aspect-square flex items-center max-w-[145px]'><img src={logo2} alt="logo notizie in" /></div></a>
+          <a target="_blank" rel="noreferrer" href="https://www.anime2you.de/news/611398/freakit-neue-otaku-dating-app/"><div className='upScaleOnHover bg-white rounded p-2 aspect-square flex items-center max-w-[145px]'><img src={logo3} alt="logo anime2you" /></div></a>
+          <a target="_blank" rel="noreferrer" href="https://www.elconfidencial.com/tecnologia/2022-10-16/freakit-tinder-espanol-frikis-otakus_3505706//"><div className='upScaleOnHover bg-white rounded p-2 aspect-square flex items-center max-w-[145px]'><img src={logo4} alt="logo el confidencial" /></div></a>
+          <a target="_blank" rel="noreferrer" href="https://blogs.20minutos.es/el-blog-de-lilih-blue/tag/freakit/"><div className='upScaleOnHover bg-white rounded p-2 aspect-square flex items-center max-w-[145px]'><img src={logo5} alt="logo 20 minutos" /></div></a>
+          <a target="_blank" rel="noreferrer" href="https://elcomercio.pe/tecnologia/actualidad/freakit-la-nueva-aplicacion-de-citas-que-pretende-ser-el-tinder-de-los-otakus-app-espana-mexico-usa-noticia/"><div className='upScaleOnHover bg-white rounded p-2 aspect-square flex items-center max-w-[145px]'><img src={logo6} alt="logo el comercio" /></div></a>
         </div>
       </section>
     </div>

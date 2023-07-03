@@ -63,6 +63,7 @@
 .herobg {
   overflow-x: hidden;
   overflow-y: visible;
+  z-index: -1;
 }
 
 .atras {
@@ -103,6 +104,32 @@
       grid-area: tarjeta;
       align-self: start;
   }
+}
+
+
+.upScaleOnHover:hover {
+  transition: transform 0.3s;
+  transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  -o-transform: scale(1.05);
+  -webkit-transition: transform 0.3s;
+  -moz-transition: transform 0.3s;
+  -ms-transition: transform 0.3s;
+  -o-transition: transform 0.3s;
+}
+.upScaleOnHover2:hover {
+  transition: transform 0.1s;
+  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  -webkit-transition: transform 0.1s;
+  -moz-transition: transform 0.1s;
+  -ms-transition: transform 0.1s;
+  -o-transition: transform 0.1s;
 }
 
 .textos-legales {
