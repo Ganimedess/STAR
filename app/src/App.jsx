@@ -2,6 +2,8 @@ import './App.css';
 import NavBar from './components/NavBar';
 import Hero from './components/Hero';
 import Work from './components/Work';
+import Freakit from './components/FreakitPage'
+import Roble from './components/RoblePage';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import About from './components/About';
@@ -29,6 +31,8 @@ function App() {
             <Route path="/" element={<><Hero/><Work/></>} />
             <Route path="/about" element={<><About/></>} />
             <Route path="/contact" element={<><Contact/></>} />
+            <Route path="/work/freakit!" element={<><Freakit/></>} />
+            <Route path="/work/elRoble" element={<><Roble/></>} />
           </Routes>
         </main>
 

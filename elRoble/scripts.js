@@ -87,25 +87,27 @@ function stopSlide() {
 }
 
 llenarActividades()
+.then(() => {llenarIndicador()})
 .then(() => {
     scrollToElement(carouselTarget);
 })
-.then(() => {llenarIndicador()});
 inicioSlide()
 
 function scrollToElement(target) {
     arrayTarjetas = document.querySelectorAll('.actividad');
-    arrayTarjetas.forEach(element => {
-        element.classList.replace("carousel-mid", "d-none")
-        element.classList.replace("carousel-left", "d-none")
-        element.classList.replace("carousel-right", "d-none")
-    });
     let leftTarget = (carouselTarget - 1 + arrayTarjetas.length) % arrayTarjetas.length;
     let rightTarget = (carouselTarget + 1) % arrayTarjetas.length;
+    arrayTarjetas[carouselTarget].classList.replace("carousel-mid", "d-none")
+    arrayTarjetas[leftTarget].classList.replace("carousel-left", "d-none")
+    arrayTarjetas[rightTarget].classList.replace("carousel-right", "d-none")
+
+    carouselTarget = target
+    let newLeftTarget = (target - 1 + arrayTarjetas.length) % arrayTarjetas.length;
+    let newRightTarget = (target + 1) % arrayTarjetas.length;
     arrayTarjetas[target].classList.replace("d-none", "carousel-mid");
-    arrayTarjetas[leftTarget].classList.replace("d-none", "carousel-left");
-    arrayTarjetas[rightTarget].classList.replace("d-none", "carousel-right");
-    console.log(arrayTarjetas[target])
+    arrayTarjetas[newLeftTarget].classList.replace("d-none", "carousel-left");
+    arrayTarjetas[newRightTarget].classList.replace("d-none", "carousel-right");
+    actualizarIndicador()
 }
 function scrollLeft() {
     let newTarget = (carouselTarget - 1 + arrayTarjetas.length) % arrayTarjetas.length;
@@ -117,6 +119,7 @@ function scrollLeft() {
     arrayTarjetas[rightTarget].classList.replace("carousel-mid", "carousel-right");
     arrayTarjetas[overRigt].classList.replace("carousel-right", "d-none")
     carouselTarget = newTarget;
+    actualizarIndicador()
 }
 function scrollRight() {
     let newTarget = (carouselTarget + 1) % arrayTarjetas.length;
@@ -128,8 +131,36 @@ function scrollRight() {
     arrayTarjetas[newTarget].classList.replace("carousel-right", "carousel-mid");
     arrayTarjetas[rightTarget].classList.replace("d-none", "carousel-right");
     carouselTarget = newTarget;
+    actualizarIndicador()
 }
-function llenarIndicador() {}
+function llenarIndicador() {
+    indicador = document.querySelector("#indicador-actividades ul")
+    tarjetas = document.querySelectorAll(".actividad")
+    for(let i = 0; i < tarjetas.length; i++) {
+        const elt = document.createElement("li")
+        const elt2 = document.createElement("span")
+        elt.addEventListener('click', () =>{
+            let parent = elt.parentNode
+            let index = Array.prototype.indexOf.call(parent.children, elt);
+            scrollToElement(index)
+
+        })
+        elt.appendChild(elt2)
+        indicador.appendChild(elt)
+    }
+    primerPunto = document.querySelector("#indicador-actividades ul span")
+    primerPunto.classList.add("currentListElement")
+}
+function actualizarIndicador() {
+    tarjetas = document.querySelectorAll(".actividad")
+    indicadores = document.querySelectorAll("#indicador-actividades ul span")
+    for(let i = 0; i < tarjetas.length; i++) {
+        indicadores[i].classList.remove("currentListElement")
+        if(tarjetas[i].classList.contains('carousel-mid')) {
+            indicadores[i].classList.add("currentListElement")
+        }
+    }
+}
 
 
 // control para iniciar/terminar el movimiento automático del slider
@@ -279,9 +310,28 @@ carouselForward.addEventListener('click', slideRight)
 
 
 
-
-
-//background control _________________________________________________
+let raiz = document.querySelector('.raiz')
+let lastX
+let lastY
+document.addEventListener('mousemove', moverChakra);
+document.addEventListener('scroll', moverChakra);
+function moverChakra(e) {
+    if(e.clientX) {
+        movX = e.clientX + 'px'
+        lastX = e.clientX
+    } else {
+        movX = lastX + 'px'
+    }
+    if(e.clientY) {
+        movY = e.clientY + window.scrollY + 'px'
+        lastY = e.clientY
+    } else {
+        movY = lastY + window.scrollY + 'px'
+    }
+    raiz.style.left = movX
+    raiz.style.top = movY
+}
+/*background control _________________________________________________
 const fondo = document.querySelector('#background')
 const raiz = document.querySelector('.raiz')
 
@@ -303,12 +353,12 @@ function cambiaFondo(element) {
 let intervaloRaiz
 
 window.onload = function() {
-    raiz.style.top = `${Math.floor( Math.random() * parseInt(fondo.offsetHeight) )}px`
-    raiz.style.left = `${Math.floor( Math.random() * parseInt(fondo.offsetWidth) )}px`
-    corazon.style.top = `${Math.floor( Math.random() * parseInt(fondo.offsetHeight) )}px`
-    corazon.style.left = `${Math.floor( Math.random() * parseInt(fondo.offsetWidth) )}px`
-    garganta.style.top = `${Math.floor( Math.random() * parseInt(fondo.offsetHeight) )}px`
-    garganta.style.left = `${Math.floor( Math.random() * parseInt(fondo.offsetWidth) )}px`
+    raiz.style.top = `${Math.floor( Math.random() * parseInt(fondo.offsetHeight/1.2) )}px`
+    raiz.style.left = `${Math.floor( Math.random() * parseInt(fondo.offsetWidth/1.2) )}px`
+    corazon.style.top = `${Math.floor( Math.random() * parseInt(fondo.offsetHeight/1.2) )}px`
+    corazon.style.left = `${Math.floor( Math.random() * parseInt(fondo.offsetWidth/1.2) )}px`
+    garganta.style.top = `${Math.floor( Math.random() * parseInt(fondo.offsetHeight/1.2) )}px`
+    garganta.style.left = `${Math.floor( Math.random() * parseInt(fondo.offsetWidth/1.2) )}px`
 
     intervaloRaiz = setInterval(function(){
         cambiaFondo(raiz)
@@ -316,3 +366,16 @@ window.onload = function() {
         cambiaFondo(garganta)
     }, 20)
 }
+*/
+const fotoPortada = document.querySelector("#img-hero")
+const imgArray = ['portada.jpg', 'portada2.jpg', 'portada3.jpg']
+let portadaTarget = 0
+function cambiaPortada() {
+    intervaloPortada = setInterval(nuevaFotoPortada, INTERVALO)
+}
+
+function nuevaFotoPortada() {
+    portadaTarget = (portadaTarget + 1) % imgArray.length
+    fotoPortada.style.backgroundImage = `url(/assets/${imgArray[portadaTarget]})`
+}
+cambiaPortada()

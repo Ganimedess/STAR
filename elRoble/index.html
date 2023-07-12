@@ -23,66 +23,76 @@
     <script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_ES/sdk.js#xfbml=1&version=v16.0"
         nonce="G06xST9h"></script>
     <!--div id="ruido"></div-->
-    <div id="background">
+    <div id="background"></div>
+    <div class="raiz d-flex justify-content-center align-items-center">
+        <div class="pointy"></div>
         <div class="chakra raiz"></div>
-        <div class="chakra corazon"></div>
-        <div class="chakra garganta"></div>
     </div>
     <div>
         <main>
-            <div class="container-lg pb-md-5 pb-1 pt-md-5 pt-1 mt-md-5 mt-3">
-                <section id="hero" class="row gx-5">
-                    <div class="col-xl-5">
-                        <span class="d-flex"><img id="logo-roble" src="/assets/roble.svg" />
-                            <h1 id="isotipo" class="mb-3">El Roble</h1>
-                        </span>
-                        <h2 class="fs-4 fw-light">
-                            Asociación de terapias alternativas de Móstoles
-                        </h2>
-                        <p class="fs-4">
-                            Somos una asociación dedicada a compartir terapias, talleres y
-                            actividades relacionadas con la medicina holística y las
-                            terapias alternativas. Creemos en el poder para sanar que está
-                            dentro de ti, y también que el camino para ser una mejor versión
-                            de tí mismo pasa por encontrar el bienestar espiritual.
-                        </p>
-                        <!--a href="" class="d-none"><button id="btn-hero" class="btn btn-light btn-lg mt-2 py-1">Saber más</button></a-->
-                    </div>
-                    <div class="col-xl-7 gx-5 mt-md-5 mt-3 pt-md-5 pt-3">
-                        <div class="mb-4">
-                            <span id="scroll-actividades">
-                                <a id="scroll-actividades-iz">
-                                    <img src="/assets/arrow-bk.svg" alt="" />
-                                </a>
-                                <h3 class="fs-4 p-0 d-inline mx-4 mb-0 fw-normal text-center serifa">
-                                    Actividades programadas
-                                </h3>
-                                <a id="scroll-actividades-de">
-                                    <img src="/assets/arrow-fw.svg" alt="" />
-                                </a>
+            <div class="container-fluid overflow-hidden d-flex flex-column-reverse pt-0 mt-0">
+                <div id="img-hero" class="">
+                </div>
+                <div class="container-lg py-md-5 py-1  pt-0 mt-0">
+                    <section id="hero" class="row gx-5">
+                        <div class="col-xl-5">
+                            <span class="d-flex"><img id="logo-roble" src="/assets/roble.svg" />
+                                <h1 id="isotipo" class="mb-3">El Roble</h1>
                             </span>
+                            <h2 class="fs-2 serifa">
+                                Asociación de terapias alternativas de Móstoles
+                            </h2>
+                            <p class="fs-4">
+                                Somos una asociación dedicada a compartir terapias, talleres y
+                                actividades relacionadas con la medicina holística y las
+                                terapias alternativas. Creemos en el poder para sanar que está
+                                dentro de ti, y también que el camino para ser una mejor versión
+                                de tí mismo pasa por encontrar el bienestar espiritual.
+                            </p>
+                            <!--a href="" class="d-none"><button id="btn-hero" class="btn btn-light btn-lg mt-2 py-1">Saber más</button></a-->
                         </div>
-                        <div id="contenedor-actividades" class="d-flex position-relative justify-content-center py-3 mw-100">
-                            <!-- ACTIVIDADES PROGRAMADAS -->
-
-                        </div>
-                        <div id="indicador-actividades">
-                            <ul class="d-flex w-100 justify-content-center">
-                                <!-- indicador o o o o -->
-                            </ul>
-                        </div>
-                    </div>
-                </section>
-                <div class="mt-md-4 mt-2 pt-md-4 pt-2"></div>
+                    </section>
+                </div>
             </div>
 
-            <div id="acordeon" class="container-fluid">
-                <div class="container-lg pt-5 pb-5">
-                    <div class="mt-md-4 mt-2 pt-md-4 pt-2"></div>
-                    <section class="row gx-5">
+            <section id="activities" class="container-fluid">
+                <div class="container-lg pb-md-5 pb-1 pt-1 mt-md-5 mt-3">
+                    <div class="row gx-5 align-items-center d-flex flex-column-reverse flex-xl-row">
+                        <div class="col-xl-6 mt-2 pt-md-4 pt-2">
+                            <div id="contenedor-actividades" class="d-flex position-relative justify-content-center py-3 mw-100">
+                                <!-- ACTIVIDADES PROGRAMADAS -->
+                            </div>
+                            <div id="indicador-actividades" class="d-flex justify-content-center py-3 mw-100">
+                                <a id="scroll-actividades-iz">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" class="bi bi-caret-left-fill" viewBox="0 0 16 16">
+                                        <path d="m3.86 8.753 5.482 4.796c.646.566 1.658.106 1.658-.753V3.204a1 1 0 0 0-1.659-.753l-5.48 4.796a1 1 0 0 0 0 1.506z"/>
+                                    </svg>
+                                </a>
+                                <ul class="d-flex justify-content-center mx-3">
+                                    <!-- indicador o o o o -->
+                                </ul>
+                                <a id="scroll-actividades-de">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                                        <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-xl-5 offset-xl-1 mt-5 mt-xl-0">
+                            <h2 class="fs-3 serifa">Actividades semanales</h2>
+                            <p class="fs-5">En nuestra asociación, ofrecemos una amplia variedad de actividades y talleres para ayudarte a encontrar el equilibrio y el bienestar espiritual que necesitas. Nuestros programas están diseñados para brindarte herramientas prácticas y conocimientos en el campo de la medicina holística y las terapias alternativas. Cada actividad está cuidadosamente planificada y dirigida por profesionales expertos en sus respectivas disciplinas.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="acordeon" class="container-fluid">
+                <div class="container-lg pt-4 pb-5">
+                    <div class="mt-md-5 mt-2 pt-md-5 pt-2"></div>
+                    <div class="row gx-5">
                         <div class="col-lg-4">
-                            <h3 class="fs-4">
-                                <span class="bg-white px-2">Información</span>
+                            <h3 class="fs-4 d-none">
+                                <span class="bg-white px-2 cejilla">Información</span>
                             </h3>
                             <p class="fs-3 serifa">
                                 ¿Te interesan nuestras actividades y terapias?
@@ -97,26 +107,30 @@
                         <ul id="contenedor-informacion" class="col-lg-8 px-0 bg-white bg-opacity-50">
                             <!-- INFORMACIÓN -->
                         </ul>
-                    </section>
+                    </div>
                     <div class="mt-md-4 mt-2 pt-md-4 pt-2"></div>
                 </div>
-            </div>
+            </section>
 
             <section id="carousel" class="container-fluid p-0">
                 <div class="controles-carousel">
                     <button id="carousel-back">
-                        <img src="/assets/arrow-bk.svg" alt="flecha atrás" />
+                        <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-arrow-left-short" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5z"/>
+                        </svg>
                     </button>
                     <button id="carousel-forward">
-                        <img src="/assets/arrow-fw.svg" alt="flecha adelante" />
+                        <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"/>
+                        </svg>
                     </button>
                 </div>
                 <div id="carousel-body" class="d-flex justify-content-center container-fluid pt-0 pb-md-5">
-                    <article class="slide col-xl-3 col-lg-5 col-sm-8 col-12 d-flex flex-column m-3 shadow-lg sliderMid">
+                    <article class="slide col-xl-4 col-lg-5 col-sm-8 col-12 d-flex flex-column m-3 rounded-3 overflow-hidden sliderMid">
                         <img class="w-100" src="/carousel/san-juan.jpg" alt="" />
                         <div class="d-inline info-slide p-sm-1 p-md-3 py-3">
-                            <p class="fs-4 p-4 pt-2 pb-1 serifa">Celebrando la noche de San Juan.</p>
-                            <p class="fs-6 p-4 pt-0 pb-2">
+                            <p class="fs-4 px-4 pt-2 pb-1 serifa">Celebrando la noche de San Juan.</p>
+                            <p class="fs-6 px-4 pt-0 pb-2">
                                 Cada año celebramos juntos la noche de San Juan en el parque
                                 del Soto. Tocamos instrumentos, cantamos mantras, hacemos
                                 meditación y comemos juntos. Además, hacemos una pequeña
@@ -125,35 +139,35 @@
                             </p>
                         </div>
                     </article>
-                    <article class="slide col-xl-3 col-lg-5 col-sm-8 col-12 d-flex flex-column m-3 shadow-lg sliderRight">
+                    <article class="slide col-xl-4 col-lg-5 col-sm-8 col-12 d-flex flex-column m-3 rounded-3 overflow-hidden sliderRight">
                         <img class="w-100" src="/carousel/ausmet.jpg" alt="" />
                         <div class="d-inline info-slide p-sm-1 p-md-3 py-3">
-                            <p class="fs-4 p-4 pt-2 pb-1 serifa">Voluntarios en AUSMET.</p>
-                            <p class="fs-6 p-4 pt-0 pb-2">
+                            <p class="fs-4 px-4 pt-2 pb-1 serifa">Voluntarios en AUSMET.</p>
+                            <p class="fs-6 px-4 pt-0 pb-2">
                                 Nos gusta colaborar con otras asociaciones para que puedan
                                 disfrutar de los beneficios de las terapias complementarias.
                                 En esta ocasión ofrecimos meditación, Reiki y grafoterapia.
                             </p>
                         </div>
                     </article>
-                    <article class="slide col-xl-3 col-lg-5 col-sm-8 col-12 d-flex flex-column m-3 shadow-lg d-none">
+                    <article class="slide col-xl-4 col-lg-5 col-sm-8 col-12 d-flex flex-column m-3 rounded-3 overflow-hidden d-none">
                         <img class="w-100" src="/carousel/semana-salud-m.jpg" alt="" />
                         <div class="d-inline info-slide p-sm-1 p-md-3 py-3">
-                            <p class="fs-4 p-4 pt-2 pb-1 serifa">
+                            <p class="fs-4 px-4 pt-2 pb-1 serifa">
                                 Semana de la Salud de Móstoles.
                             </p>
-                            <p class="fs-6 p-4 pt-0 pb-2">
+                            <p class="fs-6 px-4 pt-0 pb-2">
                                 Varios años hemos sacado nuestras actividades a la calle.
                                 Hemos compartido meditación y terapias energéticas con los
                                 vecinos de Móstoles.
                             </p>
                         </div>
                     </article>
-                    <article class="slide col-xl-3 col-lg-5 col-sm-8 col-12 d-flex flex-column m-3 shadow-lg d-none">
+                    <article class="slide col-xl-4 col-lg-5 col-sm-8 col-12 d-flex flex-column m-3 rounded-3 overflow-hidden d-none">
                         <img class="w-100" src="/carousel/senderismo.jpg" alt="" />
                         <div class="d-inline info-slide p-sm-1 p-md-3 py-3">
-                            <p class="fs-4 p-4 pt-2 pb-1 serifa">Senderismo.</p>
-                            <p class="fs-6 p-4 pt-0 pb-2">
+                            <p class="fs-4 px-4 pt-2 pb-1 serifa">Senderismo.</p>
+                            <p class="fs-6 px-4 pt-0 pb-2">
                                 Hacemos salidas en grupo para fomentar la convivencia y
                                 compartir experiencias en la naturaleza. Lo pasamos genial
                                 llendo al Monasterio de Piedra, las lagunas de Ruidera, al
@@ -163,13 +177,13 @@
                             </p>
                         </div>
                     </article>
-                    <article class="slide col-xl-3 col-lg-5 col-sm-8 col-12 d-flex flex-column m-3 shadow-lg d-none">
+                    <article class="slide col-xl-4 col-lg-5 col-sm-8 col-12 d-flex flex-column m-3 rounded-3 overflow-hidden d-none">
                         <img class="w-100" src="/carousel/conferencia3.jpg" alt="" />
                         <div class="d-inline info-slide p-sm-1 p-md-3 py-3">
-                            <p class="fs-4 p-4 pt-2 pb-1 serifa">
+                            <p class="fs-4 px-4 pt-2 pb-1 serifa">
                                 Conferencias en Participación Ciudadana.
                             </p>
-                            <p class="fs-6 p-4 pt-0 pb-2">
+                            <p class="fs-6 px-4 pt-0 pb-2">
                                 Ofrecemos conferencias y charlas informativas para dar a
                                 conocer la medicina complementaria y sus beneficios. Hemos
                                 tenido la suerte de contar con conferenciantes profesionales
@@ -178,11 +192,11 @@
                             </p>
                         </div>
                     </article>
-                    <article class="slide col-xl-3 col-lg-5 col-sm-8 col-12 d-flex flex-column m-3 shadow-lg d-none">
+                    <article class="slide col-xl-4 col-lg-5 col-sm-8 col-12 d-flex flex-column m-3 rounded-3 overflow-hidden d-none">
                         <img class="w-100" src="/carousel/semana-salud-c.jpg" alt="" />
                         <div class="d-inline info-slide p-sm-1 p-md-3 py-3">
-                            <p class="fs-4 p-4 pt-2 pb-1 serifa">Semana de la Salud de Carranque.</p>
-                            <p class="fs-6 p-4 pt-0 pb-2">
+                            <p class="fs-4 px-4 pt-2 pb-1 serifa">Semana de la Salud de Carranque.</p>
+                            <p class="fs-6 px-4 pt-0 pb-2">
                                 En 2014 colaboramos con el ayuntamiento de Carranque y con la
                                 asociación de mujeres. Ofrecimos conferencias de Reiki, la
                                 salud como amiga, grafoterapia y meditación. Y durante un
@@ -191,11 +205,11 @@
                             </p>
                         </div>
                     </article>
-                    <article class="slide col-xl-3 col-lg-5 col-sm-8 col-12 d-flex flex-column m-3 shadow-lg sliderLeft">
+                    <article class="slide col-xl-4 col-lg-5 col-sm-8 col-12 d-flex flex-column m-3 rounded-3 overflow-hidden sliderLeft">
                         <img class="w-100" src="/carousel/arroyo.jpg" alt="" />
                         <div class="d-inline info-slide p-sm-1 p-md-3 py-3">
-                            <p class="fs-4 p-4 pt-2 pb-1 serifa">Voluntariado en Arroyoinclusión.</p>
-                            <p class="fs-6 p-4 pt-0 pb-2">
+                            <p class="fs-4 px-4 pt-2 pb-1 serifa">Voluntariado en Arroyoinclusión.</p>
+                            <p class="fs-6 px-4 pt-0 pb-2">
                                 En nuestra búsqueda por compartir nuestras terapias con todos
                                 los colectivos conocimos Arroyoinclusión, una asociación de
                                 familias de Arroyomolinos que trabajan para mejorar el
@@ -207,50 +221,50 @@
                 </div>
             </section>
 
-            <div class="container-fluid">
+            <section id="socios" class="container-fluid">
                 <div id="boyfriend" class="container-lg pt-5 pb-5">
                     <div class="mt-md-4 mt-2 pt-md-4 pt-2"></div>
-                    <section id="socios" class="row gx-5 align-items-center">
-                        <div class="col-md-6 d-none d-md-block max-h400">
+                    <div class="row gx-5 align-items-center">
+                        <div id="mandala" class="col-md-6 d-none d-md-block">
                             <img src="/assets/mandala-flor80.svg" alt="mandala" />
                         </div>
                         <div class="col-md-6">
-                            <h3 class="fs-5">
-                                <span class="bg-white px-2">¡Hazte socio!</span>
+                            <h3 class="fs-5 d-none">
+                                <span class="bg-white px-2 cejilla">¡Hazte socio!</span>
                             </h3>
                             <p class="fs-3 serifa">¿Quieres apoyar a la asociación?</p>
                             <p class="fs-5">
-                                Hazte socio y disfruta de actividades gratuitas y descuentos
-                                en talleres. Nuestra asociación ofrece orientación a las
+                                ¡Hazte socio y disfruta de actividades gratuitas y descuentos
+                                en talleres! Nuestra asociación ofrece orientación a las
                                 personas que buscan mejorar su vida. Con tu ayuda, podemos
                                 seguir allanando el camino al despertar de consciencia.
                             </p>
                             <p id="precio" class="fs-3">15€ / trimestre</p>
                         </div>
-                    </section>
+                    </div>
                     <div class="mt-md-4 mt-2 pt-md-4 pt-2"></div>
                 </div>
-            </div>
+            </section>
 
-            <div class="containter-fluid">
+            <section id="contacto" class="container-fluid">
                 <div class="container-lg pt-md-5 pb-md-5">
-                    <div class="mt-md-4 mt-2 pt-md-4 pt-2"></div>
-                    <section id="contacto" class="row gx-5">
+                    <div class="mt-md-3 mt-2 pt-md-3 pt-2"></div>
+                    <div class="row gx-5">
                         <div class="col-lg-6 col-sm-8 p-sm-5">
-                            <h3 class="fs-5">
-                                <span class="bg-white px-2">Contacto</span>
+                            <h3 class="fs-5 d-none">
+                                <span class="bg-white px-2 cejilla">Contacto</span>
                             </h3>
                             <p class="fs-3 serifa">Conecta con nosotros en redes sociales</p>
                             <p class="fs-5">
-                                Puedes escribirnos un correo, un mensaje de WhatsApp o dejar
-                                un comentario en FaceBook. ¡Nos encanta leeros!
+                                
+                                Esperamos haber podido brindarte información valiosa sobre nuestras terapias alternativas. Si tienes alguna pregunta adicional, no dudes en ponerte en contacto con nosotros a través de los canales que encontrarás a continuación. Estamos comprometidos en ayudarte a encontrar el equilibrio y bienestar que buscas. ¡Te deseamos un camino lleno de armonía y serenidad!
                             </p>
-                            <span class="col-2 d-flex justify-content-between w-50">
-                                <a href="mailto:anamaria_palomino@hotmail.com" target="_blank" alt="eMail" class="">
+                            <span class="d-flex justify-content-start">
+                                <a href="mailto:anamaria_palomino@hotmail.com" target="_blank" alt="eMail" class="me-3">
                                     <img src="/assets/icons8-gmail-60.svg" alt="" />
                                     <!--p>anamaria_palomino@hotmail.com</p-->
                                 </a>
-                                <a href="tel:+34608848261" target="_blank" alt="WhatsApp" class="">
+                                <a href="tel:+34608848261" target="_blank" alt="WhatsApp" class="me-3">
                                     <img src="/assets/icons8-whatsapp-60.svg" alt="" />
                                     <!--p>608-848-261</p-->
                                 </a>
@@ -272,23 +286,23 @@
                                 </blockquote>
                             </div>
                         </div>
-                    </section>
+                    </div>
                     <div class="mt-md-4 mt-2 pt-md-4 pt-2"></div>
                 </div>
+            </section>
 
-                <div id="footer" class="container-fluid">
-                    <div class="container-lg">
-                        <section class="row">
-                            <div class="fs-5 d-flex justify-content-center p-3 text-white">
-                                "El Camino tiene un único fin y es el de vivir intensamente el Camino sin pensar en el fin."
-                            </div>
-                            <!-- Creado por Said Sel-lam -->
-                            <a href="#fb-root"><button id="arriba">
-                                    <img src="/assets/flecha-arriba.svg" alt="subir" /></button></a>
-                        </section>
+            <footer id="footer" class="container-fluid">
+                <div class="container-lg">
+                    <div class="row">
+                        <div class="fs-5 d-flex justify-content-center p-3 text-white">
+                            "El Camino tiene un único fin y es el de vivir intensamente el Camino sin pensar en el fin."
+                        </div>
+                        <!-- Creado por Said Sel-lam -->
+                        <a href="#fb-root"><button id="arriba">
+                                <img src="/assets/flecha-arriba.svg" alt="subir" /></button></a>
                     </div>
                 </div>
-            </div>
+            </footer>
         </main>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/less"></script>
