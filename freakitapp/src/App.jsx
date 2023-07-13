@@ -208,7 +208,7 @@ function App() {
             <figure><img src={amanda} alt="avatar de Amanda"className='w-full' /></figure>
             <div className="card-body">
               <h4 className="card-title">Amanda</h4>
-              <p>co-founder</p>
+              <p>Co-founder</p>
               <p className='text-sm'>`No importa qué tan difícil o imposible sea, no pierdas de vista tu objetivo`</p>
             </div>
           </div>
@@ -216,7 +216,7 @@ function App() {
             <figure><img src={alba} alt="avatar de Alba"className='w-full' /></figure>
             <div className="card-body">
               <h4 className="card-title">Alba</h4>
-              <p>co-founder</p>
+              <p>Co-founder</p>
               <p className='text-sm'>`Hazlo o no lo hagas, pero no lo intentes`</p>
             </div>
           </div>
@@ -232,12 +232,13 @@ function App() {
       </section>
 
       <section id='media' className="max-w-screen-lg m-auto mt-12 lg:mt-40 relative max-lg:p-10">
-        <h3 className='text-3xl mb-12'>Freakit en los medios:</h3>
+        <h3 className='text-3xl mb-12 text-center'>Entrevistas:</h3>
         <div className="flex max-sm:flex-wrap justify-center sm:justify-between">
           <div className='overflow-hidden'><a target="_blank" rel="noreferrer" href="https://www.youtube.com/watch?v=0PtjKPdrDFs"><img className='upScaleOnHover' src={vid1} alt="vídeo Comedy-Con Youtube" /></a></div>
           <div className="overflow-hidden sm:mx-2 max-sm:my-7"><a target="_blank" rel="noreferrer" href="https://www.youtube.com/watch?v=ozQK7hjm5oQ"><img className='upScaleOnHover' src={vid2} alt="vídeo UPM Youtube" /></a></div>
           <div className='overflow-hidden'><a target="_blank" rel="noreferrer" href="https://www.youtube.com/watch?v=IX3zq1dwmcQ&t=2218s"><img className='upScaleOnHover' src={vid3} alt="vídeo Radio Nakama Youtube" /></a></div>
         </div>
+        <h3 className='text-3xl mb-12 mt-12 text-center'>Artículos sobre freakit:</h3>
         <div className='grid grid-cols-2 md:grid-cols-3 max-w-lg gap-10 m-auto mt-10 justify-items-center'>
           <a target="_blank" rel="noreferrer" href="https://www.flooxernow.com/noticias/freakit-app-ligar-otakus-que-saturado-enorme-volumen-descargas_2022101263467b7c71418d000155f1d3.html"><div className='upScaleOnHover bg-white rounded p-2 aspect-square flex items-center max-w-[145px]'><img src={logo1} alt="logo flooxer" /></div></a>
           <a target="_blank" rel="noreferrer" href="https://notiziein.it/freakit-tinder-otaku-237368"><div className='upScaleOnHover bg-white rounded p-2 aspect-square flex items-center max-w-[145px]'><img src={logo2} alt="logo notizie in" /></div></a>

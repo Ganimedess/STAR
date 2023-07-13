@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import screen1 from '../assets/sf1.png'
 import screen2 from '../assets/sf2.png'
 import screen3 from '../assets/sf3.png'
@@ -20,7 +21,8 @@ const FreakitPage = () => {
           <h2 className="text-xl italic mb-10">Dating app for otakus</h2>
           <span className='text-slate-400'>Description:</span>
           <p className="text-xl">This is a dating app for otakus with a unique feature. When you create your profile, you take a personality test, and you are matched with an anime character who is similar to you. This way, Freakit! focuses on personality and shared interests rather than physical appearance.</p>
-          
+          <a target="_blank" rel='noreferrer' href="https://www.freakitapp.es"><button className="border-2 border-white px-2 py-1 rounded-lg hover:bg-white hover:text-black mt-5">Visit -&gt;</button></a>
+          <Link to="/work/elRoble"><span className='ml-7 text-slate-400 underline'>Go to next proyect -&gt;</span></Link>
         </div>
         <div className="col-span-5 col-start-7">
         <span className='text-slate-400'>Type:</span>
