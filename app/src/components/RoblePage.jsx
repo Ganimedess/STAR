@@ -20,7 +20,7 @@ const RoblePage = () => {
             <h2 className="text-xl italic mb-10">Holistic therapy centre</h2>
             <span className='text-slate-400'>Description:</span>
             <p className="text-xl">'El Roble' is a non-profit association focused on complementary therapies and natural medicine. In this web project, they aimed to promote the association, its philosophy, and the activities they carry out.</p>
-            <button className="border-2 border-white px-2 py-1 rounded-lg hover:bg-white hover:text-black mt-5">Visit -&gt;</button>
+            <a href="https://eclectic-mermaid-5f918e.netlify.app/"><button className="border-2 border-white px-2 py-1 rounded-lg hover:bg-white hover:text-black mt-5">Visit -&gt;</button></a>
             <Link to="/work/Freakit!"><span className='ml-7 text-slate-400 underline'>Go to next proyect -&gt;</span></Link>
           </div>
           <div className="col-span-5 col-start-7">

@@ -29,7 +29,7 @@ const Header = () => {
               <ul tabIndex={0} className="dropdown-content rounded-md menu p-2 shadow bg-white">
                 <li><Link to="/ayuda">Ayuda</Link></li>
                 <li><Link to="/preguntas-frecuentes">Preguntas frecuentes</Link></li>
-                <li><Link to="/consejos-de-seguridad">consejos de seguridad</Link></li>
+                <li><Link to="/consejos-de-seguridad">Consejos de seguridad</Link></li>
               </ul>
             </li>
             <li className="dropdown dropdown-hover pl-3">
