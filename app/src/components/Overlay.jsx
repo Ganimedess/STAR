@@ -13,15 +13,15 @@ const Overlay = ({appHeight}) => {
   return (
       <div id="overlay" className="fixed fixed w-full min-h-screen">
         <div className='parallax p-far static flex flex-wrap'>
-          <Star size={48} top={75} left={35} color={currentPalette.hot} />
-          <Ellipse size={20} top={7} left={60} color={currentPalette.light} />
-          <Ellipse size={16} top={40} left={14} color={currentPalette.light} />
+          <Star size={48} top={75} left={35} color={currentPalette.hot} hid={true} />
+          <Ellipse size={20} top={7} left={60} color={currentPalette.light} hid={true} />
+          <Ellipse size={16} top={40} left={14} color={currentPalette.light} hid={true} />
           <Ellipse size={28} top={70} left={52} color={currentPalette.dark} />
           <Ellipse size={30} top={30} left={4} color={currentPalette.dark} />
           <Star size={22} top={25} left={80} color={currentPalette.dark} />
           <Star size={18} top={85} left={10} color={currentPalette.dark} />
           <Star size={28} top={65} left={85} color={currentPalette.hot} />
-          <Star size={24} top={20} left={30} color={currentPalette.cold} />
+          <Star size={24} top={20} left={30} color={currentPalette.cold} hid={true} />
           <Star size={26} top={90} left={76} color={currentPalette.cold} />
         </div>
         <div className='parallax p-mid static flex flex-wrap'>

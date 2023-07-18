@@ -17,11 +17,11 @@ const Contact = () => {
                 <div className="col-span-full md:col-span-3 md:col-start-5">
                     <p className="text-xl text-white">Email me at:</p>
                     <a href="mailto:ssp.mays@gmail.com" className="text-xl">ssp.mays@gmail.com</a>
-                    <div className="flex w-full justify-star md:justify-between mt-8">
-                        <a href="" className='me-5 md:me-0'><img src={linkedin} alt="linkedin logo" /></a>
-                        <a href="" className='me-5 md:me-0'><img src={behance} alt="behance logo" /></a>
-                        <a href="" className='me-5 md:me-0'><img src={github} alt="github logo" /></a>
-                        <a href="" className='me-5 md:me-0'><img src={instagram} alt="instagram logo" /></a>
+                    <div className="flex w-full justify-start mt-8">
+                        <a href="" className='me-5'><img src={linkedin} alt="linkedin logo" /></a>
+                        <a href="" className='me-5'><img src={behance} alt="behance logo" /></a>
+                        <a href="" className='me-5'><img src={github} alt="github logo" /></a>
+                        <a href="" className='me-5 hidden'><img src={instagram} alt="instagram logo" /></a>
                     </div>
                 </div>
             </div>

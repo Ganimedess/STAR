@@ -251,30 +251,6 @@ window.addEventListener('resize', () => { reescalarDescripcion() })
 
 
 
-//slider de fotos
-/*
-let slides = document.querySelectorAll(".slide")
-let slider = document.querySelector("#carousel-body")
-
-async function slideRight() {
-    slider.scroll(slides[1].offsetLeft - slider.offsetLeft , 0)
-    await setTimeout( () => {
-        slider.appendChild(slides[0])
-        slides = document.querySelectorAll(".slide")
-    }, 450 )
-}
-
-function slideLeft() {
-    slider.prepend(slides[slides.length -1])
-    slides = document.querySelectorAll(".slide")
-    slider.scroll(0,0)
-}
-
-const carouselBack = document.querySelector("#carousel-back")
-const carouselForward = document.querySelector("#carousel-forward")
-carouselBack.addEventListener('click', slideLeft)
-carouselForward.addEventListener('click', slideRight)
-*/
 let slides = document.querySelectorAll(".slide")
 let slider = document.querySelector("#carousel-body")
 slider.scroll(1000, 1000)
@@ -331,42 +307,7 @@ function moverChakra(e) {
     raiz.style.left = movX
     raiz.style.top = movY
 }
-/*background control _________________________________________________
-const fondo = document.querySelector('#background')
-const raiz = document.querySelector('.raiz')
 
-const corazon = document.querySelector('.corazon')
-const garganta = document.querySelector('.garganta')
-
-function cambiaFondo(element) {
-    if(element.style.top == "") return
-    let rPosY = parseInt(element.style.top)
-    let rPosX = parseInt(element.style.left)
-    let randomY = Math.random() < .5 ? 1 : -1
-    let randomX = Math.random() < .5 ? 1 : -1
-    if( rPosY + randomY > 0 && rPosY + randomY < fondo.offsetHeight) rPosY += randomY
-    if( rPosX + randomX > 0 && rPosX + randomX < fondo.offsetWidth) rPosX += randomX
-    element.style.top = `${rPosY}px`
-    element.style.left = `${rPosX}px`
-}
-
-let intervaloRaiz
-
-window.onload = function() {
-    raiz.style.top = `${Math.floor( Math.random() * parseInt(fondo.offsetHeight/1.2) )}px`
-    raiz.style.left = `${Math.floor( Math.random() * parseInt(fondo.offsetWidth/1.2) )}px`
-    corazon.style.top = `${Math.floor( Math.random() * parseInt(fondo.offsetHeight/1.2) )}px`
-    corazon.style.left = `${Math.floor( Math.random() * parseInt(fondo.offsetWidth/1.2) )}px`
-    garganta.style.top = `${Math.floor( Math.random() * parseInt(fondo.offsetHeight/1.2) )}px`
-    garganta.style.left = `${Math.floor( Math.random() * parseInt(fondo.offsetWidth/1.2) )}px`
-
-    intervaloRaiz = setInterval(function(){
-        cambiaFondo(raiz)
-        cambiaFondo(corazon)
-        cambiaFondo(garganta)
-    }, 20)
-}
-*/
 const fotoPortada = document.querySelector("#img-hero")
 const imgArray = ['portada.jpg', 'portada2.jpg', 'portada3.jpg']
 let portadaTarget = 0

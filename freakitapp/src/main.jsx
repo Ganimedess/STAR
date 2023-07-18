@@ -60,7 +60,6 @@ const rutas = createBrowserRouter([
           path: "/politica-privacidad",
           element: <PoliticaPrivacidad />,
         },
-      
     ],
   },
 ]);

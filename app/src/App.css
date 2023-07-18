@@ -28,6 +28,10 @@ footer {
   position: relative;
   z-index: 101;
 }
+
+
+
+
 .App{
   height: 100%;
   -webkit-perspective: 100px;
@@ -74,9 +78,75 @@ svg {
   -o-transform: translateZ(30px) scale(.4);
 }
 
+
+
+
+
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+    filter: blur(20px);
+    -webkit-filter: blur(20px);
+  }
+  100% {
+    opacity: 1;
+    filter: blur(0px);
+    -webkit-filter: blur(0px);
+  }
+}
+@keyframes aparecerZoom {
+  0% {
+    opacity: 0;
+    filter: blur(20px);
+    -webkit-filter: blur(20px);
+    transform: scale(.95);
+    -webkit-transform: scale(.95);
+    -moz-transform: scale(.95);
+    -ms-transform: scale(.95);
+    -o-transform: scale(.95);
+  }
+  100% {
+    opacity: 1;
+    filter: blur(0px);
+    -webkit-filter: blur(0px);
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+  }
+}
+@keyframes desaparecer {
+  0% {
+    opacity: 1;
+    filter: blur(0px);
+    -webkit-filter: blur(0px);
+}
+  100% {
+    opacity: 0;
+    filter: blur(20px);
+    -webkit-filter: blur(20px);
+}
+}
+.aparecer {
+  animation: aparecer 0.8s ease 1 .2s both;
+  -webkit-animation: aparecer 0.8s ease 1 .2s both;
+}
+.aparecer-d {
+  animation: aparecerZoom 0.8s ease 1 .8s both;
+  -webkit-animation: aparecerZoom 0.8s ease 1 .8s both;
+}
+.desaparecer {
+  animation: desaparecer 0.8s ease 1 .2s both;
+  -webkit-animation: desaparecer 0.8s ease 1 .2s both;
+}
+
+
+
 .proyect:hover h6, .proyect:hover span {
   z-index: 10;
-  opacity: 0;
+  animation: desaparecer 0.8s ease 1 .2s both;
+  -webkit-animation: desaparecer 0.8s ease 1 .2s both;
 }
 .proyectThumb {
   top: calc(50% - 280px);
@@ -84,6 +154,7 @@ svg {
 }
 .proyect:hover .proyectThumb {
   display: block;
+  z-index: 9;
 }
 .proyectThumb:hover {
   display: none !important;
