@@ -18,10 +18,9 @@ const Contact = () => {
                     <p className="text-xl text-white">Email me at:</p>
                     <a href="mailto:ssp.mays@gmail.com" className="text-xl">ssp.mays@gmail.com</a>
                     <div className="flex w-full justify-start mt-8">
-                        <a href="" className='me-5'><img src={linkedin} alt="linkedin logo" /></a>
-                        <a href="" className='me-5'><img src={behance} alt="behance logo" /></a>
-                        <a href="" className='me-5'><img src={github} alt="github logo" /></a>
-                        <a href="" className='me-5 hidden'><img src={instagram} alt="instagram logo" /></a>
+                        <a target="_blank" rel='noreferrer' href="https://www.linkedin.com/in/said-sel-lam-palomino-8b747960/" className='me-5 biggie'><img src={linkedin} alt="linkedin logo" /></a>
+                        <a target="_blank" rel='noreferrer' href="https://www.behance.net/sspmays270e" className='me-5 biggie'><img src={behance} alt="behance logo" /></a>
+                        <a target="_blank" rel='noreferrer' href="https://github.com/Ganimedess" className='me-5 biggie'><img src={github} alt="github logo" /></a>
                     </div>
                 </div>
             </div>

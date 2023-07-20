@@ -47,6 +47,43 @@ const About = () => {
                 <p className="col-span-4 lg:col-span-3 sm:text-xl text-white bg-slate-900">Ilustration</p>
             </div>
         </div>
+        <div id="experience" className="grid grid-cols-12 gap-4 w-full mt-20 md:mt-40">
+            <div className='col-start-2 md:col-start-3 col-span-10 md:col-span-9 grid grid-cols-8 md:grid-cols-9 gap-4 gap-y-8'>
+                <h6 className="text-4xl font-bold sm:mb-5 col-span-full">Experience</h6>
+                <span className="col-span-full grid grid-cols-9 gap-4">
+                    <div className="col-span-2 text-2xl text-slate-400">
+                        <p className='mt-1 text-sm md:text-xl'>jan2019/ jul2021</p>
+                    </div>
+                    <div className="col-span-7">
+                        <p className='text-2xl mb-2'>Junior developer - KreativeWork</p>
+                        <p className='text-lg text-slate-400'>I worked on developing and maintaining web projects based on various CMS such as Wordpress, PrestaShop, SPIP, and also undertook fully customized developments.</p>
+                    </div>
+                </span>
+                <div className="col-span-full grid grid-cols-9 gap-4">
+                    <div className="col-span-2 text-2xl text-slate-400">
+                        <p className='mt-1 text-sm md:text-xl'>jan2019/ jul2021</p>
+                    </div>
+                    <div className="col-span-7">
+                        <p className='text-2xl mb-2'>Freelance designer</p>
+                        <p className='text-lg text-slate-400'>I collaborated with a print shop and managed all design processes, dealing directly with end clients: from briefing, sketches, to final artwork for printing, etc.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="experience" className="grid grid-cols-12 gap-4 w-full mt-5 md:mt-1040">
+            <div className='col-start-2 md:col-start-3 col-span-10 md:col-span-9 grid grid-cols-8 md:grid-cols-9 gap-4 gap-y-8'>
+                <h6 className="text-4xl font-bold sm:mb-5 col-span-full mt-5">Education</h6>
+                <div className="col-span-full grid grid-cols-9 gap-4">
+                    <div className="col-span-2 text-2xl text-slate-400">
+                        <p className='mt-1 text-sm md:text-xl'>jan2019/ jul2021</p>
+                    </div>
+                    <div className="col-span-7">
+                        <p className='text-2xl mb-2'>Graphic Design Bachelor Degree</p>
+                        <p className='text-lg text-slate-400'>Escuela Superior de Diseño de Madrid</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
   )
 }

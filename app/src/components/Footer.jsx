@@ -12,9 +12,9 @@ const Footer = () => {
                 <div className="text-xs md:text-base text-right">
                     social
                     <ul>
-                        <li className='my-2 hover:underline'>Behance</li>
-                        <li className='my-2 hover:underline'>Github</li>
-                        <li className='my-2 hover:underline'>Linkedin</li>
+                        <a target="_blank" rel='noreferrer' href="https://www.behance.net/sspmays270e"><li className='my-2 hover:underline'>Behance</li></a>
+                        <a target="_blank" rel='noreferrer' href="https://github.com/Ganimedess"><li className='my-2 hover:underline'>Github</li></a>
+                        <a target="_blank" rel='noreferrer' href="https://www.linkedin.com/in/said-sel-lam-palomino-8b747960/"><li className='my-2 hover:underline'>Linkedin</li></a>
                     </ul>
                 </div>
             </div>

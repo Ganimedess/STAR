@@ -35,7 +35,7 @@ const OverlayLong = ({appHeight}) => {
         <div className='parallax p-mid static flex flex-wrap'>
         </div>
         <div className='parallax p-close static flex flex-wrap'>
-          <Ellipse size={350} top={82} left={-4} color={currentPalette.dark} />
+          <Ellipse size={350} top={82} left={-4} color={currentPalette.dark} hid={true} />
           <Star size={100} top={-2} left={37} color={currentPalette.dark} />
           <Star size={100} top={90} left={66} color={currentPalette.cold} hid={true} />
           <Ellipse size={180} top={22} left={94} color={currentPalette.cold} />
