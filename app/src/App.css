@@ -167,13 +167,3 @@ svg {
   -o-transform: scale(1.1);
 }
 
-
-#skills p:hover, #services p:hover {
-  background-color: #DBFEB8;
-  color: rgb(15,23,42);
-  transition: all .3s;
-  -webkit-transition: all .3s;
-  -moz-transition: all .3s;
-  -ms-transition: all .3s;
-  -o-transition: all .3s;
-}

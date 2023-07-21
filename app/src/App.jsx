@@ -31,18 +31,8 @@ function App() {
     <>
       <NavBar/>
       <div className="App text-white aparecer scroll-smooth">
-        <OverlayLong />
-        <main className="AppMain container mx-auto max-w-7xl static aparecer-d">
-          <Hero />
-          <About />
-          <Work />
-          <Contact />
-        </main>
-{/*
     <Routes>
           <Route path="/" element={<OverlayLong/>} />
-          <Route path="/about" element={<OverlayLong/>} />
-          <Route path="/contact" element={<Overlay/>} />
           <Route path="/work/freakit!" element={<OverlayLong/>} />
           <Route path="/work/elRoble" element={<OverlayLong/>} />
           <Route path='*' element={<Overlay />}/>
@@ -50,15 +40,16 @@ function App() {
 
         <main className="AppMain container mx-auto max-w-7xl static aparecer-d">
           <Routes>
-            <Route path="/" element={<><Hero/><About/><Work/><Contact/>npm</>} />
-            <Route path="/about" element={<><About/></>} />
-            <Route path="/contact" element={<><Contact/></>} />
+            <Route path="/" element={<><Hero />
+              <About />
+              <Work />
+              <Contact /></>} />
             <Route path="/work/freakit!" element={<><Freakit/></>} />
             <Route path="/work/elRoble" element={<><Roble/></>} />
             <Route path='*' element={<NotFound />}/>
           </Routes>
         </main>
-  */}
+
         <Footer />
       </div>
     </>

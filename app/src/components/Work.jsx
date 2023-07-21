@@ -18,7 +18,7 @@ const Work = () => {
 
   return (
     <section className="h-100 flex items-start min-h-[60vh] mt-24">
-        <div id="work" className="grid grid-cols-12 gap-4 w-full py-48 max-md:pt-36 max-md:py-0">
+        <div id="work" className="grid grid-cols-12 gap-4 w-full py-48 max-md:pt-36">
             <div className="col-start-2 lg:col-start-3 col-span-10 lg:col-span-8 grid grid-cols-8 gap-6">
                 <div className="col-span-full lg:col-span-3">
                     <p className="text-xl text-slate-400">Selected projects:</p>
