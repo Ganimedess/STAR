@@ -3,8 +3,8 @@ import foto from  '../assets/retrato.png'
 
 const About = () => {
   return (
-    <section className="h-100 flex flex-wrap items-center min-h-screen py-44">
-        <div id="about" className="grid grid-cols-12 gap-4 w-full">
+    <section className="h-100 flex flex-wrap items-center min-h-screen">
+        <div id="about" className="grid grid-cols-12 gap-4 w-full py-48 max-md:pt-36 max-md:py-0">
             <div className="col-start-2 lg:col-start-3 col-span-10 lg:col-span-9 grid grid-cols-9 gap-4 gap-y-9">
                 <div className="col-span-full md:col-span-4">
                     <h6 className="text-6xl font-bold mb-12">About me</h6>
@@ -52,7 +52,7 @@ const About = () => {
                 <h6 className="text-4xl font-bold sm:mb-5 col-span-full">Experience</h6>
                 <span className="col-span-full grid grid-cols-9 gap-4">
                     <div className="col-span-2 text-2xl text-slate-400">
-                        <p className='mt-1 text-sm md:text-xl'>jan2019/ jul2021</p>
+                        <p className='mt-1 text-sm md:text-xl'>jan2021/ jul2022</p>
                     </div>
                     <div className="col-span-7">
                         <p className='text-2xl mb-2'>Junior developer - KreativeWork</p>
@@ -61,7 +61,7 @@ const About = () => {
                 </span>
                 <div className="col-span-full grid grid-cols-9 gap-4">
                     <div className="col-span-2 text-2xl text-slate-400">
-                        <p className='mt-1 text-sm md:text-xl'>jan2019/ jul2021</p>
+                        <p className='mt-1 text-sm md:text-xl'>jul2022/ now</p>
                     </div>
                     <div className="col-span-7">
                         <p className='text-2xl mb-2'>Freelance designer</p>
@@ -75,7 +75,7 @@ const About = () => {
                 <h6 className="text-4xl font-bold sm:mb-5 col-span-full mt-5">Education</h6>
                 <div className="col-span-full grid grid-cols-9 gap-4">
                     <div className="col-span-2 text-2xl text-slate-400">
-                        <p className='mt-1 text-sm md:text-xl'>jan2019/ jul2021</p>
+                        <p className='mt-1 text-sm md:text-xl'>2016/ 2021</p>
                     </div>
                     <div className="col-span-7">
                         <p className='text-2xl mb-2'>Graphic Design Bachelor Degree</p>

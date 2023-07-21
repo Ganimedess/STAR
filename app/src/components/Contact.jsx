@@ -7,7 +7,7 @@ import github from '../assets/github.png';
 const Contact = () => {
   return (
     <section className="h-100 flex items-center min-h-screen">
-        <div id="contact" className="grid grid-cols-12 gap-4 w-full">
+        <div id="contact" className="grid grid-cols-12 gap-4 w-full py-48 max-md:pt-36 max-md:py-0">
             <div className="col-start-2 lg:col-start-3 col-span-10 lg:col-span-8 grid grid-cols-8 gap-4 gap-y-9">
                 <div className="col-span-full">
                     <h6 className="text-6xl font-bold">Let's talk</h6>            </div>

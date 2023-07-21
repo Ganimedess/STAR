@@ -10,7 +10,7 @@ const Footer = () => {
                     <p className='my-2'>Designed and developed by me</p>
                 </div>
                 <div className="text-xs md:text-base text-right">
-                    social
+                    Social
                     <ul>
                         <a target="_blank" rel='noreferrer' href="https://www.behance.net/sspmays270e"><li className='my-2 hover:underline'>Behance</li></a>
                         <a target="_blank" rel='noreferrer' href="https://github.com/Ganimedess"><li className='my-2 hover:underline'>Github</li></a>

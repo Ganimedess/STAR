@@ -11,10 +11,11 @@ import About from './components/About';
 import { Route, Routes, useLocation } from 'react-router-dom';
 import Overlay from './components/Overlay';
 import OverlayLong from './components/OverlayLong';
+import NotFound from './components/NotFound';
 
 
 function App() {
-
+/*
   let location = useLocation(); //this is a react-router-dom hook
   //it's value changes when router changes (new url)
 
@@ -25,30 +26,39 @@ function App() {
     else { document.querySelector('.AppMain div').classList.toggle("aparecer")}
   }, [location]);
 
-
+*/
   return (
     <>
       <NavBar/>
-
-      <div className="App text-white aparecer">
-        <Routes>
+      <div className="App text-white aparecer scroll-smooth">
+        <OverlayLong />
+        <main className="AppMain container mx-auto max-w-7xl static aparecer-d">
+          <Hero />
+          <About />
+          <Work />
+          <Contact />
+        </main>
+{/*
+    <Routes>
           <Route path="/" element={<OverlayLong/>} />
           <Route path="/about" element={<OverlayLong/>} />
           <Route path="/contact" element={<Overlay/>} />
           <Route path="/work/freakit!" element={<OverlayLong/>} />
           <Route path="/work/elRoble" element={<OverlayLong/>} />
+          <Route path='*' element={<Overlay />}/>
         </Routes>
 
         <main className="AppMain container mx-auto max-w-7xl static aparecer-d">
           <Routes>
-            <Route path="/" element={<><Hero/><Work/></>} />
+            <Route path="/" element={<><Hero/><About/><Work/><Contact/>npm</>} />
             <Route path="/about" element={<><About/></>} />
             <Route path="/contact" element={<><Contact/></>} />
             <Route path="/work/freakit!" element={<><Freakit/></>} />
             <Route path="/work/elRoble" element={<><Roble/></>} />
+            <Route path='*' element={<NotFound />}/>
           </Routes>
         </main>
-
+  */}
         <Footer />
       </div>
     </>
