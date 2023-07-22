@@ -4,6 +4,9 @@ import elRobleThumbnail from '../assets/thumb-roble.png'
 import { Link } from 'react-router-dom'
 
 const Work = () => {
+    function scrollTop() {
+        document.querySelector(".App").scrollTo(0,0);
+      }
     //manage the blur effect on proyects names and pictures
     function hoverIn(e) {
         e.target.classList.add('proyect-hide')
@@ -17,14 +20,25 @@ const Work = () => {
     }
 
   return (
-    <section className="h-100 flex items-start min-h-[60vh] mt-24">
-        <div id="work" className="grid grid-cols-12 gap-4 w-full py-48 max-md:pt-36">
-            <div className="col-start-2 lg:col-start-3 col-span-10 lg:col-span-8 grid grid-cols-8 gap-6">
-                <div className="col-span-full lg:col-span-3">
+    <section id="work" className="h-100 flex items-start min-h-[60vh] mt-24">
+        <div className="grid grid-cols-12 gap-4 w-full py-48 max-md:pt-36">
+            <div className="col-start-2 lg:col-start-3 col-span-10 lg:col-span-9 grid grid-cols-9 gap-6">
+                <div className="col-span-full mb-5">
                     <p className="text-xl text-slate-400">Selected projects:</p>
                 </div>
+                <Link onClick={scrollTop} to='/work/Freakit!' className='proyect col-span-full sm:col-span-4'><div>
+                    <img src={freakitThumbnail} alt="freakit thumbnail" />
+                    <h6 className="text-5xl md:text-6xl font-bold block mt-7">Freakit!</h6>
+                    <p className="mt-3 text-2xl md:text-3xl mim-md:pt-8">Web page for a dating App</p>
+                </div></Link>
+                <Link onClick={scrollTop} to='/work/elRoble' className='proyect col-span-full sm:col-span-4 sm:col-start-6 max-sm:mt-7'><div>
+                    <img src={elRobleThumbnail} alt="el roble thumbnail" />
+                    <h6 className="text-5xl md:text-6xl font-bold block mt-7">El Roble</h6>
+                    <p className="mt-3 text-2xl md:text-3xl mim-md:pt-8">Alternative therapy center website</p>
+                </div></Link>
+                {/*
                 <div className="text-left md:text-center col-span-full grid gap-y-16 mt-5 relative">
-                    <Link to={'/work/Freakit!'}>
+                    <Link to={'/work/Freakit!'} onClick={scrollTop}>
                     <div className="proyect proyect-freakit max-md:relative">
                         <span className="flex flex-col md:flex-row items-start md:items-end flex-wrap">
                             <h6 onMouseLeave={hoverOut} onMouseEnter={hoverIn} className="text-5xl md:text-6xl font-bold block px-2">Freakit!</h6>
@@ -33,7 +47,7 @@ const Work = () => {
                         <img src={freakitThumbnail} alt="preview web Freakit!" className='proyectThumb hidden absolute max-sm:mt-[50%] aparecer' />
                     </div>
                     </Link>
-                    <Link to={'/work/elRoble'}>
+                    <Link to={'/work/elRoble'} onClick={scrollTop}>
                     <div className="proyect proyect-roble max-md:relative">
                         <span className="flex flex-col md:flex-row items-start md:items-end flex-wrap">
                             <h6 onMouseLeave={hoverOut} onMouseEnter={hoverIn} className="text-5xl md:text-6xl font-bold block px-2">El Roble</h6>
@@ -43,6 +57,7 @@ const Work = () => {
                     </div>
                     </Link>
                 </div>
+                */}
             </div>
         </div>
     </section>

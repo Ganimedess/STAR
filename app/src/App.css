@@ -142,7 +142,10 @@ svg {
 }
 
 
-
+#work .proyect:hover {
+  color: #51D6FF;
+}
+/*
 .proyect-hide {
   z-index: 10;
   animation: desaparecer 0.8s ease 1 .2s both;
@@ -158,7 +161,7 @@ svg {
 .proyectThumb:hover {
   display: none !important;
 }
-
+*/
 .biggie:hover {
   transform: scale(1.1);
   -webkit-transform: scale(1.1);

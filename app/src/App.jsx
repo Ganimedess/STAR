@@ -32,7 +32,7 @@ function App() {
       <NavBar/>
       <div className="App text-white aparecer scroll-smooth">
     <Routes>
-          <Route path="/" element={<OverlayLong/>} />
+          <Route path="/" element={<><OverlayLong/></>} />
           <Route path="/work/freakit!" element={<OverlayLong/>} />
           <Route path="/work/elRoble" element={<OverlayLong/>} />
           <Route path='*' element={<Overlay />}/>
