@@ -1,4 +1,6 @@
-@fondo : #cee8b1;
+@fondo : #cfe8b5;
+@otroFondo : #b7e7cd;
+@nuevoFondo : #e2e8b5;
 @raiz_size : 320px;
 @raiz_color : #b5dd9a;
 @raiz_altcolor : #dd9ac8;
@@ -61,7 +63,7 @@
     color: @negro !important;
 }
 html {
-    cursor: none;
+    //cursor: none;
 }
 
 #background {
@@ -74,10 +76,20 @@ html {
     background-color: @fondo;
 
 }
+#activities, #socios
+{
+    background-color: @otroFondo;
+}
+#acordeon
+{
+    background-color: @nuevoFondo;
+}
+
 .raiz {
     border-radius: 50%;
     position: absolute;
 }
+/*
 .pointy {
     height: 5px;
     width: 5px;
@@ -94,38 +106,33 @@ html {
     animation: latido 8s linear 1s infinite alternate;
     -webkit-animation: latido 8s linear 1s infinite alternate;
     z-index: -70;
-}
+}*/
 
-
-#img-hero {
-    position: absolute;
-    width: 50%;
-    left: 50%;
-    z-index: -1;
-    background-image: url(/assets/portada.jpg);
-    background-size: cover;
-    height: 600px;
-    -webkit-transition: background-image 0.5s ease;
-    -o-transition: background-image 0.5s ease;
-    transition: background-image 0.5s ease;
-}
-@media (max-width: 1199px) {
-    #img-hero {
-        position: relative;
-        width: 100%;
-        left: 0;
-    }
-}
 
 body, main {
     position: relative;
     overflow-x: hidden;
 }
 
+#isotipo {
+    font-family: 'Gloock', serif;
+    font-size: 7rem;
+}
+@media (max-width: 768px) {
+    #isotipo {
+        font-size: 4rem;
+    }
+}
 #logo-roble {
-    display: inline;
+    display: inline-block;
     max-width: 4.5rem;
-    margin: 0 1rem 1rem 0;
+}
+#img-portada {
+    height: 740px;
+    background-size: cover;
+    background-position: top center;
+    border-radius: 60px 60px 0px 0px;
+    transform: rotateY(180deg);
 }
 
 .serifa {
@@ -140,20 +147,6 @@ body, main {
     color: @negro !important;
 }
 
-#isotipo {
-    font-family: 'Gloock', serif;
-    font-size: 5rem;
-}
-#btn-hero {
-    border: 3px solid white;
-    &:hover {
-        background-color: @blanco50;
-    }
-    &:active {
-        background-color: transparent;
-        border-color: @blanco50;
-    }
-}
 
 @media (min-width: 1200px) {
     #activities {
@@ -177,8 +170,8 @@ body, main {
     -webkit-transform: translateX(-50%) scale(.9);
         -ms-transform: translateX(-50%) scale(.9);
             transform: translateX(-50%) scale(.9);
-    -webkit-filter: blur(1px);
-            filter: blur(1px);
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
     -webkit-transition: -webkit-transform .5s, -webkit-filter .5s;
     transition: -webkit-transform .5s, -webkit-filter .5s;
     -o-transition: transform .5s, filter .5s;
@@ -190,8 +183,8 @@ body, main {
     -webkit-transform: translateX(50%) scale(.9);
         -ms-transform: translateX(50%) scale(.9);
             transform: translateX(50%) scale(.9);
-    -webkit-filter: blur(1px);
-            filter: blur(1px);
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
     -webkit-transition: -webkit-transform .5s, -webkit-filter .5s;
     transition: -webkit-transform .5s, -webkit-filter .5s;
     -o-transition: transform .5s, filter .5s;
@@ -386,7 +379,7 @@ body, main {
            object-fit: cover;
     }
     .info-slide {
-        background-color: @blanco50;
+        background-color: white;
     }
 }
 .sliderMid {
@@ -433,6 +426,32 @@ body, main {
     -o-transition: transform 0.3s ease-in-out;
 }
 
+.entradaDerecha {
+    animation: entradaDerecha .3s ease-in-out;
+}
+@keyframes entradaDerecha {
+    0% {
+        transform: translateX(200%);
+    }
+    100% {
+        transform: translateX(102%);
+    }
+}
+.entradaIzquierda {
+    animation: entradaIzquierda .3s ease-in-out;
+}
+@keyframes entradaIzquierda {
+    0% {
+        transform: translateX(-200%);
+    }
+    100% {
+        transform: translateX(-102%);
+    }
+}
+
+
+
+
 
 @-webkit-keyframes rotar {
     0% {
@@ -468,10 +487,10 @@ body, main {
 #mandala {
     max-height: 300px;
     img {
+        top: -100px;
         max-width: 500px;
         margin-left: auto;
         position: relative;
-        top: -10vw;
         animation: rotar 240s linear infinite;
         -webkit-animation: rotar 240s linear infinite;
     }
@@ -527,3 +546,5 @@ body, main {
 h3 span.bg-white {
     background-color: rgba(255, 255, 255, 0.842) !important;
 }
+
+

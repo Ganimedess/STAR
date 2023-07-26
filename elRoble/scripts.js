@@ -1,24 +1,4 @@
-/*
-cositas que pueden hacerse necesarias:
-1________________________________________________________________
-    algoritmo que cambia el gradiente de fondo en función de una lista de gradientes y colores predefinida
-    otro que cambia el color de los círculos
-    otro que mueve los círculos de manera aleatoria
-2________________________________________________________________
-    algoritmo que carga las actividades programadas
-    otro que haga scroll lentamente por ellas cuando están en pantalla
-    otro que evite el scroll al hacer hover en una tarjeta
-    controlador que permita moverme de una a otra para verlas
-3________________________________________________________________
-    algoritmo que carga la info del json
-    al hacer hover, se cambian el puntero y el fondo de las líneas
-    click haces toggle en el acordeón
-    al abrir algo se cierra lo demás
-4________________________________________________________________
-    slider cambia el texto y las imágenes, habla sobre los eventos donde ha participado el roble
-    manejadores para pasar de una diapo a otra
-    autoplay
-*/
+
 // hero _______________________________________________________________
 // mete los datos de las actividades programadas y crea los elementos
 // también añade eventos para controlar el slide con el hover
@@ -26,6 +6,8 @@ const terapia = "rgba(239, 189, 195, .5)"
 const taller = "rgba(218, 224, 242, .5)"
 const curso = "rgba(216, 204, 245, .5)"
 const evento = "rgba(188, 232, 240, .5)"
+
+
 const INTERVALO = 5000
 let carouselTarget = 0
 
@@ -34,18 +16,18 @@ const container = document.querySelector("#contenedor-actividades")
 async function llenarActividades() {
     let contenedor = document.querySelector('#contenedor-actividades');
     // parsear el excel y asignar los valores a variables
-    const response = await fetch('datos.csv');
+    const response = await fetch('actividades.json');
     const data = await response.text();
-    const table = data.split('\r\n').slice(1); //array donde cada fila es un elemento
+    const dataParsed = JSON.parse(data);
+
     let colorCabecera
     let colorVar = 0
 
-    table.forEach(elt => { //navegamos el array
-        const row = elt.split(';'); //array donde cada campo es un elemento
-        const titulo = row[0];
-        const descripcion = row[1];
-        const profesor = row[2];
-        const horario = row[3];
+    dataParsed.Actividades.forEach(elt => { //navegamos el array
+        const titulo = elt.nombre
+        const descripcion = elt.descripción
+        const horario = elt.horario
+        const profesor = elt.profesor
 
         switch (colorVar % 3) {
             case 0: colorCabecera = terapia; colorVar++;
@@ -56,7 +38,6 @@ async function llenarActividades() {
                 break
         }
 
-        if(titulo == undefined || titulo == '') return; //coger sólo filas válidas
         // armar las tarjetas y añadirlas al dom
         const tarjeta = document.createElement('div');
         tarjeta.classList.add('d-none', 'actividad');
@@ -178,7 +159,6 @@ scrollDe.addEventListener('click', () => {stopSlide(); inicioSlide()});
 
 
 
-
 // info _______________________________________________________________
 //llena la lista con la informacion del archivo json
 async function llenarInformacion(){
@@ -251,6 +231,11 @@ window.addEventListener('resize', () => { reescalarDescripcion() })
 
 
 
+
+
+
+
+//carousel _______________________________________________________________
 let slides = document.querySelectorAll(".slide")
 let slider = document.querySelector("#carousel-body")
 slider.scroll(1000, 1000)
@@ -262,9 +247,12 @@ function slideLeft() {
     rightSlide = (currentSlide + 1) % slides.length
     overRight = (rightSlide + 1) % slides.length
     slides[currentSlide].classList.replace('sliderLeft', 'sliderMid')
+    slides[currentSlide].classList.remove('entradaIzquierda')
     slides[leftSlide].classList.replace('d-none', 'sliderLeft')
+    slides[leftSlide].classList.add('entradaIzquierda')
     slides[rightSlide].classList.replace('sliderMid', 'sliderRight')
     slides[overRight].classList.replace('sliderRight', 'd-none')
+    slides[overRight].classList.remove('entradaDerecha')
 }
 function slideRight() {
     currentSlide = (currentSlide + 1) % slides.length
@@ -272,9 +260,12 @@ function slideRight() {
     rightSlide = (currentSlide + 1) % slides.length
     overLeft = (leftSlide - 1 + slides.length) % slides.length
     slides[currentSlide].classList.replace('sliderRight', 'sliderMid')
+    slides[currentSlide].classList.remove('entradaDerecha')
     slides[leftSlide].classList.replace('sliderMid', 'sliderLeft')
     slides[rightSlide].classList.replace('d-none', 'sliderRight')
+    slides[rightSlide].classList.add('entradaDerecha')
     slides[overLeft].classList.replace('sliderLeft', 'd-none')
+    slides[overLeft].classList.remove('entradaIzquierda')
 }
 
 const carouselBack = document.querySelector("#carousel-back")
@@ -286,6 +277,9 @@ carouselForward.addEventListener('click', slideRight)
 
 
 
+
+
+/*
 let raiz = document.querySelector('.raiz')
 let lastX
 let lastY
@@ -320,3 +314,4 @@ function nuevaFotoPortada() {
     fotoPortada.style.backgroundImage = `url(/assets/${imgArray[portadaTarget]})`
 }
 cambiaPortada()
+*/

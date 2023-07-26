@@ -1,0 +1,34 @@
+{
+    "Actividades": [
+        {
+            "nombre" : "Reiki",
+            "descripción" : "Descubre el poder curativo de la energía universal y equilibra tu cuerpo, mente y espíritu",
+            "profesor" : "Ana",
+            "horario" : "Lun 19-21h<br>Mie 11-13h"
+        },
+        {
+            "nombre" : "Yoga",
+            "descripción" : "Conecta con tu ser interior, mejora tu flexibilidad y encuentra la paz a través de posturas y respiración consciente",
+            "profesor" : "Raquel",
+            "horario" : "Mie, Jue 9-11h<br>Lun, Mar, Mie 18-22h"
+        },
+        {
+            "nombre" : "Meditación",
+            "descripción" : "Encuentra calma en medio del caos, reducee el estrés y cultiva la claridad mental a través de la meditación guiada",
+            "profesor" : "Alfonso",
+            "horario" : "Sab 10:30h"
+        },
+        {
+            "nombre" : "Sanación",
+            "descripción" : "Experimenta la transformación personal y la sanación profunda a través de terapias holísticas y enfoques integrativos",
+            "profesor" : "Alfonso",
+            "horario" : "Dom 10-11h"
+        },
+        {
+            "nombre" : "TRE",
+            "descripción" : "Libera el estrés y el trauma acumulados en tu cuerpo a través de ejercicios simples y eficaces",
+            "profesor" : "Ana",
+            "horario" : "Lun 19-20:30h"
+        }
+    ]
+}

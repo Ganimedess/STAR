@@ -40,9 +40,10 @@ function App() {
 
         <main className="AppMain container mx-auto max-w-7xl static aparecer-d">
           <Routes>
-            <Route path="/" element={<><Hero />
-              <About />
+            <Route path="/" element={<>
+              <Hero />
               <Work />
+              <About />
               <Contact /></>} />
             <Route path="/work/freakit!" element={<><Freakit/></>} />
             <Route path="/work/elRoble" element={<><Roble/></>} />

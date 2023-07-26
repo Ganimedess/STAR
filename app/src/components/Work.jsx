@@ -20,9 +20,10 @@ const Work = () => {
     }
 
   return (
-    <section id="work" className="h-100 flex items-start min-h-[60vh] mt-24">
-        <div className="grid grid-cols-12 gap-4 w-full py-48 max-md:pt-36">
+    <section id="work" className="h-100 flex items-start mb-24 mt-16">
+        <div className="grid grid-cols-12 gap-4 w-full max-md:pt-36">
             <div className="col-start-2 lg:col-start-3 col-span-10 lg:col-span-9 grid grid-cols-9 gap-6">
+
                 <div className="col-span-full mb-5">
                     <p className="text-xl text-slate-400">Selected projects:</p>
                 </div>
@@ -36,7 +37,16 @@ const Work = () => {
                     <h6 className="text-5xl md:text-6xl font-bold block mt-7">El Roble</h6>
                     <p className="mt-3 text-2xl md:text-3xl mim-md:pt-8">Alternative therapy center website</p>
                 </div></Link>
-                {/*
+
+            </div>
+        </div>
+    </section>
+  )
+}
+
+export default Work
+
+/*
                 <div className="text-left md:text-center col-span-full grid gap-y-16 mt-5 relative">
                     <Link to={'/work/Freakit!'} onClick={scrollTop}>
                     <div className="proyect proyect-freakit max-md:relative">
@@ -57,11 +67,4 @@ const Work = () => {
                     </div>
                     </Link>
                 </div>
-                */}
-            </div>
-        </div>
-    </section>
-  )
-}
-
-export default Work
+                */
