@@ -8,11 +8,12 @@ const About = () => {
             <div className="col-start-2 lg:col-start-3 col-span-10 lg:col-span-9 grid grid-cols-9 gap-4 gap-y-9">
                 <div className="col-span-full md:col-span-4">
                     <h6 className="text-6xl font-bold mb-12">About me</h6>
-                    <p className="text-xl">Welcome to my portfolio! I'm thrilled to have you here. My name is Said Sel-lam, and I am a passionate front-end developer and graphic designer based in the vibrant city of Madrid.
+                    <p className="text-xl">Hello, I am Said Sel-lam, a creative and versatile professional with a degree in graphic design and a passion for front-end development. With hands-on experience in React and WordPress, I love crafting visually captivating and user-friendly digital experiences. Beyond my technical skills, I have a diverse background in sales, teaching, and customer service, which has instilled in me a deep sense of empathy and adaptability.
                     </p><p className="text-xl mt-3">
-                    Beyond the technical skills, I bring a strong sense of creativity, attention to detail, and a passion for problem-solving to every project. I am constantly seeking new challenges and opportunities to expand my skill set, allowing me to offer fresh perspectives and innovative solutions.
+                    As a responsible and collaborative team player, I always keep the business objectives in mind while working on projects. My meticulous attention to detail and ability to remain calm under pressure ensure that I deliver results that exceed expectations.
                     </p><p className="text-xl mt-3">
-                    Thank you for taking the time to explore my portfolio. I invite you to browse through my work and discover how my expertise can contribute to your next digital venture. Feel free to reach out, and let's create something remarkable together!</p>
+                    If you're interested in learning more about my work or discussing potential collaborations, feel free to reach out to me. Let's create something extraordinary together!
+                    </p>
                 </div>
                 <div className="col-span-full md:col-start-6 md:col-span-4 mt-6 md:mt-0">
                     <img src={foto} alt="self portrait" />
