@@ -1,6 +1,6 @@
-@fondo : #cfe8b5;
-@otroFondo : #b7e7cd;
-@nuevoFondo : #e2e8b5;
+@fondo : #cae4ae;
+@otroFondo : #bbe8dc;
+@nuevoFondo : #e9eec0;
 @raiz_size : 320px;
 @raiz_color : #b5dd9a;
 @raiz_altcolor : #dd9ac8;
@@ -62,8 +62,8 @@
 *{
     color: @negro !important;
 }
-html {
-    //cursor: none;
+body, main {
+    background-color: @fondo;
 }
 
 #background {
@@ -73,7 +73,7 @@ html {
     position: fixed;
     top: 0;
     z-index: -100;
-    background-color: @fondo;
+    display: none;
 
 }
 #activities, #socios
