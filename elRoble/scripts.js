@@ -68,7 +68,9 @@ async function llenarActividades() {
 
 
         tarjeta.addEventListener('mousedown', cogeTarjeta)
-        tarjeta.addEventListener('mouseup', sueltaTarjeta)
+        tarjeta.addEventListener('mouseup', cogeTarjeta)
+        tarjeta.addEventListener('touchstart', sueltaTarjeta)
+        tarjeta.addEventListener('touchend', sueltaTarjeta)
     })
 }
 
@@ -298,7 +300,9 @@ const sueltaEvento = (e) => {
 }
 slides.forEach((slide) => {
     slide.addEventListener('mousedown', cogeEvento)
-    slide.addEventListener("mouseup", sueltaEvento)
+    slide.addEventListener("touchstart", cogeEvento)
+    slide.addEventListener('mouseup', sueltaEvento)
+    slide.addEventListener("touchend", sueltaEvento)
 })
 
 
