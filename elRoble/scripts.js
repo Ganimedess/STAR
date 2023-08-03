@@ -22,6 +22,15 @@ async function llenarActividades() {
 
     let colorCabecera
     let colorVar = 0
+    let mouseXpos
+
+    const cogeTarjeta = (e) => {
+        mouseXpos = e.clientX
+    }
+    const sueltaTarjeta = (e) => {
+        if(e.clientX + 20 < mouseXpos) scrollRight()
+        else if (e.clientX - 20 > mouseXpos) scrollLeft()
+    }
 
     dataParsed.Actividades.forEach(elt => { //navegamos el array
         const titulo = elt.nombre
@@ -56,6 +65,10 @@ async function llenarActividades() {
         contenedor.appendChild(tarjeta);
         tarjeta.addEventListener('mouseenter', stopSlide) //añadimos las funciones js
         tarjeta.addEventListener('mouseleave', inicioSlide)
+
+
+        tarjeta.addEventListener('mousedown', cogeTarjeta)
+        tarjeta.addEventListener('mouseup', sueltaTarjeta)
     })
 }
 
@@ -238,6 +251,7 @@ window.addEventListener('resize', () => { reescalarDescripcion() })
 //carousel _______________________________________________________________
 let slides = document.querySelectorAll(".slide")
 let slider = document.querySelector("#carousel-body")
+
 slider.scroll(1000, 1000)
 let currentSlide = 0
 
@@ -274,44 +288,21 @@ carouselBack.addEventListener('click', slideLeft)
 carouselForward.addEventListener('click', slideRight)
 
 
-
-
-
-
-
-/*
-let raiz = document.querySelector('.raiz')
-let lastX
-let lastY
-document.addEventListener('mousemove', moverChakra);
-document.addEventListener('scroll', moverChakra);
-function moverChakra(e) {
-    if(e.clientX) {
-        movX = e.clientX + 'px'
-        lastX = e.clientX
-    } else {
-        movX = lastX + 'px'
-    }
-    if(e.clientY) {
-        movY = e.clientY + window.scrollY + 'px'
-        lastY = e.clientY
-    } else {
-        movY = lastY + window.scrollY + 'px'
-    }
-    raiz.style.left = movX
-    raiz.style.top = movY
+const cogeEvento = (e) => {
+    mouseXpos = e.clientX
+    console.log('hey')
 }
-
-const fotoPortada = document.querySelector("#img-hero")
-const imgArray = ['portada.jpg', 'portada2.jpg', 'portada3.jpg']
-let portadaTarget = 0
-function cambiaPortada() {
-    intervaloPortada = setInterval(nuevaFotoPortada, INTERVALO)
+const sueltaEvento = (e) => {
+    if(e.clientX + 20 < mouseXpos) slideRight()
+    else if (e.clientX - 20 > mouseXpos) slideLeft()
 }
+slides.forEach((slide) => {
+    slide.addEventListener('mousedown', cogeEvento)
+    slide.addEventListener("mouseup", sueltaEvento)
+})
 
-function nuevaFotoPortada() {
-    portadaTarget = (portadaTarget + 1) % imgArray.length
-    fotoPortada.style.backgroundImage = `url(/assets/${imgArray[portadaTarget]})`
-}
-cambiaPortada()
-*/
+
+
+
+
+

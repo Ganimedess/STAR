@@ -90,8 +90,8 @@ function App() {
             <h1 className="text-5xl font-bold">La aplicación más popular para conocer otakus</h1>
             <p className="py-6 text-xl">Conoce gente, haz amigos, encuentra el amor.<br/>Descubre la mayor comunidad de otakus en español.</p>
             <div className="join">
-              <a target='_blank' rel='noreferrer' href="https://play.google.com/store/apps/details?id=com.freakit.dev&hl=es_419&gl=US"><img src={apple} alt="descarga para apple ios" className='join-item' /></a>
-              <a target='_blank' rel='noreferrer' href="https://apps.apple.com/es/app/freakit/id6446035400" className="ml-7 join-item" ><img src={googleps} alt="descarga desde google play store" /></a>
+              <a target='_blank' rel='noreferrer' href="https://apps.apple.com/es/app/freakit/id6446035400"><img src={apple} alt="descarga para apple ios" className='join-item' /></a>
+              <a target='_blank' rel='noreferrer' href="https://play.google.com/store/apps/details?id=com.freakit.dev&hl=es_419&gl=US" className="ml-7 join-item" ><img src={googleps} alt="descarga desde google play store" /></a>
             </div>
           </div>
         </div>

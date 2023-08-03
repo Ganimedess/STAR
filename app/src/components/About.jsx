@@ -8,11 +8,10 @@ const About = () => {
             <div className="col-start-2 lg:col-start-3 col-span-10 lg:col-span-9 grid grid-cols-9 gap-4 gap-y-9">
                 <div className="col-span-full md:col-span-4">
                     <h6 className="text-6xl font-bold mb-12">About me</h6>
-                    <p className="text-xl">Hello, I am Said Sel-lam, a creative and versatile professional with a degree in graphic design and a passion for front-end development. With hands-on experience in React and WordPress, I love crafting visually captivating and user-friendly digital experiences. Beyond my technical skills, I have a diverse background in sales, teaching, and customer service, which has instilled in me a deep sense of empathy and adaptability.
+                    <p className="text-xl">Hello, I am Said Sel-lam, a creative and versatile professional with a degree in graphic design and a passion for front-end development. With hands-on experience in React and WordPress, I love crafting visually captivating and user-friendly digital experiences.
                     </p><p className="text-xl mt-3">
-                    As a responsible and collaborative team player, I always keep the business objectives in mind while working on projects. My meticulous attention to detail and ability to remain calm under pressure ensure that I deliver results that exceed expectations.
-                    </p><p className="text-xl mt-3">
-                    If you're interested in learning more about my work or discussing potential collaborations, feel free to reach out to me. Let's create something extraordinary together!
+                    Beyond my technical skills, I have a diverse background in sales, teaching, and customer service, which has instilled in me a deep sense of empathy and adaptability.
+                    As a responsible and collaborative team player, I always keep the business objectives in mind while working on projects.
                     </p>
                 </div>
                 <div className="col-span-full md:col-start-6 md:col-span-4 mt-6 md:mt-0">

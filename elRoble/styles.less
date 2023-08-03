@@ -1,4 +1,4 @@
-@fondo : #cae4ae;
+@fondo : #d6eac1;
 @otroFondo : #bbe8dc;
 @nuevoFondo : #e9eec0;
 @raiz_size : 320px;
@@ -13,51 +13,13 @@
 @curso : rgba(216, 204, 245, .5);
 @evento : rgba(188, 232, 240, .5);
 
-@-webkit-keyframes latido {
-    0% {
-        -webkit-transform: scale(100%);
-        transform: scale(100%);
-    }
-    10% {
-        -webkit-transform: scale(83%);
-        transform: scale(83%);
-    }
-    30% {
-        -webkit-transform: scale(115%);
-        transform: scale(115%);
-    }
-    50% {
-        -webkit-transform: scale(87%);
-        transform: scale(87%);
-    }
-    70% {
-        -webkit-transform: scale(117%);
-        transform: scale(117%);
-    }
-}
+.prevent-select {
+    user-select: none;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+  }
 
-@keyframes latido {
-    0% {
-        -webkit-transform: scale(100%);
-        transform: scale(100%);
-    }
-    10% {
-        -webkit-transform: scale(83%);
-        transform: scale(83%);
-    }
-    30% {
-        -webkit-transform: scale(115%);
-        transform: scale(115%);
-    }
-    50% {
-        -webkit-transform: scale(87%);
-        transform: scale(87%);
-    }
-    70% {
-        -webkit-transform: scale(117%);
-        transform: scale(117%);
-    }
-}
 
 *{
     color: @negro !important;
@@ -80,7 +42,7 @@ body, main {
 {
     background-color: @otroFondo;
 }
-#acordeon
+#acordeon, #contacto
 {
     background-color: @nuevoFondo;
 }
