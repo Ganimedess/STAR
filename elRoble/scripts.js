@@ -63,10 +63,12 @@ async function llenarActividades() {
 
         tarjeta.addEventListener('mousedown', (e) => {
             mouseXpos = e.clientX
+            moved = false
         })
-        tarjeta.addEventListener('mouseup', (e) => {
-            if(e.clientX + 20 < mouseXpos) scrollRight()
-            else if (e.clientX - 20 > mouseXpos) scrollLeft()
+        tarjeta.addEventListener('mousemove', (e) => {
+            if(moved) return
+            if(e.clientX + 20 < mouseXpos) {scrollRight(); moved = true}
+            else if (e.clientX - 20 > mouseXpos) {scrollLeft(); moved=true}
         })
         tarjeta.addEventListener('touchstart', (e) => {
             mouseXpos = e.touches[0].screenX
@@ -308,10 +310,12 @@ carouselForward.addEventListener('click', slideRight)
 slides.forEach((slide) => {
     slide.addEventListener('mousedown', (e) => {
         mouseXpos = e.clientX
+        moved = false
     })
-    slide.addEventListener('mouseup', (e) => {
-        if(e.clientX + 20 < mouseXpos) slideRight()
-        else if (e.clientX - 20 > mouseXpos) slideLeft()
+    slide.addEventListener('mousemove', (e) => {
+        if(moved) return
+        if(e.clientX + 20 < mouseXpos) {slideRight(); moved = true}
+        else if (e.clientX - 20 > mouseXpos) {slideLeft(); moved = true}
     })
     slide.addEventListener('touchstart', (e) => {
         mouseXpos = e.touches[0].screenX

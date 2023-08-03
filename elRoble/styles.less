@@ -18,7 +18,11 @@
     -webkit-user-select: none; /* Safari */
     -ms-user-select: none; /* IE 10 and IE 11 */
     user-select: none; /* Standard syntax */
-  }
+
+    .slide, .actividad {
+        cursor: grab;
+    }
+}
 
 
 *{
@@ -76,26 +80,37 @@ body, main {
     overflow-x: hidden;
 }
 
-#isotipo {
-    font-family: 'Gloock', serif;
-    font-size: 7rem;
-}
-@media (max-width: 768px) {
-    #isotipo {
-        font-size: 4rem;
+#hero {
+    min-height: 100vh;
+    .herobox {
+        min-height: 100vh;
+        #isotipo {
+            font-family: 'Gloock', serif;
+            font-size: 7rem;
+        }
+        @media (max-width: 768px) {
+            #isotipo {
+                font-size: 4rem;
+            }
+        }
+        #logo-roble {
+            display: inline-block;
+            max-width: 4.5rem;
+        }
+        #img-portada {
+            flex-grow: 3;
+            min-height: 580px;
+            background-size: cover;
+            background-position: top center;
+            border-radius: 0px 0px 60px 60px;
+            transform: rotateY(180deg);
+        }
+        #texto-portada{
+            flex-grow: 0;
+        }
     }
 }
-#logo-roble {
-    display: inline-block;
-    max-width: 4.5rem;
-}
-#img-portada {
-    height: 740px;
-    background-size: cover;
-    background-position: top center;
-    border-radius: 60px 60px 0px 0px;
-    transform: rotateY(180deg);
-}
+
 
 .serifa {
     font-family: 'Source Serif Pro', serif;
