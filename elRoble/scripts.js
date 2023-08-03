@@ -23,14 +23,8 @@ async function llenarActividades() {
     let colorCabecera
     let colorVar = 0
     let mouseXpos
+    let moved = false
 
-    const cogeTarjeta = (e) => {
-        mouseXpos = e.clientX
-    }
-    const sueltaTarjeta = (e) => {
-        if(e.clientX + 20 < mouseXpos) scrollRight()
-        else if (e.clientX - 20 > mouseXpos) scrollLeft()
-    }
 
     dataParsed.Actividades.forEach(elt => { //navegamos el array
         const titulo = elt.nombre
@@ -67,10 +61,31 @@ async function llenarActividades() {
         tarjeta.addEventListener('mouseleave', inicioSlide)
 
 
-        tarjeta.addEventListener('mousedown', cogeTarjeta)
-        tarjeta.addEventListener('mouseup', cogeTarjeta)
-        tarjeta.addEventListener('touchstart', sueltaTarjeta)
-        tarjeta.addEventListener('touchend', sueltaTarjeta)
+        tarjeta.addEventListener('mousedown', (e) => {
+            mouseXpos = e.clientX
+        })
+        tarjeta.addEventListener('mouseup', (e) => {
+            if(e.clientX + 20 < mouseXpos) scrollRight()
+            else if (e.clientX - 20 > mouseXpos) scrollLeft()
+        })
+        tarjeta.addEventListener('touchstart', (e) => {
+            mouseXpos = e.touches[0].screenX
+            moved = false
+        })
+        tarjeta.addEventListener('touchmove', (e) => {
+            if(e.touches[0].screenX + 20 < mouseXpos) {
+                if(moved) return
+                scrollRight()
+                mouseXpos = e.touches[0].screenX
+                moved = true
+            }
+            else if (e.touches[0].screenX - 20 > mouseXpos) {
+                if(moved) return
+                scrollLeft()
+                mouseXpos = e.touches[0].screenX
+                moved = true
+            }
+        })
     })
 }
 
@@ -290,19 +305,32 @@ carouselBack.addEventListener('click', slideLeft)
 carouselForward.addEventListener('click', slideRight)
 
 
-const cogeEvento = (e) => {
-    mouseXpos = e.clientX
-    console.log('hey')
-}
-const sueltaEvento = (e) => {
-    if(e.clientX + 20 < mouseXpos) slideRight()
-    else if (e.clientX - 20 > mouseXpos) slideLeft()
-}
 slides.forEach((slide) => {
-    slide.addEventListener('mousedown', cogeEvento)
-    slide.addEventListener("touchstart", cogeEvento)
-    slide.addEventListener('mouseup', sueltaEvento)
-    slide.addEventListener("touchend", sueltaEvento)
+    slide.addEventListener('mousedown', (e) => {
+        mouseXpos = e.clientX
+    })
+    slide.addEventListener('mouseup', (e) => {
+        if(e.clientX + 20 < mouseXpos) slideRight()
+        else if (e.clientX - 20 > mouseXpos) slideLeft()
+    })
+    slide.addEventListener('touchstart', (e) => {
+        mouseXpos = e.touches[0].screenX
+        moved = false
+    })
+    slide.addEventListener('touchmove', (e) => {
+        if(e.touches[0].screenX + 20 < mouseXpos) {
+            if(moved) return
+            slideRight()
+            mouseXpos = e.touches[0].screenX
+            moved = true
+        }
+        else if (e.touches[0].screenX - 20 > mouseXpos) {
+            if(moved) return
+            slideLeft()
+            mouseXpos = e.touches[0].screenX
+            moved = true
+        }
+    })
 })
 
 
