@@ -88,11 +88,6 @@ body, main {
             font-family: 'Gloock', serif;
             font-size: 7rem;
         }
-        @media (max-width: 768px) {
-            #isotipo {
-                font-size: 4rem;
-            }
-        }
         #logo-roble {
             display: inline-block;
             max-width: 4.5rem;
@@ -108,6 +103,27 @@ body, main {
         #texto-portada{
             flex-grow: 0;
         }
+        @media (max-width: 768px) {
+            #isotipo {
+                font-size: 3.2rem;
+            }
+            #logo-roble {
+                max-width: 3.2rem;
+            }
+            #img-portada {
+                min-height: 0px;
+                height: 60vh;
+            }
+            #texto-portada {
+                padding-right: 0px;
+                &>div {
+                    padding-right: 0px;
+                }
+            }
+        }
+    }
+    @media (max-width: 768px) {
+        padding: 0px;
     }
 }
 

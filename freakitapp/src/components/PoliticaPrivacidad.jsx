@@ -34,7 +34,7 @@ const PoliticaPrivacidad = () => {
                         <ul><li>
                             Datos de carácter identificativo. Para el uso correcto y para poder disfrutar del Servicio de una manera óptima, los datos que Freakit! solicitará al usuario serán los siguientes: nombre, correo, fecha de nacimiento, género, orientación sexual, acceso a las imágenes del dispositivo móvil y localización.
                         </li></ul>
-                        También recogemos de forma automática datos sobre su visita a nuestro sitio web según se describe en la política de cookies. Siempre que solicitemos sus Datos personales, le informaremos con claridad de qué datos personales recogemos y con qué fin. En general, recogemos y tratamos sus datos personales con el propósito de:
+                            Siempre que solicitemos sus Datos personales, le informaremos con claridad de qué datos personales recogemos y con qué fin. En general, recogemos y tratamos sus datos personales con el propósito de:
                         <ul className="list-disc">
                             <li>Proporcionar información, servicios, productos, información relevante y novedades en el sector.</li>
                             <li>Envío de comunicaciones.</li>

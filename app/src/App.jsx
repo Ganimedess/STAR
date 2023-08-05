@@ -27,9 +27,9 @@ function App() {
   }, [location]);
 
 */
+
   return (
-    <>
-      <NavBar/>
+    <><NavBar/>
       <div className="App text-white aparecer scroll-smooth">
     <Routes>
           <Route path="/" element={<><OverlayLong/></>} />
@@ -50,8 +50,9 @@ function App() {
             <Route path='*' element={<NotFound />}/>
           </Routes>
         </main>
-
+        
         <Footer />
+
       </div>
     </>
   );

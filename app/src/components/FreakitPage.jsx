@@ -9,22 +9,27 @@ import screen6 from '../assets/sf6.png'
 import screen7 from '../assets/sf7.png'
 
 const FreakitPage = () => {
+  let gotop = () => {
+    document.querySelector('.App').scroll(0,0)
+  }
+
+
   return (
     <>
-    <section className="min-h-[50vh] mt-16 flex items-center">
+    <section className="min-h-[50vh] pt-32 flex items-center">
       <div className="grid grid-cols-12 gap-4 w-full">
-        <div className="col-span-10 max-[1300px]:col-start-2">
+        <div className="col-span-10 col-start-2">
             <h1 className="text-6xl font-bold">Freakit!</h1>
         </div>
 
-        <div className="col-span-10 md:col-span-5 col-start-2 md:col-start-2 min-[1300px]:col-start-1 mb-5 md:mb-7">
+        <div className="col-span-10 md:col-span-5 col-start-2 md:col-start-2 mb-5 md:mb-7">
           <h2 className="text-xl italic mb-10">Dating app for otakus</h2>
           <span className='text-slate-400'>Description:</span>
           <p className="text-xl">This is a dating app for otakus with a unique feature. When you create your profile, you take a personality test, and you are matched with an anime character who is similar to you. This way, Freakit! focuses on personality and shared interests rather than physical appearance.</p>
           <a target="_blank" rel='noreferrer' href="https://www.freakitapp.es"><button className="border-2 border-white px-2 py-1 rounded-lg hover:bg-white hover:text-black mt-5">Visit -&gt;</button></a>
-          <Link to="/work/elRoble"><span className='ml-7 text-slate-400 underline hover:text-white'>Go to next proyect -&gt;</span></Link>
+          <Link to="/work/elRoble" onClick={gotop}><span className='ml-7 text-slate-400 underline hover:text-white'>Go to next proyect -&gt;</span></Link>
         </div>
-        <div className="col-span-10 md:col-span-4 col-start-2 md:col-start-8 min-[1300px]:col-start-7 mb-12">
+        <div className="col-span-10 md:col-span-4 col-start-2 md:col-start-8 mb-12">
         <span className='text-slate-400'>Type:</span>
           <p className="text-xl mb-5">Web design and development</p>
 
@@ -36,7 +41,7 @@ const FreakitPage = () => {
         </div>
       </div>
     </section>
-    <div className='mb-12 flex flex-col items-center border-t-2 border-white'>
+    <div className='my-12 flex flex-col items-center border-t-2 border-white'>
       <img loading='lazy' src={screen1} alt="freakit web hero" />
       <img loading='lazy' src={screen2} alt="freakit web mockup" />
       <img loading='lazy' src={screen3} alt="freakit web arguments" />
