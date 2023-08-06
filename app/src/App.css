@@ -145,23 +145,6 @@ svg {
 #work .proyect:hover {
   color: var(--fBlue);
 }
-/*
-.proyect-hide {
-  z-index: 10;
-  animation: desaparecer 0.8s ease 1 .2s both;
-  -webkit-animation: desaparecer 0.8s ease 1 .2s both;
-}
-.proyectThumb {
-  top: calc(50% - 280px);
-}
-.proyect:hover .proyectThumb {
-  display: block;
-  z-index: 9;
-}
-.proyectThumb:hover {
-  display: none !important;
-}
-*/
 .biggie:hover {
   transform: scale(1.1);
   -webkit-transform: scale(1.1);
