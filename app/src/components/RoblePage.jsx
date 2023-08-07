@@ -4,8 +4,6 @@ import screen1 from '../assets/sr1.png'
 import screen2 from '../assets/sr2.png'
 import screen3 from '../assets/sr3.png'
 import screen4 from '../assets/sr4.png'
-import screen5 from '../assets/sr5.png'
-import screen6 from '../assets/sr6.png'
 
 const RoblePage = () => {
   let gotop = () => {
@@ -44,8 +42,6 @@ const RoblePage = () => {
         <img loading='lazy' src={screen2} alt="roble web slider" />
         <img loading='lazy' src={screen3} alt="roble web accordion" />
         <img loading='lazy' src={screen4} alt="roble web gallery" />
-        <img loading='lazy' src={screen5} alt="roble web cta" />
-        <img loading='lazy' src={screen6} alt="roble web contact" />
       </div>
     </>
   )
