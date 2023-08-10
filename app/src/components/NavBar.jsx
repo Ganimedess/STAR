@@ -59,7 +59,7 @@ const NavBar = () => {
               <Link to="/" onClick={scrollAbout}>About me</Link>
             </li>
             <li className="pl-5 sm:pl-10" key='4'>
-              <Link to="/" onClick={scrollContact} className="border-2 border-white p-2 rounded-lg hover:bg-white hover:text-black">Reach out</Link>
+              <Link to="/" onClick={scrollContact} className="buttonNav border-2 border-white p-2 rounded-lg hover:bg-white hover:text-black">Reach out</Link>
             </li>
           </ul>
         </div>

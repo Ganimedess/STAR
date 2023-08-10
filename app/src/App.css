@@ -142,8 +142,12 @@ svg {
 }
 
 
-#work .proyect:hover {
+#work .proyect:hover, #contact a:hover, header li:hover, footer a:hover, #proyect a:hover span {
   color: var(--fBlue);
+}
+.buttonNav:hover, #proyect a button:hover {
+  border-color: var(--fBlue);
+  background-color: var(--fBlue) !important;
 }
 .biggie:hover {
   transform: scale(1.1);

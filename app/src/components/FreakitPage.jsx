@@ -16,7 +16,7 @@ const FreakitPage = () => {
 
   return (
     <>
-    <section className="min-h-[50vh] pt-32 flex items-center">
+    <section id='proyect' className="min-h-[50vh] pt-32 flex items-center">
       <div className="grid grid-cols-12 gap-4 w-full">
         <div className="col-span-10 col-start-2">
             <h1 className="text-6xl font-bold">Freakit!</h1>
