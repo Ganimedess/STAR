@@ -591,8 +591,8 @@ const TerminosCondiciones = () => {
               reconoce haber leído, entendido y aceptado estos Términos y se
               compromete a cumplir con ellos. Si tiene alguna pregunta o
               inquietud, no dude en ponerse en contacto con nuestro equipo.{" "}
-              <br />
-              Fecha de entrada en vigencia: 07 de agosto de 2023 <br />
+              <br /><br />
+              Fecha de entrada en vigencia: 07 de agosto de 2023 <br /><br />
               Freakit! S.L
             </p>
           </li>
