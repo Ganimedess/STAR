@@ -73,7 +73,7 @@ const About = () => {
                         <p className='mt-1 text-sm md:text-xl'>jan2021/ jul2022</p>
                     </div>
                     <div className="col-span-7">
-                        <p className='text-2xl mb-2'>Junior developer - KreativeWork</p>
+                        <p className='text-2xl mb-2'>Web developer - KreativeWork</p>
                         <p className='text-lg text-slate-400'>I worked developing and maintaining web projects based on different CMS such as Wordpress and PrestaShop. I was also involved on marketing task such as creating social media content for clients, creating email templates and managing e-mail promotion campaings for events using Mailchimp.</p>
                     </div>
                 </div>

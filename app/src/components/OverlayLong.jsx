@@ -7,8 +7,11 @@ const OverlayLong = ({appHeight}) => {
   const colors1 = { c1: "#8A817C", c2: "#bcb8b1", c3: "#f4f3ee", c4: "#e0afa0"}
   const colors2 = { c1: "#bbcea8", c2: "#e3d87e", c3: "#f0ec57", c4: "#748067"}
   const colors3 = { c1: "#fb9f89", c2: "#c4af9a", c3: "#81ae9d", c4: "#21a179"}
+  const colors4 = { c1: "#3397B1", c2: "#D0D8CD", c3: "#E75D5B", c4: "#EBB121"}
+  const colors5 = { c1: "#2A9D8E", c2: "#E9C46B", c3: "#F3A261", c4: "#E66F51"}
+  const colors6 = { c1: "#A24502", c2: "#CD8A39", c3: "#595D2B", c4: "#1D2A10"}
 
-  const currentPalette = colors2
+  const currentPalette = colors5
 
   return (
       <div id="overlay" className="fixed fixed w-full min-h-screen">
