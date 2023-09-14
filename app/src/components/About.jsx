@@ -7,7 +7,7 @@ const About = () => {
         <div className="grid grid-cols-12 gap-4 w-full">
             <div className="col-start-2 lg:col-start-3 col-span-10 lg:col-span-9 grid grid-cols-9 gap-4 gap-y-9">
                 <div className="col-span-full md:col-span-4">
-                    <h6 className="text-6xl font-bold mb-12">About me</h6>
+                    <h6 className="text-6xl font-bold mb-12 fontCool">About me</h6>
                     <p className="text-xl">Hello, I am Said Sel-lam, a creative and versatile professional with a degree in graphic design and a passion for front-end development. With hands-on experience in React and WordPress, I love crafting visually captivating and user-friendly digital experiences.
                     </p><p className="text-xl mt-3">
                     Beyond my technical skills, I have a diverse background in sales, teaching, and customer service, which has instilled in me a deep sense of empathy and adaptability.
@@ -41,19 +41,7 @@ const About = () => {
 
             </div>
         </div>
-        {/*
-        <div id="services" className="grid grid-cols-12 gap-4 w-full mt-20 md:mt-40">
-            <div className="col-start-2 md:col-start-3 col-span-10 md:col-span-9 grid grid-cols-8 md:grid-cols-9 gap-4 gap-y-8">
-                <div className="col-span-full"><h6 className="text-4xl font-bold sm:mb-5">Services</h6></div>
-                <p className="col-span-4 lg:col-span-3 sm:text-xl text-white bg-slate-900">UI/UX</p>
-                <p className="col-span-4 lg:col-span-3 sm:text-xl text-white bg-slate-900">Web design</p>
-                <p className="col-span-4 lg:col-span-3 sm:text-xl text-white bg-slate-900">Front-end development</p>
-                <p className="col-span-4 lg:col-span-3 sm:text-xl text-white bg-slate-900">Branding</p>
-                <p className="col-span-4 lg:col-span-3 sm:text-xl text-white bg-slate-900">Graphic design</p>
-                <p className="col-span-4 lg:col-span-3 sm:text-xl text-white bg-slate-900">Ilustration</p>
-            </div>
-        </div>
-  */}
+        
         <div id="experience" className="grid grid-cols-12 gap-4 w-full mt-20 md:mt-40">
             <div className='col-start-2 md:col-start-3 col-span-10 md:col-span-9 grid grid-cols-8 md:grid-cols-9 gap-4 gap-y-8'>
                 <h6 className="text-4xl font-bold sm:mb-5 col-span-full">Experience</h6>

@@ -10,7 +10,7 @@ const Contact = () => {
         <div className="grid grid-cols-12 gap-4 w-full">
             <div className="col-start-2 lg:col-start-3 col-span-10 lg:col-span-8 grid grid-cols-8 gap-4 gap-y-9">
                 <div className="col-span-full">
-                    <h6 className="text-6xl font-bold">Let's talk</h6>            </div>
+                    <h6 className="text-6xl font-bold fontCool">Let's talk</h6>            </div>
                 <div className="col-span-full md:col-span-3">
                     <p className="text-xl text-white">I'm open for hiring and also for collaborating!</p>
                 </div>

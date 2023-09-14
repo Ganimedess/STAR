@@ -3,8 +3,19 @@
   --dBlue5: #264653;
   --dBlue6: #060C08;
   --dPurp: #06060d;
-  --fBlue: #E9C46B;
+  --fWhite: #fff;
+  --fYellow: #E9C46B;
+  --fOrange: #F3A261;
+  --fBlue: #2A9D8E;
+  --fGreen: #69E2AF;
+  --fRed: #E66F51;
 }
+
+@font-face {
+  font-family: myFirstFont;
+  src: url(assets/GT-Super-Display-Super-Italic-Trial.otf);
+}
+
 * {
   font-family: 'Inter', sans-serif;
 }
@@ -134,21 +145,19 @@ svg {
   -webkit-animation: aparecer 0.8s ease 1 .2s both;
 }
 .aparecer-d {
-  animation: aparecerZoom 0.8s ease 1 .8s both;
-  -webkit-animation: aparecerZoom 0.8s ease 1 .8s both;
+  animation: aparecer 0.8s ease 1 .8s both;
+  -webkit-animation: aparecer 0.8s ease 1 .8s both;
 }
 .desaparecer {
   animation: desaparecer 0.8s ease 1 .2s both;
   -webkit-animation: desaparecer 0.8s ease 1 .2s both;
 }
 
-
-#work .proyect:hover, #contact a:hover, header li:hover, footer a:hover, #proyect a:hover span {
-  color: var(--fBlue);
+.fontCool {
+  font-family: myFirstFont;
 }
-.buttonNav:hover, #proyect a button:hover {
-  border-color: var(--fBlue);
-  background-color: var(--fBlue) !important;
+#contact a:hover, footer a:hover {
+  color: var(--fYellow);
 }
 .biggie:hover {
   transform: scale(1.1);
@@ -158,3 +167,15 @@ svg {
   -o-transform: scale(1.1);
 }
 
+#work img:hover {
+  transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  -o-transform: scale(1.05);
+  transition: all .1s ease;
+  -webkit-transition: all .1s ease;
+  -moz-transition: all .1s ease;
+  -ms-transition: all .1s ease;
+  -o-transition: all .1s ease;
+}

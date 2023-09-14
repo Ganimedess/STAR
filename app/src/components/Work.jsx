@@ -1,6 +1,7 @@
 import React from 'react'
 import freakitThumbnail from '../assets/thumb-freakit.png'
 import elRobleThumbnail from '../assets/thumb-roble.png'
+import BeThumbnail from '../assets/thumb-be.png'
 import { Link } from 'react-router-dom'
 
 const Work = () => {
@@ -20,23 +21,28 @@ const Work = () => {
     }
 
   return (
-    <section id="work" className="h-100 flex items-start mb-24 mt-16">
+    <section id="work" className="h-100 flex items-start mb-32 mt-16">
         <div className="grid grid-cols-12 gap-4 w-full max-md:pt-36">
-            <div className="col-start-2 lg:col-start-3 col-span-10 lg:col-span-9 grid grid-cols-9 gap-6">
+            <div className="col-start-2 lg:col-start-2 col-span-10 lg:col-span-11 grid grid-cols-11 gap-0">
 
-                <div className="col-span-full mb-5">
-                    <p className="text-xl text-slate-400">Selected projects:</p>
+                <div className="col-span-full mb-6">
+                    <p className="text-xl text-slate-400">Projects:</p>
                 </div>
-                <Link onClick={scrollTop} to='/work/Freakit!' className='proyect col-span-full sm:col-span-4'><div>
+                <Link onClick={scrollTop} to='/work/Freakit!' className='proyect text-slate-400 hover:text-white col-span-full sm:col-span-3'><div>
                     <img src={freakitThumbnail} alt="freakit thumbnail" />
-                    <h6 className="text-5xl md:text-6xl font-bold block mt-7">Freakit!</h6>
+                    <h6 className="text-5xl md:text-6xl font-bold block mt-7 fontCool">Freakit!</h6>
                     <p className="mt-3 text-2xl md:text-3xl mim-md:pt-8">Web page for a dating App</p>
                 </div></Link>
-                <Link onClick={scrollTop} to='/work/elRoble' className='proyect col-span-full sm:col-span-4 sm:col-start-6 max-sm:mt-7'><div>
+                <Link onClick={scrollTop} to='/work/elRoble' className='proyect text-slate-400 hover:text-white col-span-full sm:col-span-3 sm:col-start-5 max-sm:mt-7'><div>
                     <img src={elRobleThumbnail} alt="el roble thumbnail" />
-                    <h6 className="text-5xl md:text-6xl font-bold block mt-7">El Roble</h6>
+                    <h6 className="text-5xl md:text-6xl font-bold block mt-7 fontCool">El Roble</h6>
                     <p className="mt-3 text-2xl md:text-3xl mim-md:pt-8">Alternative therapy center website</p>
                 </div></Link>
+                <a href='https://www.behance.net/said-sellam' rel='noreferrer' target='_blank' className='proyect text-slate-400 hover:text-white col-span-full sm:col-span-3 sm:col-start-9 max-sm:mt-7'><div>
+                    <img src={BeThumbnail} alt="Behance profile thumbnail" />
+                    <h6 className="text-5xl md:text-6xl font-bold block mt-7 fontCool">More projects</h6>
+                    <p className="mt-3 text-2xl md:text-3xl mim-md:pt-8">Check my Behance profile.</p>
+                </div></a>
 
             </div>
         </div>

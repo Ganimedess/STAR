@@ -15,9 +15,8 @@ const OverlayLong = ({appHeight}) => {
 
   return (
       <div id="overlay" className="fixed fixed w-full min-h-screen">
-        <div className='parallax p-far static flex flex-wrap'>
+        <div className='parallax p-far static flex flex-wrap opacity-70'>
           <Star size={48} top={75} left={35} color={currentPalette.c1} hid={true} />
-          <Ellipse size={16} top={40} left={14} color={currentPalette.c3} hid={true} />
           <Ellipse size={28} top={70} left={52} color={currentPalette.c4} />
           <Ellipse size={30} top={30} left={4} color={currentPalette.c4} hid={true} />
           <Star size={22} top={25} left={80} color={currentPalette.c4} />
@@ -43,18 +42,16 @@ const OverlayLong = ({appHeight}) => {
 
 
         </div>
-        <div className='parallax p-mid static flex flex-wrap'>
+        <div className='parallax p-mid static flex flex-wrap opacity-60'>
         </div>
-        <div className='parallax p-close static flex flex-wrap'>
+        <div className='parallax p-close static flex flex-wrap opacity-95'>
           <Ellipse size={350} top={82} left={-4} color={currentPalette.c4} hid={true} />
           <Ellipse size={180} top={22} left={94} color={currentPalette.c2} />
           <Star size={100} top={-2} left={37} color={currentPalette.c4} />
           <Star size={100} top={90} left={66} color={currentPalette.c2} hid={true} />
           {/* long part */}
           <Ellipse size={110} top={130} left={46} color={currentPalette.c1} hid={true} />
-          <Ellipse size={350} top={182} left={-4} color={currentPalette.c4} hid={true} />
           <Ellipse size={180} top={222} left={94} color={currentPalette.c2} />
-          <Star size={90} top={180} left={79} color={currentPalette.c3} />
           <Star size={100} top={290} left={66} color={currentPalette.c2} hid={true} />
 
           <Ellipse size={120} top={517} left={5} color={currentPalette.c3} hid={true} />

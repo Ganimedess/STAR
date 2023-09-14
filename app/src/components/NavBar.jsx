@@ -49,13 +49,13 @@ const NavBar = () => {
         <div className="w-full mx-auto py-5 max-w-7xl text-xs sm:text-lg md:text-xl w-full text-white">
 
           <ul className="flex w-full justify-between" role="tabpanel">
-            <li className="hover:underline" key='1'>
+            <li className="hover:underline " key='1'>
               <Link to='/' onClick={scrollTop} className="hover:underline cursor-pointer">Portfolio 2023</Link>
             </li>
-            <li className="pl-5 sm:pl-10 hover:underline" key='3'>
+            <li className="pl-5 sm:pl-10 hover:underline " key='3'>
               <Link to="/" onClick={scrollWork}>Work</Link>
             </li>
-            <li className="pl-5 sm:pl-10 hover:underline max-sm:hidden" key='2'>
+            <li className="pl-5 sm:pl-10 hover:underline max-sm:hidden " key='2'>
               <Link to="/" onClick={scrollAbout}>About me</Link>
             </li>
             <li className="pl-5 sm:pl-10" key='4'>
