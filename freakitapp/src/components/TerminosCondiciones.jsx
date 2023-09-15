@@ -357,6 +357,7 @@ const TerminosCondiciones = () => {
                   quede prohibido en este Acuerdo.
                 </li>
                 <li>No utilizar el Servicio para perjudicar a Freakit!.</li>
+                <li>En tu perfil, al menos en dos de las fotografías debes aparecer tú, tu cara. Esto es debido a que buscamos que la app sea lo más segura posible. Si no, tu cuenta será bloqueada automáticamente.</li>
                 <li>
                   No suplantar la identidad de otra persona con fotografías de
                   esa persona, datos personales de esa persona, etc.

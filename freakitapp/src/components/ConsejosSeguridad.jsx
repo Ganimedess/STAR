@@ -45,7 +45,7 @@ const ConsejosSeguridad = () => {
                 <li>Toda relación íntima y/o sexual tiene que ser aprobada previamente por todas partes que estén en dicha relación. El consentimiento puede ser retirado en cualquier momento. No le debes nada a nadie.</li>
                 <li>Si ves a alguien insegurx o incómodx o si no es capaz de mostrar el consentimiento adecuado debido al consumo de cualquier sustancia o si se encuentra en un estado mental en el cual no puede dar su consentimiento de manera total, no debes tener relaciones íntimas y/o sexuales con esa persona. La comunicación de todas las partes tiene que ser totalmente afirmativa.</li>
             </ul>
-                Recuerda que aunque sigas todos estos consejos, no existe la manera perfecta de evitar todos los riesgos. Si sientes que estás en peligro llama a las fuerzas de seguridad de inmediato y denuncia. Para obtener asistencia inmediata en caso de emergencia en España: llama al 112
+                Recuerda que aunque sigas todos estos consejos, no existe la manera perfecta de evitar todos los riesgos. Si sientes que estás en peligro llama a las fuerzas de seguridad de inmediato y denuncia. Para obtener asistencia inmediata en caso de emergencia puedes llamar al 112 si estás en España, al 911 en Mexico, 133 en el caso de Chile y 123 en Colombia.
             </p>
 
         </section>
