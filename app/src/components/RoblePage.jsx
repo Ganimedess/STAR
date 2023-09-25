@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom'
 import screen1 from '../assets/sr1.png'
 import screen2 from '../assets/sr2.png'
 import screen3 from '../assets/sr3.png'
-import screen4 from '../assets/sr4.png'
 
 const RoblePage = () => {
   let gotop = () => {
@@ -38,10 +37,9 @@ const RoblePage = () => {
         </div>
       </section>
       <div className='my-12 flex flex-col items-center border-t-2 border-white'>
-        <img loading='lazy' src={screen1} alt="roble web hero" />
-        <img loading='lazy' src={screen2} alt="roble web slider" />
-        <img loading='lazy' src={screen3} alt="roble web accordion" />
-        <img loading='lazy' src={screen4} alt="roble web gallery" />
+        <img loading='lazy' src={screen1} alt="roble web part1" />
+        <img loading='lazy' src={screen2} alt="roble web part2" />
+        <img loading='lazy' src={screen3} alt="roble web part3" />
       </div>
     </>
   )
