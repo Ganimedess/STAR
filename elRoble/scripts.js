@@ -99,16 +99,16 @@ window.addEventListener('resize', () => { reescalarDescripcion() })
 
 
 //galería _______________________________________________________________
-
+const ANCHOTARJETA = 360;
 const galeriaScroll = document.querySelector('#galeria ul')
 const flechaIz = document.querySelector('#galeria-iz')
 const flechaDe = document.querySelector('#galeria-de')
 flechaIz.addEventListener('click', () => {
     let a = galeriaScroll.scrolLeft + 320
-    galeriaScroll.scroll(galeriaScroll.scrollLeft - 320, 0)
+    galeriaScroll.scroll(galeriaScroll.scrollLeft - ANCHOTARJETA, 0)
 })
 flechaDe.addEventListener('click', () => {
     let a = galeriaScroll.scrolLeft + 320
-    galeriaScroll.scroll(galeriaScroll.scrollLeft + 320, 0)
+    galeriaScroll.scroll(galeriaScroll.scrollLeft + ANCHOTARJETA, 0)
 })
 
