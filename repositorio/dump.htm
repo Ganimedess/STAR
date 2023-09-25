@@ -49,7 +49,21 @@
     </p>
     <p>
                                                         <h4>STYLE</h4>
+        esto es esconder las barras scroll bar
+        html, body, #root {
+            scrollbar-width: none;
+            -ms-overflow-style: none;
+            overflow: hidden;
+            height: 100%;
+            background-color: var(--dPurp);
+          }
+          html::-webkit-scrollbar, body::-webkit-scrollbar {
+            display: none;
+          }
 
+
+
+        esta es la grid que usa chrome en su web
         grid (chrome-grid-deffault)<br>
         <code>
             @media only screen and (min-width: 1440px)
@@ -106,6 +120,17 @@
 
     </p>
     <p>
+        .htaccess -redirección SPA React, para acceder a las urls secundarias desde el navegador sin problema
+        <br>
+            RewriteEngine On
+            RewriteBase /
+
+            # Redirige todas las solicitudes a la página principal
+            RewriteCond %{REQUEST_FILENAME} !-f
+            RewriteCond %{REQUEST_FILENAME} !-d
+            RewriteRule ^ index.html [QSA,L]
+
+
 
     </p>
 
