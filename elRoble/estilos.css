@@ -59,7 +59,7 @@ background: linear-gradient(rgba(202,216,229,1) 0%, rgba(249,212,229,1) 100%);
 /* actividades */
 #actividades li { min-height: 500px !important}
 #actividades-iz, #actividades-de {
-    top: calc(50% - 15px);
+    top: 220px;
     left: 10px;
 }
 #actividades-de {
@@ -152,4 +152,16 @@ background: linear-gradient(rgba(202,216,229,1) 0%, rgba(249,212,229,1) 100%);
     div.media-hidden {
         display: none !important;
     }
+    div.media-pt-0 {
+        padding-top: 0 !important;
+    }
+.m-6 { margin: 3rem !important; }
+.p-6 { padding: 3rem !important; }
+.my-7 { margin-top: 4rem !important; margin-bottom: 4rem !important}
+.py-7 { padding-top: 4rem !important; padding-bottom: 4rem !important}
+
+#actividades li { padding: 2rem !important;}
+.flecha-galeria {
+    max-width: 60px !important;
+}
 }
