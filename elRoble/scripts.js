@@ -99,7 +99,7 @@ window.addEventListener('resize', () => { reescalarDescripcion() })
 
 
 //galería _______________________________________________________________
-const ANCHOTARJETA = 360;
+const ANCHOTARJETA = 480;
 const galeriaScroll = document.querySelector('#galeria ul')
 const flechaIz = document.querySelector('#galeria-iz')
 const flechaDe = document.querySelector('#galeria-de')
