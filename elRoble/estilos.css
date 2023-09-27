@@ -106,6 +106,7 @@ background: linear-gradient(rgba(202,216,229,1) 0%, rgba(249,212,229,1) 100%);
     background-color: white;
     top: calc(50% - 50px);
     right: 20px;
+    --wd: 80px;
 }
 #galeria-iz {
     right: auto;
@@ -161,7 +162,14 @@ background: linear-gradient(rgba(202,216,229,1) 0%, rgba(249,212,229,1) 100%);
 .py-7 { padding-top: 4rem !important; padding-bottom: 4rem !important}
 
 #actividades li { padding: 2rem !important;}
-.flecha-galeria {
-    max-width: 60px !important;
 }
+
+@media (max-width: 768px) {
+    #galeria li {
+        min-width: 100vw;
+    }
+    .flecha-galeria {
+        --wd: 50px !important;
+        padding: 5px !important;
+    }
 }
