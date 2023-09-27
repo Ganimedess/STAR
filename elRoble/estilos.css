@@ -120,6 +120,7 @@ background: linear-gradient(rgba(202,216,229,1) 0%, rgba(249,212,229,1) 100%);
     -o-transform: rotate(180deg);
 }
 #galeria ul {
+    scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
     height: 600px;
     scrollbar-width: none;
@@ -129,6 +130,7 @@ background: linear-gradient(rgba(202,216,229,1) 0%, rgba(249,212,229,1) 100%);
     display: none;
 }
 #galeria li {
+    scroll-snap-align: center;
     min-width: var(--anchoTarjeta)
 }
 #galeria div {
