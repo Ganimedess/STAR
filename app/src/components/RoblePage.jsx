@@ -21,8 +21,8 @@ const RoblePage = () => {
             <h2 className="text-xl italic mb-10">Holistic therapy centre</h2>
             <span className='text-slate-900'>Description:</span>
             <p className="text-xl">'El Roble' is a non-profit association focused on complementary therapies and natural medicine. In this web project, they aimed to promote the association, its philosophy, and the activities they carry out.</p>
-            <a rel='noreferrer' target='_blank' href="https://elroble.uno/"><button className="text-xl border-2 border-white px-2 py-1 rounded-lg hover:bg-white hover:text-black mt-9">Visit -&gt;</button></a>
-            <Link to="/work/Freakit!" onClick={gotop}><span className='text-xl ml-7 text-slate-900 underline hover:text-slate-900'>Go to next proyect -&gt;</span></Link>
+            <a rel='noreferrer' target='_blank' href="https://elroble.uno/"><button className="biggie text-xl px-4 py-1 rounded-lg bg-white hover:bg-verde mt-9">Visit -&gt;</button></a>
+            <Link to="/work/Freakit!" onClick={gotop}><span className='biggie text-xl ml-7 text-slate-900 hover:bg-white px-2'>Go to next proyect -&gt;</span></Link>
           </div>
           <div className="col-span-10 md:col-span-4 col-start-2 md:col-start-8 mb-12">
           <span className='text-slate-900'>Type:</span>

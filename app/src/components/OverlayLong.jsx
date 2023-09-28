@@ -47,7 +47,7 @@ const OverlayLong = ({appHeight}) => {
           <Star size={100} top={-2} left={87} color={currentPalette.ro} />
           <Star size={100} top={90} left={66} color={currentPalette.ve} hid={true} />
           {/* long part */}
-          <Ellipse size={110} top={130} left={46} color={currentPalette.am} hid={true} />
+          <Ellipse size={110} top={130} left={24} color={currentPalette.ro} hid={true} />
           <Ellipse size={180} top={222} left={94} color={currentPalette.am} />
           <Star size={100} top={290} left={66} color={currentPalette.am} hid={true} />
 

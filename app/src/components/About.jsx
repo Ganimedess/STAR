@@ -8,7 +8,7 @@ const About = () => {
         <div className="grid grid-cols-12 gap-4 w-full">
             <div className="col-start-2 lg:col-start-3 col-span-10 lg:col-span-9 grid grid-cols-9 gap-4 gap-y-9">
                 <div className="col-span-full md:col-span-4">
-                    <h6 className="text-6xl font-bold mb-12 fontCool">About me</h6>
+                    <h2 className="text-6xl font-bold mb-12 fontCool">About me</h2>
                     <p className="text-xl">Hello, I am Said Sel-lam, a creative and versatile professional with a degree in graphic design and a passion for front-end development. With hands-on experience in React and WordPress, I love crafting visually captivating and user-friendly digital experiences.
                     </p><p className="text-xl mt-3">
                     Beyond my technical skills, I have a diverse background in sales, teaching, and customer service, which has instilled in me a deep sense of empathy and adaptability.
@@ -34,18 +34,18 @@ const About = () => {
                 <h6 className="text-4xl font-bold mb-7 sm:mb-12 block">Skills</h6>
                 <p className="text-xl mb-7">Some of the tools I use to manifest ideas as digital products:</p>
                 <div className="">
-                    <p className="sm:text-xl text-slate-900 bg-slate-200 p-4 mt-0 mb-4 mx-4 ml-0 inline-block">HTML</p>
-                    <p className="sm:text-xl text-slate-900 bg-slate-200 p-4 mt-0 mb-4 mx-4 ml-0 inline-block">CSS3</p>
-                    <p className="sm:text-xl text-slate-900 bg-slate-200 p-4 mt-0 mb-4 mx-4 ml-0 inline-block">Javascript/ES6</p>
-                    <p className="sm:text-xl text-slate-900 bg-slate-200 p-4 mt-0 mb-4 mx-4 ml-0 inline-block">Bootstrap</p>
-                    <p className="sm:text-xl text-slate-900 bg-slate-200 p-4 mt-0 mb-4 mx-4 ml-0 inline-block">Less</p>
-                    <p className="sm:text-xl text-slate-900 bg-slate-200 p-4 mt-0 mb-4 mx-4 ml-0 inline-block">TailWind</p>
-                    <p className="sm:text-xl text-slate-900 bg-slate-200 p-4 mt-0 mb-4 mx-4 ml-0 inline-block">ReactJs</p>
-                    <p className="sm:text-xl text-slate-900 bg-slate-200 p-4 mt-0 mb-4 mx-4 ml-0 inline-block">WordPress</p>
-                    <p className="sm:text-xl text-slate-900 bg-slate-200 p-4 mt-0 mb-4 mx-4 ml-0 inline-block">GIT/Github</p>
-                    <p className="sm:text-xl text-slate-900 bg-slate-200 p-4 mt-0 mb-4 mx-4 ml-0 inline-block">Adobe Illustrator</p>
-                    <p className="sm:text-xl text-slate-900 bg-slate-200 p-4 mt-0 mb-4 mx-4 ml-0 inline-block">Adobe Photoshop</p>
-                    <p className="sm:text-xl text-slate-900 bg-slate-200 p-4 mt-0 mb-4 mx-4 ml-0 inline-block">Figma</p>
+                    <p className="sm:text-xl text-slate-900 bg-white p-4 mt-0 mb-4 mx-4 ml-0 inline-block">HTML</p>
+                    <p className="sm:text-xl text-slate-900 bg-white p-4 mt-0 mb-4 mx-4 ml-0 inline-block">CSS3</p>
+                    <p className="sm:text-xl text-slate-900 bg-white p-4 mt-0 mb-4 mx-4 ml-0 inline-block">Javascript/ES6</p>
+                    <p className="sm:text-xl text-slate-900 bg-white p-4 mt-0 mb-4 mx-4 ml-0 inline-block">Bootstrap</p>
+                    <p className="sm:text-xl text-slate-900 bg-white p-4 mt-0 mb-4 mx-4 ml-0 inline-block">Less</p>
+                    <p className="sm:text-xl text-slate-900 bg-white p-4 mt-0 mb-4 mx-4 ml-0 inline-block">TailWind</p>
+                    <p className="sm:text-xl text-slate-900 bg-white p-4 mt-0 mb-4 mx-4 ml-0 inline-block">ReactJs</p>
+                    <p className="sm:text-xl text-slate-900 bg-white p-4 mt-0 mb-4 mx-4 ml-0 inline-block">WordPress</p>
+                    <p className="sm:text-xl text-slate-900 bg-white p-4 mt-0 mb-4 mx-4 ml-0 inline-block">GIT/Github</p>
+                    <p className="sm:text-xl text-slate-900 bg-white p-4 mt-0 mb-4 mx-4 ml-0 inline-block">Adobe Illustrator</p>
+                    <p className="sm:text-xl text-slate-900 bg-white p-4 mt-0 mb-4 mx-4 ml-0 inline-block">Adobe Photoshop</p>
+                    <p className="sm:text-xl text-slate-900 bg-white p-4 mt-0 mb-4 mx-4 ml-0 inline-block">Figma</p>
                 </div>
 
             </div>
@@ -56,22 +56,22 @@ const About = () => {
                 <h6 className="text-4xl font-bold sm:mb-5 col-span-full">Experience</h6>
                 <div className="col-span-full grid grid-cols-9 gap-4">
                     <div className="col-span-7">
-                        <p className='text-2xl mb-2'>Freelance designer</p>
-                        <p className='text-lg text-slate-500'>I collaborated with a print shop and managed all design processes, dealing directly with end clients: from briefing, sketches, to final artwork for printing, etc.
-                        <br />I am currently workeing as a freelance web developer and designer.</p>
+                        <p className='text-xl mb-2'>Freelance designer</p>
+                        <p className='text-lg text-slate-500'>Last year I collaborated with a print shop and managed all design processes, dealing directly with end clients: from briefing, sketches, to final artwork for printing, etc.
+                        <br />Today I keep working as a freelance web developer and designer.</p>
                     </div>
-                    <div className="col-span-2 text-2xl text-slate-900">
+                    <div className="col-span-2 text-xl text-slate-900">
                         <p className='mt-1 text-sm md:text-xl text-right capitalize'>jul 2022/ now</p>
                     </div>
                 </div>
 
                 <div className="col-span-full grid grid-cols-9 gap-4">
                     <div className="col-span-7">
-                        <p className='text-2xl mb-2'>Web developer - KreativeWork</p>
-                        <p className='text-lg text-slate-500'>I worked developing and maintaining web projects based on different CMS such as Wordpress and PrestaShop. I was also involved on marketing task such as creating social media content for clients, creating email templates and managing e-mail promotion campaings for events using Mailchimp.</p>
+                        <p className='text-lg mb-2'>Web developer at KreativeWork</p>
+                        <p className='text-lg text-slate-500'>I worked developing and maintaining web projects based on different CMS such as Wordpress and PrestaShop. I was also involved on marketing task such as creating social media content for clients, building email templates and managing e-mail marketing campaings using Mailchimp.</p>
                     </div>
-                    <div className="col-span-2 text-2xl text-slate-900">
-                        <p className='mt-1 text-sm md:text-xl text-right capitalize'>jan 2021/ jul 2022</p>
+                    <div className="col-span-2 text-slate-900">
+                        <p className='mt-1 text-sm md:text-lg text-right capitalize'>jan 2021/ jul 2022</p>
                     </div>
                 </div>
             </div>
@@ -81,11 +81,11 @@ const About = () => {
                 <h6 className="text-4xl font-bold sm:mb-5 col-span-full mt-5">Education</h6>
                 <div className="col-span-full grid grid-cols-9 gap-4">
                     <div className="col-span-7">
-                        <p className='text-2xl mb-2'>Graphic Design Bachelor Degree</p>
+                        <p className='text-lg mb-2'>Graphic Design Bachelor Degree</p>
                         <p className='text-lg text-slate-500'>Escuela Superior de Diseño de Madrid</p>
                     </div>
-                    <div className="col-span-2 text-2xl text-slate-900">
-                        <p className='mt-1 text-sm md:text-xl text-right capitalize'>2016/ 2021</p>
+                    <div className="col-span-2 text-slate-900">
+                        <p className='mt-1 text-sm md:text-lg text-right capitalize'>2016/ 2021</p>
                     </div>
                 </div>
             </div>
