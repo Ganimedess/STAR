@@ -2,10 +2,10 @@
   --dBlue4: #463C32;
   --dBlue5: #264653;
   --dBlue6: #060C08;
-  --dPurp: #06060d;
+  --dPurp: #e2dddd;
   --fWhite: #fff;
   --fYellow: #E9C46B;
-  --fOrange: #F3A261;
+  --fPurple: #787cef;
   --fBlue: #2A9D8E;
   --fGreen: #69E2AF;
   --fRed: #E66F51;
@@ -77,21 +77,22 @@ svg {
   -moz-transform: translateZ(-70px) scale(2.4);
   -ms-transform: translateZ(-70px) scale(2.4);
   -o-transform: translateZ(-70px) scale(2.4);
-  filter: blur(2px);
-  -webkit-filter: blur(2px);
+  filter: blur(1px)
 }
 .p-close {
-  filter: blur(4px);
-  -webkit-filter: blur(4px);
   transform: translateZ(30px) scale(.4);
   -webkit-transform: translateZ(30px) scale(.4);
   -moz-transform: translateZ(30px) scale(.4);
   -ms-transform: translateZ(30px) scale(.4);
   -o-transform: translateZ(30px) scale(.4);
+  filter: blur(1px);
+  -webkit-filter: blur(1px);
 }
 
 
-
+.fontCool {
+  font-family: myFirstFont;
+}
 
 
 @keyframes aparecer {
@@ -104,28 +105,6 @@ svg {
     opacity: 1;
     filter: blur(0px);
     -webkit-filter: blur(0px);
-  }
-}
-@keyframes aparecerZoom {
-  0% {
-    opacity: 0;
-    filter: blur(20px);
-    -webkit-filter: blur(20px);
-    transform: scale(.95);
-    -webkit-transform: scale(.95);
-    -moz-transform: scale(.95);
-    -ms-transform: scale(.95);
-    -o-transform: scale(.95);
-  }
-  100% {
-    opacity: 1;
-    filter: blur(0px);
-    -webkit-filter: blur(0px);
-    transform: scale(1);
-    -webkit-transform: scale(1);
-    -moz-transform: scale(1);
-    -ms-transform: scale(1);
-    -o-transform: scale(1);
   }
 }
 @keyframes desaparecer {
@@ -144,38 +123,27 @@ svg {
   animation: aparecer 0.8s ease 1 .2s both;
   -webkit-animation: aparecer 0.8s ease 1 .2s both;
 }
-.aparecer-d {
-  animation: aparecer 0.8s ease 1 .8s both;
-  -webkit-animation: aparecer 0.8s ease 1 .8s both;
+.enfocar {
+  animation: enfocar 1.2s ease 1 .8s both;
+  -webkit-animation: aparecer 1.2s ease 1 .8s both;
 }
 .desaparecer {
   animation: desaparecer 0.8s ease 1 .2s both;
   -webkit-animation: desaparecer 0.8s ease 1 .2s both;
 }
 
-.fontCool {
-  font-family: myFirstFont;
+
+
+.resume svg {
+  stroke: black;
 }
-#contact a:hover, footer a:hover {
-  color: var(--fYellow);
+footer a:hover {
+  color: var(--fGreen);
 }
 .biggie:hover {
-  transform: scale(1.1);
-  -webkit-transform: scale(1.1);
-  -moz-transform: scale(1.1);
-  -ms-transform: scale(1.1);
-  -o-transform: scale(1.1);
-}
-
-#work img:hover {
   transform: scale(1.05);
   -webkit-transform: scale(1.05);
   -moz-transform: scale(1.05);
   -ms-transform: scale(1.05);
   -o-transform: scale(1.05);
-  transition: all .1s ease;
-  -webkit-transition: all .1s ease;
-  -moz-transition: all .1s ease;
-  -ms-transition: all .1s ease;
-  -o-transition: all .1s ease;
 }

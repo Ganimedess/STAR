@@ -24,19 +24,19 @@ const FreakitPage = () => {
 
         <div className="col-span-10 md:col-span-5 col-start-2 md:col-start-2 mb-5 md:mb-7">
           <h2 className="text-xl italic mb-10">Dating app for otakus</h2>
-          <span className='text-slate-400'>Description:</span>
+          <span className='text-slate-900'>Description:</span>
           <p className="text-xl">This is a dating app for otakus with a unique feature. When you create your profile, you take a personality test, and you are matched with an anime character who is similar to you. This way, Freakit! focuses on personality and shared interests rather than physical appearance.</p>
           <a target="_blank" rel='noreferrer' href="https://www.freakitapp.es"><button className="text-xl border-2 border-white px-2 py-1 rounded-lg hover:bg-white hover:text-black mt-9">Visit -&gt;</button></a>
-          <Link to="/work/elRoble" onClick={gotop}><span className='text-xl ml-7 text-slate-400 underline hover:text-white'>Go to next proyect -&gt;</span></Link>
+          <Link to="/work/elRoble" onClick={gotop}><span className='text-xl ml-7 text-slate-900 underline hover:text-slate-900'>Go to next proyect -&gt;</span></Link>
         </div>
         <div className="col-span-10 md:col-span-4 col-start-2 md:col-start-8 mb-12">
-        <span className='text-slate-400'>Type:</span>
+        <span className='text-slate-900'>Type:</span>
           <p className="text-xl mb-5">Web design and development</p>
 
-          <span className='text-slate-400'>logic:</span>
+          <span className='text-slate-900'>logic:</span>
           <p className="text-xl mb-5">React</p>
 
-          <span className='text-slate-400'>styles:</span>
+          <span className='text-slate-900'>styles:</span>
           <p className="text-xl">Tailwind CSS + daisyUI</p>
         </div>
       </div>

@@ -29,8 +29,8 @@ function App() {
 */
 
   return (
-    <><NavBar/>
-      <div className="App text-white aparecer scroll-smooth">
+    <>
+      <div className="App text-slate-900 aparecer scroll-smooth">
     <Routes>
           <Route path="/" element={<><OverlayLong/></>} />
           <Route path="/work/freakit!" element={<OverlayLong/>} />
@@ -38,7 +38,8 @@ function App() {
           <Route path='*' element={<Overlay />}/>
         </Routes>
 
-        <main className="AppMain container mx-auto max-w-7xl static aparecer-d">
+        <main className="AppMain container mx-auto max-w-7xl static enfocar">
+        <NavBar/>
           <Routes>
             <Route path="/" element={<>
               <Hero />

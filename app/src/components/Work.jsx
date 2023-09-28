@@ -26,22 +26,22 @@ const Work = () => {
             <div className="col-start-2 lg:col-start-2 col-span-10 lg:col-span-11 grid grid-cols-11 gap-0">
 
                 <div className="col-span-full mb-6">
-                    <p className="text-xl text-slate-400">Projects:</p>
+                    <p className="text-xl text-slate-900 hidden">Projects:</p>
                 </div>
-                <Link onClick={scrollTop} to='/work/Freakit!' className='proyect text-slate-400 hover:text-white col-span-full sm:col-span-3'><div>
+                <Link onClick={scrollTop} to='/work/Freakit!' className='proyect biggie text-slate-900 rounded-xl hover:bg-white border-2 border-white p-4 col-span-full sm:col-span-3'><div>
                     <img src={freakitThumbnail} alt="freakit thumbnail" />
-                    <h6 className="text-5xl md:text-6xl font-bold block mt-7 fontCool">Freakit!</h6>
-                    <p className="mt-3 text-2xl md:text-3xl mim-md:pt-8">Web page for a dating App</p>
+                    <h6 className="text-5xl md:text-4xl font-bold block mt-7 fontCool">Freakit!</h6>
+                    <p className="mt-3 text-xl md:text-2xl mim-md:pt-8">Web page for a dating App</p>
                 </div></Link>
-                <Link onClick={scrollTop} to='/work/elRoble' className='proyect text-slate-400 hover:text-white col-span-full sm:col-span-3 sm:col-start-5 max-sm:mt-7'><div>
+                <Link onClick={scrollTop} to='/work/elRoble' className='proyect biggie text-slate-900 rounded-xl hover:bg-white border-2 border-white p-4 col-span-full sm:col-span-3 sm:col-start-5 max-sm:mt-7'><div>
                     <img src={elRobleThumbnail} alt="el roble thumbnail" />
-                    <h6 className="text-5xl md:text-6xl font-bold block mt-7 fontCool">El Roble</h6>
-                    <p className="mt-3 text-2xl md:text-3xl mim-md:pt-8">Alternative therapy center website</p>
+                    <h6 className="text-5xl md:text-4xl font-bold block mt-7 fontCool">El Roble</h6>
+                    <p className="mt-3 text-xl md:text-2xl mim-md:pt-8">Alternative therapy center website</p>
                 </div></Link>
-                <a href='https://www.behance.net/said-sellam' rel='noreferrer' target='_blank' className='proyect text-slate-400 hover:text-white col-span-full sm:col-span-3 sm:col-start-9 max-sm:mt-7'><div>
+                <a href='https://www.behance.net/said-sellam' rel='noreferrer' target='_blank' className='proyect biggie text-slate-900 rounded-xl hover:bg-white border-2 border-white p-4 col-span-full sm:col-span-3 sm:col-start-9 max-sm:mt-7'><div>
                     <img src={BeThumbnail} alt="Behance profile thumbnail" />
-                    <h6 className="text-5xl md:text-6xl font-bold block mt-7 fontCool">More projects</h6>
-                    <p className="mt-3 text-2xl md:text-3xl mim-md:pt-8">Check my Behance profile.</p>
+                    <h6 className="text-5xl md:text-4xl font-bold block mt-7 fontCool">More projects</h6>
+                    <p className="mt-3 text-xl md:text-2xl mim-md:pt-8">Check my Behance profile.</p>
                 </div></a>
 
             </div>

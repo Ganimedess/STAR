@@ -1,5 +1,6 @@
 import React from 'react';
-import foto from  '../assets/retrato.png'
+import foto from  '../assets/retrato.png';
+import resume from '../assets/Resume-Said.pdf';
 
 const About = () => {
   return (
@@ -13,70 +14,78 @@ const About = () => {
                     Beyond my technical skills, I have a diverse background in sales, teaching, and customer service, which has instilled in me a deep sense of empathy and adaptability.
                     As a responsible and collaborative team player, I always keep the business objectives in mind while working on projects.
                     </p>
+                    <a href={resume} download="Resume-Said.pdf">
+                        <button className="resume biggie text-xl bg-white rounded-lg py-2 pl-3 pr-4 mt-10 flex hover:border-verde hover:bg-verde hover:text-black">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className='mr-4'>
+                            <path d="M4 20.3827C4.40471 20.778 4.95361 21 5.52595 21H18.4741C19.0464 21 19.5953 20.778 20 20.3827M12.0012 3V14.9425M12.0012 14.9425L16.9338 10.3793M12.0012 14.9425L7.06859 10.3793" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        <span>Resume</span></button>
+                    </a>
+
                 </div>
                 <div className="col-span-full md:col-start-6 md:col-span-4 mt-6 md:mt-0">
                     <img src={foto} alt="self portrait" />
                 </div>
             </div>
         </div>
-        <div id="skills" className="grid grid-cols-12 gap-4 w-full mt-40">
+        <div id="skills" className="grid grid-cols-12 gap-4 w-full mt-10 md:mt-20">
             <div className="col-start-2 md:col-start-3 col-span-10 md:col-span-9">
 
                 <h6 className="text-4xl font-bold mb-7 sm:mb-12 block">Skills</h6>
                 <p className="text-xl mb-7">Some of the tools I use to manifest ideas as digital products:</p>
                 <div className="">
-                    <p className="sm:text-xl text-white bg-slate-900 p-4 mt-0 mb-4 mx-4 ml-0 inline-block">HTML</p>
-                    <p className="sm:text-xl text-white bg-slate-900 p-4 mt-0 mb-4 mx-4 ml-0 inline-block">CSS3</p>
-                    <p className="sm:text-xl text-white bg-slate-900 p-4 mt-0 mb-4 mx-4 ml-0 inline-block">Javascript/ES6</p>
-                    <p className="sm:text-xl text-white bg-slate-900 p-4 mt-0 mb-4 mx-4 ml-0 inline-block">Bootstrap</p>
-                    <p className="sm:text-xl text-white bg-slate-900 p-4 mt-0 mb-4 mx-4 ml-0 inline-block">Less</p>
-                    <p className="sm:text-xl text-white bg-slate-900 p-4 mt-0 mb-4 mx-4 ml-0 inline-block">TailWind</p>
-                    <p className="sm:text-xl text-white bg-slate-900 p-4 mt-0 mb-4 mx-4 ml-0 inline-block">ReactJs</p>
-                    <p className="sm:text-xl text-white bg-slate-900 p-4 mt-0 mb-4 mx-4 ml-0 inline-block">WordPress</p>
-                    <p className="sm:text-xl text-white bg-slate-900 p-4 mt-0 mb-4 mx-4 ml-0 inline-block">GIT/Github</p>
-                    <p className="sm:text-xl text-white bg-slate-900 p-4 mt-0 mb-4 mx-4 ml-0 inline-block">Adobe Illustrator</p>
-                    <p className="sm:text-xl text-white bg-slate-900 p-4 mt-0 mb-4 mx-4 ml-0 inline-block">Adobe Photoshop</p>
-                    <p className="sm:text-xl text-white bg-slate-900 p-4 mt-0 mb-4 mx-4 ml-0 inline-block">Figma</p>
+                    <p className="sm:text-xl text-slate-900 bg-slate-200 p-4 mt-0 mb-4 mx-4 ml-0 inline-block">HTML</p>
+                    <p className="sm:text-xl text-slate-900 bg-slate-200 p-4 mt-0 mb-4 mx-4 ml-0 inline-block">CSS3</p>
+                    <p className="sm:text-xl text-slate-900 bg-slate-200 p-4 mt-0 mb-4 mx-4 ml-0 inline-block">Javascript/ES6</p>
+                    <p className="sm:text-xl text-slate-900 bg-slate-200 p-4 mt-0 mb-4 mx-4 ml-0 inline-block">Bootstrap</p>
+                    <p className="sm:text-xl text-slate-900 bg-slate-200 p-4 mt-0 mb-4 mx-4 ml-0 inline-block">Less</p>
+                    <p className="sm:text-xl text-slate-900 bg-slate-200 p-4 mt-0 mb-4 mx-4 ml-0 inline-block">TailWind</p>
+                    <p className="sm:text-xl text-slate-900 bg-slate-200 p-4 mt-0 mb-4 mx-4 ml-0 inline-block">ReactJs</p>
+                    <p className="sm:text-xl text-slate-900 bg-slate-200 p-4 mt-0 mb-4 mx-4 ml-0 inline-block">WordPress</p>
+                    <p className="sm:text-xl text-slate-900 bg-slate-200 p-4 mt-0 mb-4 mx-4 ml-0 inline-block">GIT/Github</p>
+                    <p className="sm:text-xl text-slate-900 bg-slate-200 p-4 mt-0 mb-4 mx-4 ml-0 inline-block">Adobe Illustrator</p>
+                    <p className="sm:text-xl text-slate-900 bg-slate-200 p-4 mt-0 mb-4 mx-4 ml-0 inline-block">Adobe Photoshop</p>
+                    <p className="sm:text-xl text-slate-900 bg-slate-200 p-4 mt-0 mb-4 mx-4 ml-0 inline-block">Figma</p>
                 </div>
 
             </div>
         </div>
-        
-        <div id="experience" className="grid grid-cols-12 gap-4 w-full mt-20 md:mt-40">
+
+        <div id="experience" className="grid grid-cols-12 gap-4 w-full mt-10 md:mt-20">
             <div className='col-start-2 md:col-start-3 col-span-10 md:col-span-9 grid grid-cols-8 md:grid-cols-9 gap-4 gap-y-8'>
                 <h6 className="text-4xl font-bold sm:mb-5 col-span-full">Experience</h6>
                 <div className="col-span-full grid grid-cols-9 gap-4">
-                    <div className="col-span-2 text-2xl text-slate-400">
-                        <p className='mt-1 text-sm md:text-xl'>jul2022/ now</p>
-                    </div>
                     <div className="col-span-7">
                         <p className='text-2xl mb-2'>Freelance designer</p>
-                        <p className='text-lg text-slate-400'>I collaborated with a print shop and managed all design processes, dealing directly with end clients: from briefing, sketches, to final artwork for printing, etc.
+                        <p className='text-lg text-slate-500'>I collaborated with a print shop and managed all design processes, dealing directly with end clients: from briefing, sketches, to final artwork for printing, etc.
                         <br />I am currently workeing as a freelance web developer and designer.</p>
+                    </div>
+                    <div className="col-span-2 text-2xl text-slate-900">
+                        <p className='mt-1 text-sm md:text-xl text-right capitalize'>jul 2022/ now</p>
                     </div>
                 </div>
 
                 <div className="col-span-full grid grid-cols-9 gap-4">
-                    <div className="col-span-2 text-2xl text-slate-400">
-                        <p className='mt-1 text-sm md:text-xl'>jan2021/ jul2022</p>
-                    </div>
                     <div className="col-span-7">
                         <p className='text-2xl mb-2'>Web developer - KreativeWork</p>
-                        <p className='text-lg text-slate-400'>I worked developing and maintaining web projects based on different CMS such as Wordpress and PrestaShop. I was also involved on marketing task such as creating social media content for clients, creating email templates and managing e-mail promotion campaings for events using Mailchimp.</p>
+                        <p className='text-lg text-slate-500'>I worked developing and maintaining web projects based on different CMS such as Wordpress and PrestaShop. I was also involved on marketing task such as creating social media content for clients, creating email templates and managing e-mail promotion campaings for events using Mailchimp.</p>
+                    </div>
+                    <div className="col-span-2 text-2xl text-slate-900">
+                        <p className='mt-1 text-sm md:text-xl text-right capitalize'>jan 2021/ jul 2022</p>
                     </div>
                 </div>
             </div>
         </div>
-        <div id="experience" className="grid grid-cols-12 gap-4 w-full mt-5 md:mt-1040">
+        <div id="experience" className="grid grid-cols-12 gap-4 w-full mt-10 md:mt-20">
             <div className='col-start-2 md:col-start-3 col-span-10 md:col-span-9 grid grid-cols-8 md:grid-cols-9 gap-4 gap-y-8'>
                 <h6 className="text-4xl font-bold sm:mb-5 col-span-full mt-5">Education</h6>
                 <div className="col-span-full grid grid-cols-9 gap-4">
-                    <div className="col-span-2 text-2xl text-slate-400">
-                        <p className='mt-1 text-sm md:text-xl'>2016/ 2021</p>
-                    </div>
                     <div className="col-span-7">
                         <p className='text-2xl mb-2'>Graphic Design Bachelor Degree</p>
-                        <p className='text-lg text-slate-400'>Escuela Superior de Diseño de Madrid</p>
+                        <p className='text-lg text-slate-500'>Escuela Superior de Diseño de Madrid</p>
+                    </div>
+                    <div className="col-span-2 text-2xl text-slate-900">
+                        <p className='mt-1 text-sm md:text-xl text-right capitalize'>2016/ 2021</p>
                     </div>
                 </div>
             </div>
