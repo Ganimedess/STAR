@@ -141,6 +141,9 @@ svg {
   filter: saturate(1);
   -webkit-filter: saturate(1);
 }
+.project {
+  border-radius: 30px;
+}
 .resume svg {
   stroke: black;
 }
@@ -154,6 +157,7 @@ footer a:hover {
   -ms-transform: scale(1.05);
   -o-transform: scale(1.05);
 }
+
 
 
 

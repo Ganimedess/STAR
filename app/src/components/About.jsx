@@ -12,7 +12,6 @@ const About = () => {
                     <p className="text-xl">Hello, I am Said Sel-lam, a creative and versatile professional with a degree in graphic design and a passion for front-end development. With hands-on experience in React and WordPress, I love crafting visually captivating and user-friendly digital experiences.
                     </p><p className="text-xl mt-3">
                     Beyond my technical skills, I have a diverse background in sales, teaching, and customer service, which has instilled in me a deep sense of empathy and adaptability.
-                    As a responsible and collaborative team player, I always keep the business objectives in mind while working on projects.
                     </p>
                     <a href={resume} download="Resume-Said.pdf">
                         <button className="resume biggie text-xl bg-white rounded-lg py-2 pl-3 pr-4 mt-10 flex hover:border-verde hover:bg-verde hover:text-black">
@@ -54,35 +53,41 @@ const About = () => {
         <div id="experience" className="grid grid-cols-12 gap-4 w-full mt-10 md:mt-20">
             <div className='col-start-2 md:col-start-3 col-span-10 md:col-span-9 grid grid-cols-8 md:grid-cols-9 gap-4 gap-y-8'>
                 <h6 className="text-4xl font-bold sm:mb-5 col-span-full">Experience</h6>
-                <div className="col-span-full grid grid-cols-9 gap-4">
+                <div className="col-span-full grid grid-cols-9 gap-4 text-slate-600">
                     <div className="col-span-7">
-                        <p className='text-xl mb-2'>Freelance designer</p>
-                        <p className='text-lg text-slate-500'>Last year I collaborated with a print shop and managed all design processes, dealing directly with end clients: from briefing, sketches, to final artwork for printing, etc.
-                        <br />Today I keep working as a freelance web developer and designer.</p>
+                        <p className='text-xl mb-2 font-semibold'>Freelance designer:</p>
+                        <p className='text-lg  '>Last year I started collaborated with a print shop and managed all design processes, dealing directly with end clients: from briefing, sketches, to final artwork for printing, etc.</p>
                     </div>
                     <div className="col-span-2 text-xl text-slate-900">
-                        <p className='mt-1 text-sm md:text-xl text-right capitalize'>jul 2022/ now</p>
+                        <p className='mt-1 text-sm md:text-lg text-right capitalize'>jul 2022/ now</p>
                     </div>
                 </div>
 
-                <div className="col-span-full grid grid-cols-9 gap-4">
+                <div className="col-span-full grid grid-cols-9 gap-4 text-slate-600">
                     <div className="col-span-7">
-                        <p className='text-lg mb-2'>Web developer at KreativeWork</p>
-                        <p className='text-lg text-slate-500'>I worked developing and maintaining web projects based on different CMS such as Wordpress and PrestaShop. I was also involved on marketing task such as creating social media content for clients, building email templates and managing e-mail marketing campaings using Mailchimp.</p>
+                        <p className='text-lg mb-2 font-semibold'>Web developer at KreativeWork:</p>
+                        <p className='text-lg  '>I worked developing and maintaining web projects based on different CMS such as Wordpress and PrestaShop. I was also involved on marketing task such as creating social media content for clients, building email templates and managing e-mail marketing campaings using Mailchimp among many other things.</p>
                     </div>
                     <div className="col-span-2 text-slate-900">
                         <p className='mt-1 text-sm md:text-lg text-right capitalize'>jan 2021/ jul 2022</p>
                     </div>
                 </div>
-            </div>
-        </div>
-        <div id="experience" className="grid grid-cols-12 gap-4 w-full mt-10 md:mt-20">
-            <div className='col-start-2 md:col-start-3 col-span-10 md:col-span-9 grid grid-cols-8 md:grid-cols-9 gap-4 gap-y-8'>
-                <h6 className="text-4xl font-bold sm:mb-5 col-span-full mt-5">Education</h6>
-                <div className="col-span-full grid grid-cols-9 gap-4">
+
+                <div className="col-span-full grid grid-cols-9 gap-4 text-slate-600">
                     <div className="col-span-7">
-                        <p className='text-lg mb-2'>Graphic Design Bachelor Degree</p>
-                        <p className='text-lg text-slate-500'>Escuela Superior de Diseño de Madrid</p>
+                        <p className='text-lg mb-2 font-semibold'>Other relevant experience:</p>
+                        <p className='text-lg  '>I happen to have quite a diverse curriculum since I have worked in many jobs while studding.
+                        My favorite experience was the year I spent as a teacher in a small academy, since working with teenagers and kids is so fun and fulfilling.
+                        However, I think that the most valuable experience I got was as a salesperson working door to door. That job gave me a lot of resilience and communication skills.</p>
+                    </div>
+                </div>
+            </div>
+            <div className='col-start-2 md:col-start-3 col-span-10 md:col-span-9 grid grid-cols-8 md:grid-cols-9 gap-4 gap-y-8 mt-6'>
+                <h6 className="text-4xl font-bold sm:mb-5 col-span-full mt-5">Education</h6>
+                <div className="col-span-full grid grid-cols-9 gap-4 text-slate-600">
+                    <div className="col-span-7">
+                        <p className='text-lg mb-2 font-semibold'>Graphic Design Bachelor Degree:</p>
+                        <p className='text-lg  '>Escuela Superior de Diseño de Madrid</p>
                     </div>
                     <div className="col-span-2 text-slate-900">
                         <p className='mt-1 text-sm md:text-lg text-right capitalize'>2016/ 2021</p>
