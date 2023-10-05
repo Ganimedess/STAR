@@ -5,7 +5,7 @@ import resume from '../assets/Resume-Said.pdf';
 const About = () => {
   return (
     <section id="about" className="h-100 flex flex-wrap items-center min-h-screen pt-36 max-md:pt-24">
-        <div className="grid grid-cols-12 gap-4 w-full">
+        <div className="aparece grid grid-cols-12 gap-4 w-full">
             <div className="col-start-2 lg:col-start-3 col-span-10 lg:col-span-9 grid grid-cols-9 gap-4 gap-y-9">
                 <div className="col-span-full md:col-span-4">
                     <h2 className="text-6xl font-bold mb-12 fontCool">About me</h2>
@@ -27,7 +27,7 @@ const About = () => {
                 </div>
             </div>
         </div>
-        <div id="skills" className="grid grid-cols-12 gap-4 w-full mt-10 md:mt-20">
+        <div id="skills" className="aparece grid grid-cols-12 gap-4 w-full mt-10 md:mt-20">
             <div className="col-start-2 md:col-start-3 col-span-10 md:col-span-9">
 
                 <h6 className="text-4xl font-bold mb-7 sm:mb-12 block">Skills</h6>
@@ -51,9 +51,9 @@ const About = () => {
         </div>
 
         <div id="experience" className="grid grid-cols-12 gap-4 w-full mt-10 md:mt-20">
-            <div className='col-start-2 md:col-start-3 col-span-10 md:col-span-9 grid grid-cols-8 md:grid-cols-9 gap-4 gap-y-8'>
+            <div className='aparece col-start-2 md:col-start-3 col-span-10 md:col-span-9 grid grid-cols-8 md:grid-cols-9 gap-4 gap-y-8'>
                 <h6 className="text-4xl font-bold sm:mb-5 col-span-full">Experience</h6>
-                <div className="col-span-full grid grid-cols-9 gap-4 text-slate-600">
+                <div className="col-span-full grid grid-cols-9 gap-4 text-slate-900">
                     <div className="col-span-7">
                         <p className='text-xl mb-2 font-semibold'>Freelance designer:</p>
                         <p className='text-lg  '>Last year I started collaborated with a print shop and managed all design processes, dealing directly with end clients: from briefing, sketches, to final artwork for printing, etc.</p>
@@ -63,7 +63,7 @@ const About = () => {
                     </div>
                 </div>
 
-                <div className="col-span-full grid grid-cols-9 gap-4 text-slate-600">
+                <div className="col-span-full grid grid-cols-9 gap-4 text-slate-900">
                     <div className="col-span-7">
                         <p className='text-lg mb-2 font-semibold'>Web developer at KreativeWork:</p>
                         <p className='text-lg  '>I worked developing and maintaining web projects based on different CMS such as Wordpress and PrestaShop. I was also involved on marketing task such as creating social media content for clients, building email templates and managing e-mail marketing campaings using Mailchimp among many other things.</p>
@@ -73,7 +73,7 @@ const About = () => {
                     </div>
                 </div>
 
-                <div className="col-span-full grid grid-cols-9 gap-4 text-slate-600">
+                <div className="col-span-full grid grid-cols-9 gap-4 text-slate-900">
                     <div className="col-span-7">
                         <p className='text-lg mb-2 font-semibold'>Other relevant experience:</p>
                         <p className='text-lg  '>I happen to have quite a diverse curriculum since I have worked in many jobs while studding.
@@ -82,9 +82,9 @@ const About = () => {
                     </div>
                 </div>
             </div>
-            <div className='col-start-2 md:col-start-3 col-span-10 md:col-span-9 grid grid-cols-8 md:grid-cols-9 gap-4 gap-y-8 mt-6'>
+            <div className='aparece col-start-2 md:col-start-3 col-span-10 md:col-span-9 grid grid-cols-8 md:grid-cols-9 gap-4 gap-y-8 mt-6'>
                 <h6 className="text-4xl font-bold sm:mb-5 col-span-full mt-5">Education</h6>
-                <div className="col-span-full grid grid-cols-9 gap-4 text-slate-600">
+                <div className="col-span-full grid grid-cols-9 gap-4 text-slate-900">
                     <div className="col-span-7">
                         <p className='text-lg mb-2 font-semibold'>Graphic Design Bachelor Degree:</p>
                         <p className='text-lg  '>Escuela Superior de Diseño de Madrid</p>

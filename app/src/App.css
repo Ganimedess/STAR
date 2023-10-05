@@ -7,9 +7,10 @@
   --fYellow: #E9C46B;
   --fPurple: #787cef;
   --fBlue: #2A9D8E;
-  --fGreen: #69E2AF;
+  --fGreen: #8eedc6;
   --fRed: #E66F51;
 }
+
 
 @font-face {
   font-family: myFirstFont;
@@ -95,52 +96,7 @@ svg {
 }
 
 
-@keyframes aparecer {
-  0% {
-    opacity: 0;
-    filter: blur(20px);
-    -webkit-filter: blur(20px);
-  }
-  100% {
-    opacity: 1;
-    filter: blur(0px);
-    -webkit-filter: blur(0px);
-  }
-}
-@keyframes desaparecer {
-  0% {
-    opacity: 1;
-    filter: blur(0px);
-    -webkit-filter: blur(0px);
-}
-  100% {
-    opacity: 0;
-    filter: blur(20px);
-    -webkit-filter: blur(20px);
-}
-}
-.aparecer {
-  animation: aparecer 0.8s ease 1 .2s both;
-  -webkit-animation: aparecer 0.8s ease 1 .2s both;
-}
-.enfocar {
-  animation: enfocar 1.2s ease 1 .8s both;
-  -webkit-animation: aparecer 1.2s ease 1 .8s both;
-}
-.desaparecer {
-  animation: desaparecer 0.8s ease 1 .2s both;
-  -webkit-animation: desaparecer 0.8s ease 1 .2s both;
-}
 
-
-#work img {
-  filter: saturate(0);
-  -webkit-filter: saturate(0);
-}
-#work .project:hover img {
-  filter: saturate(1);
-  -webkit-filter: saturate(1);
-}
 .project {
   border-radius: 30px;
 }
@@ -201,4 +157,22 @@ footer a:hover {
 #overlay svg {
   animation: wiggle 3s linear infinite alternate;
   -webkit-animation: wiggle 3s linear infinite alternate;
+}
+
+
+.aparece {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all .5s;
+}
+
+@media(prefers-reduced-motion) {
+  .aparece {
+      transition: none;
+  }
+}
+
+.mostrar {
+  opacity: 1;
+  transform: translateX(0);
 }

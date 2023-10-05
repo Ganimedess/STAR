@@ -21,30 +21,32 @@ const Work = () => {
     }
 
   return (
-    <section id="work" className="h-100 flex items-start mb-32 mt-16">
-        <div className="grid grid-cols-12 gap-4 w-full max-md:pt-36">
+    <section id="work" className="  h-100 flex items-start mb-32 mt-16">
+        <div className=" grid grid-cols-12 gap-4 w-full pt-36 max-md:pt-24">
 
-            <div className=" lg:col-start-3 col-span-12 lg:col-span-8 grid grid-cols-8 gap-y-2 md:gap-y-16 p-3 lg:p-0">
-                <p className="col-span-full text-2xl text-center mb-6 md:mb-0 font-semibold">Selected projects:</p>
-                <Link onClick={scrollTop} to='/work/Freakit!' className='project text-slate-900 col-span-full bg-white rounded-lg biggie overflow-hidden'>
-                    <div className="md:grid grid-cols-8 gap-12 py-3 md:py-0">
-                        <img className='col-span-2 hidden md:block' src={freakitThumbnail} alt="freakit thumbnail" />
-                        <div className="col-span-full md:col-span-6 flex flex-col justify-center text-center md:text-left">
-                            <h6 className="text-3xl md:text-4xl font-bold block fontCool">Freakit!</h6>
-                            <p className="mt-3 text-xl md:text-2xl mim-md:pt-8">Web page for a dating App</p>
+            <div className="aparece lg:col-start-3 col-span-12 lg:col-span-8 grid grid-cols-8 gap-2 md:gap-16 p-3 lg:p-0">
+                <p className="  col-span-full text-2xl text-center mb-6 md:mb-0">Selected projects:</p>
+                <Link onClick={scrollTop} to='/work/Freakit!' className='  project text-slate-900 col-span-4 bg-white rounded-lg biggie overflow-hidden'>
+                    <div className="items-center d-flex">
+                        
+                        <div className="col-span-full md:col-span-6 flex flex-col justify-center text-center md:text-left p-5">
+                            <h6 className="text-3xl md:text-4xl font-bold block fontCool text-center">Freakit!</h6>
+                            <p className="mt-3 text-xl md:text-2xl mim-md:pt-8 text-center">Web page for a dating App</p>
                         </div>
+                        <img className='col-span-full hidden md:block' src={freakitThumbnail} alt="freakit thumbnail" />
                     </div>
                 </Link>
-                <Link onClick={scrollTop} to='/work/elRoble' className='project text-slate-900 col-span-full max-sm:mt-7 bg-white rounded-lg biggie overflow-hidden'>
-                    <div className="md:grid grid-cols-8 gap-12 py-3 md:py-0">
-                        <img className='col-span-2 hidden md:block' src={elRobleThumbnail} alt="el roble thumbnail" />
-                        <div className="col-span-full md:col-span-6 flex flex-col justify-center text-center md:text-left">
-                            <h6 className="text-3xl md:text-4xl font-bold block fontCool">El Roble</h6>
-                            <p className="mt-3 text-xl md:text-2xl mim-md:pt-8">Alternative therapy center website</p>
+                <Link onClick={scrollTop} to='/work/elRoble' className='  project text-slate-900 col-span-4 bg-white rounded-lg biggie overflow-hidden'>
+                    <div className="items-center d-flex">
+                        
+                        <div className="col-span-full md:col-span-6 flex flex-col justify-center text-center md:text-left p-5">
+                            <h6 className="text-3xl md:text-4xl font-bold block fontCool text-center">El Roble</h6>
+                            <p className="mt-3 text-xl md:text-2xl mim-md:pt-8 text-center">Alternative therapy center website</p>
                         </div>
+                        <img className='col-span-full hidden md:block' src={elRobleThumbnail} alt="el roble thumbnail" />
                     </div>
                 </Link>
-                <a href='https://www.behance.net/said-sellam' rel='noreferrer' target='_blank' className='project text-slate-900 col-span-full max-sm:mt-7 bg-white rounded-lg biggie overflow-hidden'>
+                <a href='https://www.behance.net/said-sellam' rel='noreferrer' target='_blank' className='  project text-slate-900 col-span-full max-sm:mt-7 bg-white rounded-lg biggie overflow-hidden'>
                     <div className="md:grid grid-cols-8 gap-12 py-3 md:py-0">
                         <img className='col-span-2 hidden md:block' src={BeThumbnail} alt="Behance profile thumbnail" />
                         <div className="col-span-full md:col-span-6 flex flex-col justify-center text-center md:text-left">

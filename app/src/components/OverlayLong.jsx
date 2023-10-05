@@ -11,7 +11,7 @@ const OverlayLong = ({appHeight}) => {
   const colors5 = { ve: "#2A9D8E", am: "#E9c46B", pu: "#787cef", ro: "#E66F51"}
   const colors6 = { ve: "#A24502", am: "#CD8A39", pu: "#595D2B", ro: "#1D2A10"}
 
-  const currentPalette = colors5
+  const currentPalette = colors1
 
   return (
       <div id="overlay" className="fixed fixed w-full min-h-screen">
@@ -41,7 +41,7 @@ const OverlayLong = ({appHeight}) => {
 
 
         </div>
-        <div className='parallax p-close static flex flex-wrap opacity-95'>
+        <div className='parallax p-close static flex flex-wrap opacity-90'>
           <Ellipse size={350} top={82} left={-4} color={currentPalette.pu} hid={true} />
           <Ellipse size={180} top={22} left={94} color={currentPalette.am} />
           <Star size={100} top={-2} left={87} color={currentPalette.ro} />
