@@ -46,7 +46,7 @@ const Work = () => {
                         <img className='col-span-full hidden md:block' src={elRobleThumbnail} alt="el roble thumbnail" />
                     </div>
                 </Link>
-                <a href='https://www.behance.net/said-sellam' rel='noreferrer' target='_blank' className='  project text-slate-900 col-span-full max-sm:mt-7 bg-white rounded-lg biggie overflow-hidden'>
+                <a href='https://www.behance.net/said-sellam' rel='noreferrer' target='_blank' className='  project text-slate-900 col-span-full bg-white rounded-lg biggie overflow-hidden'>
                     <div className="md:grid grid-cols-8 gap-12 py-3 md:py-0">
                         <img className='col-span-2 hidden md:block' src={BeThumbnail} alt="Behance profile thumbnail" />
                         <div className="col-span-full md:col-span-6 flex flex-col justify-center text-center md:text-left">

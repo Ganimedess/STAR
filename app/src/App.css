@@ -107,6 +107,7 @@ footer a:hover {
   color: var(--fGreen);
 }
 .biggie:hover {
+  transition: all .2s;
   transform: scale(1.05);
   -webkit-transform: scale(1.05);
   -moz-transform: scale(1.05);
@@ -162,8 +163,8 @@ footer a:hover {
 
 .aparece {
   opacity: 0;
-  transform: translateY(30px);
-  transition: all .5s;
+  transform: translateX(-90px);
+  transition: all 1s;
 }
 
 @media(prefers-reduced-motion) {

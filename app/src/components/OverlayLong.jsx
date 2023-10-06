@@ -5,7 +5,6 @@ import Star from './Star'
 const OverlayLong = ({appHeight}) => {
 
   const colors1 = { ve: "#8A817C", am: "#bcb8b1", pu: "#f4f3ee", ro: "#e0afa0"}
-  const colors2 = { ve: "#bbcea8", am: "#e3d87e", pu: "#f0ec57", ro: "#748067"}
   const colors3 = { ve: "#fb9f89", am: "#c4af9a", pu: "#81ae9d", ro: "#21a179"}
   const colors4 = { ve: "#3397B1", am: "#D0D8CD", pu: "#E75D5B", ro: "#EBB121"}
   const colors5 = { ve: "#2A9D8E", am: "#E9c46B", pu: "#787cef", ro: "#E66F51"}
