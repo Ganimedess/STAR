@@ -9,7 +9,6 @@ import Contact from './components/Contact';
 import Footer from './components/Footer';
 import About from './components/About';
 import { Route, Routes, useLocation  } from 'react-router-dom';
-import Overlay from './components/Overlay';
 import OverlayLong from './components/OverlayLong';
 import NotFound from './components/NotFound';
 
@@ -29,7 +28,7 @@ function App() {
   } )
 
   const elementosAnimados = document.querySelectorAll('.aparece')
-  elementosAnimados.forEach((el) => observer.observe(el)) 
+  elementosAnimados.forEach((el) => observer.observe(el))
 
   }, [location]); // Empty dependency array ensures it runs only once after initial render
 
