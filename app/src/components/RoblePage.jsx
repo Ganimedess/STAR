@@ -29,7 +29,7 @@ const RoblePage = () => {
             <p className="text-xl mb-5">Web design and development</p>
 
             <span className='text-slate-900'>logic:</span>
-            <p className="text-xl mb-5">JavaScript (vainilla)</p>
+            <p className="text-xl mb-5">JavaScript (vanilla)</p>
 
             <span className='text-slate-900'>styles:</span>
             <p className="text-xl">less</p>
