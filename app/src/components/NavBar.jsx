@@ -49,7 +49,7 @@ const NavBar = () => {
         <div className="w-full pt-8 max-w-7xl text-xs sm:text-lg md:text-xl w-full text-slate-900">
 
           <ul className="flex w-full justify-between" role="tabpanel">
-            <li className="px-1 bg-[#e2ddddd9] hover:bg-verde biggie" key='1'>
+            <li className="px-1 bg-[#e2dddddd] hover:bg-verde biggie" key='1'>
               <Link to='/' onClick={scrollTop} className="px-1 cursor-pointer">Portfolio 2023</Link>
             </li>
             {/*

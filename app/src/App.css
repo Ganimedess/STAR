@@ -98,7 +98,13 @@ svg {
 
 
 .project {
-  border-radius: 30px;
+  border-radius: 10px;
+}
+.project:hover {
+  
+  -webkit-box-shadow: 0px 4px 32px -11px rgba(28,28,28,0.39);
+  -moz-box-shadow: 0px 4px 32px -11px rgba(28,28,28,0.39);
+  box-shadow: 0px 4px 32px -11px rgba(28,28,28,0.39);
 }
 .resume svg {
   stroke: black;

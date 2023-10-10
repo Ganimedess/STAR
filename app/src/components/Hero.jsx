@@ -8,7 +8,7 @@ const Hero = () => {
 
 
     return (
-    <section className={`flex items-center md:min-h-[85vh] pt-22 max-md:pt-24 z-40`}>
+    <section className={`flex items-center z-40 mt-32 md:mt-40 md:mb-20`}>
         <div id="hero" className="grid grid-cols-12 gap-4 w-full text-slate-900">
             <div className="aparece col-start-2 lg:col-start-3 col-span-10 lg:col-span-8 grid grid-cols-8 gap-4 gap-y-8 pt-10">
                 <h1 className="col-span-8 leading-normal text-4xl md:leading-normal md:text-5xl lg:leading-normal lg:text-6xl">

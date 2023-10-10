@@ -18,29 +18,73 @@ let carouselTarget = 0
 let actividadesIz = document.querySelector("#actividades-iz")
 let actividadesDe = document.querySelector("#actividades-de")
 let listaActividades = document.querySelectorAll("#actividades li")
+let intervaloActividades
+const cajaActividades = document.querySelector('.cajaActividades')
+
+
 const ActividadAnterior = () => {
     for(let i = 0; i < listaActividades.length; i++) {
-        if(!listaActividades[i].classList.contains('d-none')) {
+        if(!listaActividades[i].classList.contains('oculto')) {
             let n = (i-1 + listaActividades.length) % listaActividades.length
-            listaActividades[i].classList.add('d-none')
-            listaActividades[n].classList.remove('d-none')
+            listaActividades[i].classList.add('oculto')
+            listaActividades[n].classList.remove('oculto')
+            listaActividades[n].classList.remove('entraDe')
+            listaActividades[n].classList.add('entraIz')
             break
         }
     }
+    clearInterval(intervaloActividades)
+    intervaloActividades = setInterval(ActividadSiguiente, 5000)
 }
 const ActividadSiguiente = () => {
     for(let i = 0; i < listaActividades.length; i++) {
-        if(!listaActividades[i].classList.contains('d-none')) {
+        if(!listaActividades[i].classList.contains('oculto')) {
             let n = (i+1) % listaActividades.length
-            listaActividades[i].classList.add('d-none')
-            listaActividades[n].classList.remove('d-none')
+            listaActividades[i].classList.add('oculto')
+            listaActividades[n].classList.remove('oculto')
+            listaActividades[n].classList.remove('entraIz')
+            listaActividades[n].classList.add('entraDe')
             break
         }
     }
+    clearInterval(intervaloActividades)
+    intervaloActividades = setInterval(ActividadSiguiente, 5000)
 }
+
 actividadesIz.addEventListener('click', ActividadAnterior)
 actividadesDe.addEventListener('click', ActividadSiguiente)
+//añade auto-play para las actividades
+window.addEventListener('load', () => {
+    intervaloActividades = setInterval(ActividadSiguiente, 5000)
+    console.log('hey')
+})
 
+//añade control táctil
+let controlClick = 0
+var mediaQ = window.matchMedia("(max-width: 700px)")
+cajaActividades.addEventListener('mousedown', TocaActividad)
+function TocaActividad(e) {
+    if(mediaQ.matches) {
+        controlClick = e.clientX
+        console.log('inicio: ' + controlClick)
+    }
+}
+cajaActividades.addEventListener('mouseup', SueltaActividad)
+function SueltaActividad(e) {
+    if(mediaQ.matches) {
+        if(controlClick < e.clientX - 30) ActividadSiguiente()
+        else if(controlClick > e.clientX + 30) ActividadAnterior()
+        console.log('fin: ' + e.clientX)
+    }
+}
+cajaActividades.addEventListener('mouseleave', SueltaActividad)
+function SueltaActividad(e) {
+    if(mediaQ.matches) {
+        if(controlClick < e.clientX - 30) ActividadSiguiente()
+        else if(controlClick > e.clientX + 30) ActividadAnterior()
+        console.log('fin: ' + e.clientX)
+    }
+}
 
 // info _______________________________________________________________
 //llena la lista con la informacion del archivo json

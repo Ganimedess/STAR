@@ -57,7 +57,7 @@ h1 {
 }
 .gradiente {
     background: rgb(202,216,229);
-background: linear-gradient(rgba(202,216,229,1) 0%, rgba(249,212,229,1) 100%);
+    background: linear-gradient(rgba(202,216,229,1) 0%, rgba(249,212,229,1) 100%);
 }
 
 /* actividades */
@@ -77,6 +77,42 @@ background: linear-gradient(rgba(202,216,229,1) 0%, rgba(249,212,229,1) 100%);
 #actividades svg path:hover {
     fill: var(--gris);
 }
+#actividades svg path:active {
+    fill: var(--negr);
+}
+
+/* transicion actividades */
+.oculto {
+    display: none;
+}
+.entraDe>div {
+    animation: entraDerecha 200ms linear;
+}
+@keyframes entraDerecha {
+    0% {
+        transform: translateY(-20px);
+        opacity: 0.5;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+.entraIz>div {
+    animation: entraIzquierda 200ms linear;
+}
+@keyframes entraIzquierda {
+    0% {
+        transform: translateY(20px);
+        opacity: 0.5;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
 
 /* acordeon */
 .descripcion-act {

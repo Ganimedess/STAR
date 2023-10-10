@@ -16,9 +16,9 @@ const FreakitPage = () => {
 
   return (
     <>
-    <section id='proyect' className="aparece min-h-[50vh] pt-24 flex items-center">
+    <section id='proyect' className="aparece min-h-[50vh] py-24 flex items-center">
       <div className="grid grid-cols-12 gap-4 w-full">
-        <div className="col-span-8 col-start-3">
+        <div className="col-span-8 col-start-2 md:col-start-3">
             <h1 className="text-6xl font-bold">Freakit!</h1>
         </div>
 
@@ -26,8 +26,8 @@ const FreakitPage = () => {
           <h2 className="text-xl italic mb-10">Dating app for otakus</h2>
           <span className='text-slate-900'>Description:</span>
           <p className="text-xl">This is a dating app for otakus with a unique feature. When you create your profile, you take a personality test, and you are matched with an anime character who is similar to you. This way, Freakit! focuses on personality and shared interests rather than physical appearance.</p>
-          <a target="_blank" rel='noreferrer' href="https://www.freakitapp.es"><button className="biggie text-xl px-4 py-1 rounded-lg bg-white hover:bg-verde mt-9">Visit →</button></a>
-          <Link to="/work/elRoble" onClick={gotop}><span className='biggie text-xl ml-7 text-slate-900 hover:bg-verde px-2'>Go to next proyect →</span></Link>
+          <a target="_blank" rel='noreferrer' href="https://www.freakitapp.es"><button className="biggie text-xl px-4 py-1 rounded-lg bg-white hover:bg-verde mt-9 mr-7">Visit →</button></a>
+          <Link to="/work/elRoble" onClick={gotop}><span className='biggie text-xl text-slate-900 hover:bg-verde px-2 inline-block'>Go to next proyect →</span></Link>
         </div>
         <div className="col-span-10 md:col-span-4 col-start-2 md:col-start-8 mb-12">
         <span className='text-slate-900'>Type:</span>
