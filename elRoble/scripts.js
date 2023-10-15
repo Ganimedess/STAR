@@ -56,27 +56,33 @@ actividadesDe.addEventListener('click', ActividadSiguiente)
 //añade auto-play para las actividades
 window.addEventListener('load', () => {
     intervaloActividades = setInterval(ActividadSiguiente, 5000)
-    console.log('hey')
 })
 
 //añade control táctil
-let controlClick = 0
+let startX;
+let seguridad = true
 var mediaQ = window.matchMedia("(max-width: 700px)")
-cajaActividades.addEventListener('touchstart', TocaActividad)
-function TocaActividad(e) {
+cajaActividades.addEventListener('touchstart', (e) => {
     if(mediaQ.matches) {
-        controlClick = e.clientX
-        console.log('inicio: ' + controlClick)
+        startX = e.touches[0].clientX;
+        seguridad = true
     }
-}
-cajaActividades.addEventListener('touchend', SueltaActividad)
-function SueltaActividad(e) {
+})
+cajaActividades.addEventListener('touchmove', (e) => {
     if(mediaQ.matches) {
-        if(controlClick < e.clientX - 30) ActividadSiguiente()
-        else if(controlClick > e.clientX + 30) ActividadAnterior()
-        console.log('fin: ' + e.clientX)
+        const currentX = e.touches[0].clientX;
+        const differenceX = startX - currentX;
+        if (differenceX > 60 && seguridad) {
+            // User is swiping left
+            ActividadSiguiente()
+            seguridad = false
+          } else if (differenceX < -60 && seguridad) {
+            // User is swiping right
+            ActividadAnterior()
+            seguridad = false
+          }
     }
-}
+})
 
 // info _______________________________________________________________
 //llena la lista con la informacion del archivo json
