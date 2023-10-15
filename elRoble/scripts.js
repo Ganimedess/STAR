@@ -62,22 +62,14 @@ window.addEventListener('load', () => {
 //añade control táctil
 let controlClick = 0
 var mediaQ = window.matchMedia("(max-width: 700px)")
-cajaActividades.addEventListener('mousedown', TocaActividad)
+cajaActividades.addEventListener('touchstart', TocaActividad)
 function TocaActividad(e) {
     if(mediaQ.matches) {
         controlClick = e.clientX
         console.log('inicio: ' + controlClick)
     }
 }
-cajaActividades.addEventListener('mouseup', SueltaActividad)
-function SueltaActividad(e) {
-    if(mediaQ.matches) {
-        if(controlClick < e.clientX - 30) ActividadSiguiente()
-        else if(controlClick > e.clientX + 30) ActividadAnterior()
-        console.log('fin: ' + e.clientX)
-    }
-}
-cajaActividades.addEventListener('mouseleave', SueltaActividad)
+cajaActividades.addEventListener('touchend', SueltaActividad)
 function SueltaActividad(e) {
     if(mediaQ.matches) {
         if(controlClick < e.clientX - 30) ActividadSiguiente()
