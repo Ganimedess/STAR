@@ -133,14 +133,7 @@ const TerminosCondiciones = () => {
               Freakit! no permite que dos usuarixs puedan comunicarse sin el
               consentimiento previo de cada uno de ellos.
               <br />
-              Freakit! cuenta con un servicio de verificación facial de cada uno
-              de los usuarios para confirmar la identidad de estos. Esto se
-              reflejará en el perfil con un símbolo de "perfil verificado". Esta
-              verificación se hará a partir de dos pasos: el usuario mandará dos
-              fotografías a través de la misma aplciación imitando a otras
-              previamente dispuestas en la misma. Estas fotografías serán
-              validadas por el equipo y eliminadas en el mismo instante que se
-              cerciorice la identidad del usuario.
+              Freakit! cuenta con un servicio de verificación facial de cada uno de los usuarios para confirmar la identidad de estos. Esto se reflejará en el perfil con un símbolo de &quot;perfil verificado&quot;. Esta verificación se hará a partir de dos pasos: el usuario mandará dos fotografías a través de la misma aplicación imitando a otras previamente dispuestas en la misma. Estas fotografías serán validadas por el equipo siempre y cuando cumplan los siguientes requisitos: el usuario debe tener en su perfil al menos dos fotografías en las que se puedan reconocer de manera clara al usuario junto con las imágenes que este ha mandado para la verificación. En estas fotos deben aparecer la cara y no deben usar filtros que puedan distorsionar el aspecto real de la persona. Una vez el equipo verifique o no la identidad de esa persona, las fotografías enviadas por el usuario para la verificación serán eliminadas al mismo instante.
               <br />
               Aun así, USTED ES RESPONSABLE DE LA INTERACCIÓN QUE TIENE CON
               OTROS USUARIOS.
@@ -473,11 +466,11 @@ const TerminosCondiciones = () => {
                   <p>
                     <b>Introducción</b>  <br />
                     Estos Términos y Condiciones de Pagos y Suscripciones
-                    ("Términos") establecen los términos y condiciones bajo los
-                    cuales los usuarios ("Usuarixs", "Usted") pueden acceder y
+                    (&quot;Términos&quot;) establecen los términos y condiciones bajo los
+                    cuales los usuarios (&quot;Usuarixs&quot;, &quot;Usted&quot;) pueden acceder y
                     utilizar las suscripciones de la aplicación móvil
-                    ("Freakit!, Aplicación") ofrecida por Freakit S.L.
-                    ("Nosotros", "Nuestro", "Nos").
+                    (&quot;Freakit!, Aplicación&quot;) ofrecida por Freakit S.L.
+                    (&quot;Nosotros&quot;, &quot;Nuestro&quot;, &quot;Nos&quot;).
                   </p>
                 </li>
               </ol>

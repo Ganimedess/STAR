@@ -8,7 +8,7 @@ const Footer = () => {
   return (
     <>
     <ul className="mt-12 lg:mt-32 flex items-center justify-between w-52 m-auto mb-5">
-      <li className="upScaleOnHover2 h-fit"><a target="_blank" href="https://www.tiktok.com/@freakit__" rel="noreferrer" className='py-3'><img src={tiktok} alt="tiktok" className="max-w-[35px] max-h-[35px]"/></a></li>
+      <li className="upScaleOnHover2 h-fit"><a target="_blank" href="https://www.tiktok.com/@freakitapp" rel="noreferrer" className='py-3'><img src={tiktok} alt="tiktok" className="max-w-[35px] max-h-[35px]"/></a></li>
       <li className="upScaleOnHover2 h-fit"><a target="_blank" href="https://www.instagram.com/freakitapp/?hl=es" rel="noreferrer" className='py-3'><img src={instagram} alt="instagram" className="max-w-[35px] max-h-[35px]"/></a></li>
       <li className="upScaleOnHover2 h-fit"><a target="_blank" href="mailto:freakitapp@gmail.com" rel="noreferrer" className='py-3'><img src={gmail} alt="gmail" className="max-w-[35px] max-h-[35px]"/></a></li>
     </ul>

@@ -1,5 +1,5 @@
 import React from 'react';
-import foto from  '../assets/retrato.png';
+import foto from  '../assets/retrato.jpg';
 import resume from '../assets/Resume-Said.pdf';
 
 const About = () => {

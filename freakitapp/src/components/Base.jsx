@@ -15,6 +15,36 @@ const Base = () => {
   //it's value changes when router changes (new url)
   React.useEffect(() => { window.scrollTo(0,0) }, [location]);
 
+  //aquí el efecto de animación en scroll.
+  //utiliza el intersectionObserver que vigila ciertos elementos marcados con CSS, y cuando intersectan con el viewport, arranca una función
+  //le he puesto un threshold distinto para mostrarse que para ocultarse, así prevengo que los elementos se bugeen al borde del viewport
+
+  React.useEffect(() => {
+    
+    const observer = new IntersectionObserver((entries)=> {
+      entries.forEach((entry)=> {
+          if (entry.isIntersecting) {
+              entry.target.classList.add('mostrar')
+          }
+      })
+    }, {threshold: .2})
+    const observ2 = new IntersectionObserver((entries)=> {
+      entries.forEach((entry)=> {
+          if (!entry.isIntersecting) {
+            entry.target.classList.remove('mostrar')
+          }
+      })
+    })
+
+  const elementosAnimados = document.querySelectorAll('.aparece')
+  elementosAnimados.forEach((el) => {
+    observer.observe(el)
+    observ2.observe(el)
+  })
+
+  }, [location]); // Empty dependency array ensures it runs only once after initial render
+
+
 
   return (
     <div className="drawer">
@@ -64,7 +94,7 @@ const Base = () => {
             <li>
               <h2 className="menu-title">Contacto</h2>
               <ul className='flex items-center'>
-                <li><a target="_blank" href="https://www.tiktok.com/@freakit__" rel="noreferrer" className='py-3'><img src={tiktok} alt="tiktok" className="max-w-[30px] max-h-[35px]"/></a></li>
+                <li><a target="_blank" href="https://www.tiktok.com/@freakitapp" rel="noreferrer" className='py-3'><img src={tiktok} alt="tiktok" className="max-w-[30px] max-h-[35px]"/></a></li>
                 <li><a target="_blank" href="https://www.instagram.com/freakitapp/?hl=es" rel="noreferrer" className='py-3'><img src={instagram} alt="instagram" className="max-w-[30px] max-h-[35px]"/></a></li>
                 <li><a target="_blank" href="mailto:freakitapp@gmail.com" rel="noreferrer" className='py-3'><img src={gmail} alt="gmail" className="max-w-[30px] max-h-[35px]"/></a></li>
               </ul>

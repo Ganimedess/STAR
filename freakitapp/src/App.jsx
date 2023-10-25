@@ -83,7 +83,7 @@ function App() {
           <img src={ball} alt="gráficos decorativos" className='absolute min-w-fit max-sm:min-h-screen top-[-200px] right-[-500px]' />
           <img src={heart} alt="gráficos decorativos" className='absolute min-w-fit max-sm:min-h-screen md:top-[-50px] heartHero' />
         </div>
-      <section id='hero' className="hero md:h-screen min-h-screen md:min-h-[800px] relative text-white">
+      <section id='hero' className="hero md:h-screen min-h-screen md:min-h-[800px] relative text-white aparece">
         <div className="hero-content flex-col-reverse md:flex-row-reverse max-w-screen-lg p-10 lg:p-0">
           <img src={heroImage} alt='captura de pantalla app' className="max-w-sm rounded-[30px] heroImg z-40 max-h-[550px]" />
           <div className="lg:bg-white/30 lg:rounded-[40px] pt-24 lg:p-11 lg:pr-32 heroCaja mb-10">
@@ -97,7 +97,7 @@ function App() {
         </div>
       </section>
 
-      <section id='second' className="max-w-screen-lg m-auto flex p-10 lg:p-0">
+      <section id='second' className="max-w-screen-lg m-auto flex p-10 lg:p-0 aparece">
         <div className="grid grid-second">
           <img src={mockup} alt="interfaz freakit" className='md:p-10 img-second w-full max-w-[400px] md:max-w-full m-auto' />
           <div className="text-second">
@@ -112,7 +112,7 @@ function App() {
         </div>
       </section>
 
-      <section id='arguments' className="max-w-screen-lg m-auto flex flex-col mt-12 lg:mt-32 p-10 lg:p-0">
+      <section id='arguments' className="max-w-screen-lg m-auto flex flex-col mt-12 lg:mt-32 p-10 lg:p-0 aparece">
         <h3 className='text-3xl mb-12'>Descubre lo que te ofrecemos:</h3>
         <div className='flex max-sm:flex-wrap justify-center md:justify-between'>
           <div className='card max-w-[300px] rounded-none border-blueF border-l'>
@@ -139,7 +139,7 @@ function App() {
         </div>
       </section>
 
-      <section id='instructions' className="max-w-screen-lg m-auto mt-12 lg:mt-40 p-10 lg:p-0">
+      <section id='instructions' className="max-w-screen-lg m-auto mt-12 lg:mt-40 p-10 lg:p-0 aparece">
         <h3 className='text-3xl'>¿Cómo funciona?</h3>
         <div className='flex flex-wrap'>
           <div className='flex flex-col justify-center my-12 max-md:w-full'>
@@ -193,12 +193,12 @@ function App() {
         </div>
       </section>
 
-      <section id="comments" className="text-center mt-12 lg:mt-40 z-20 max-w-full overflow-hidden">
+      <section id="comments" className="text-center mt-12 lg:mt-40 z-20 max-w-full overflow-hidden aparece">
         <h3 className='text-3xl'>¿Qué dicen de nosotros?</h3>
         <Carousel slides={slides} />
       </section>
 
-      <section id='team' className="max-w-screen-lg m-auto mt-12 lg:mt-40 relative p-10 lg:p-0">
+      <section id='team' className="max-w-screen-lg m-auto mt-12 lg:mt-40 relative p-10 lg:p-0 aparece">
         <div className="absolute w-full h-full">
           <img src={heart} alt="gráficos decorativos" className='atras absolute min-w-fit left-[-100px] top-[-200px] heartTeam rotate-[330deg]' />
         </div>
@@ -231,7 +231,7 @@ function App() {
         </div>
       </section>
 
-      <section id='media' className="max-w-screen-lg m-auto mt-12 lg:mt-40 relative max-lg:p-10">
+      <section id='media' className="max-w-screen-lg m-auto mt-12 lg:mt-40 relative max-lg:p-10 aparece">
         <h3 className='text-3xl mb-12 text-center'>Entrevistas:</h3>
         <div className="flex max-sm:flex-wrap justify-center sm:justify-between">
           <div className='overflow-hidden'><a target="_blank" rel="noreferrer" href="https://www.youtube.com/watch?v=0PtjKPdrDFs"><img className='upScaleOnHover' src={vid1} alt="vídeo Comedy-Con Youtube" /></a></div>
