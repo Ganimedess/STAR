@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-key */
 import { personalidades } from '../datos-personajes.json';
 
 const Personalidades = () => {
@@ -9,7 +10,7 @@ const Personalidades = () => {
         personalidades.map(item => (
           <li>
             <figure className='rounded-[20px] aspect-[3/4] overflow-hidden'>
-              <img className='' loading='lazy' src={`/personajes/${item.personajes[0].url}.jpg`} alt={`retrato ${item.personajes[0].nombre}`} />
+              <img className='' loading='lazy' src={`/fotosPersonajes/${item.personajes[0].url}.jpg`} alt={`retrato ${item.personajes[0].nombre}`} />
             </figure>
             
             <p className='mt-3 mb-2 font-bold lg:text-xl'>{`${item.tipo}`}</p>

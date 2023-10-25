@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-key */
 import { personalidades } from '../datos-personajes.json';
 
 const Personajes = () => {
@@ -11,7 +12,7 @@ const Personajes = () => {
           personalidades.map(item =>(
             item.personajes.map(element => (
               <li className=''>
-                <img className='rounded-[20px]' loading="lazy" src={`/personajes/${element.url}.jpg`} alt={`retrato ${element.nombre}`} />
+                <img className='rounded-[20px]' loading="lazy" src={`/fotosPersonajes/${element.url}.jpg`} alt={`retrato ${element.nombre}`} />
                 <div className='text-center mt-2'>
                 <span className='capitalize'>{`${element.nombre}`}</span>
                 {` - ${item.tipo}`}
