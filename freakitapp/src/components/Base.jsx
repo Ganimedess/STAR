@@ -20,7 +20,7 @@ const Base = () => {
   //le he puesto un threshold distinto para mostrarse que para ocultarse, así prevengo que los elementos se bugeen al borde del viewport
 
   React.useEffect(() => {
-    
+
     const observer = new IntersectionObserver((entries)=> {
       entries.forEach((entry)=> {
           if (entry.isIntersecting) {
