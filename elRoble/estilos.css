@@ -215,3 +215,8 @@ h1 {
         padding: 5px !important;
     }
 }
+
+.bg-hero {
+    background: rgb(255,229,193);
+background: linear-gradient(0deg, rgba(170,235,255,1) 0%, rgba(249,212,229,1) 59%);
+}

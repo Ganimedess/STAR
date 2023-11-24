@@ -580,13 +580,36 @@ const TerminosCondiciones = () => {
                     suscripciones.
                   </p>
                 </li>
+                <li>
+                  <p>
+                  <b>Suscripciones a través de la Plataforma Apple</b>   <br />
+                  Si realiza la suscripción a freakit a través de la App Store de Apple, tenga en cuenta lo siguiente:
+                  <ul className="list-disc">
+                    <li>
+                  La suscripción se renovará automáticamente a menos que se desactive la renovación automática al menos 24 horas antes del final del período actual.
+                    </li>
+                    <li>
+                    La cuenta se cargará por la renovación dentro de las 24 horas anteriores al final del período actual.
+                    </li>
+                    <li>
+                    Las suscripciones pueden ser gestionadas por el usuario y la renovación automática puede desactivarse accediendo a los Ajustes de la Cuenta del usuario en Apple después de la compra.
+
+                    </li>
+                  </ul>
+                  <br />
+Estos términos están en consonancia con las políticas estándar de suscripción de Apple. Para obtener más detalles o resolver cualquier duda en relación con las suscripciones a través de la App Store, le recomendamos que consulte los Términos y Condiciones de Apple directamente. <br />
+                  <a target="_blank" rel="noreferrer" className='hover:text-purpleF' href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">https://www.apple.com/legal/internet-services/itunes/dev/stdeula/</a>
+                  
+                  </p>
+                </li>
               </ol>
+              <br /><br />
               Al utilizar Freakit! y suscribirse a nuestros servicios, Usted
               reconoce haber leído, entendido y aceptado estos Términos y se
               compromete a cumplir con ellos. Si tiene alguna pregunta o
               inquietud, no dude en ponerse en contacto con nuestro equipo.{" "}
               <br /><br />
-              Fecha de entrada en vigencia: 07 de agosto de 2023 <br /><br />
+              Fecha de entrada en vigencia: 30 de octubre de 2023 <br /><br />
               Freakit! S.L
             </p>
           </li>

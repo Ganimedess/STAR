@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <p>Use: https://wa.me/34XXXXXXXXX</p>
+    <form id="formulario" style="display: flex; flex-direction: column;">
+        <input type="text" id="link">
+        <input type="range" id="range" min="10" max="500">
+        <input type="submit" value="generarQR">
+    </form>
+    <img src="" alt="Código QR">
+
+    <script type="text/javascript">
+        const formEl = document.querySelector('#formulario')
+        const linkEl = document.querySelector('#link')
+        const rangeEl = document.querySelector('#range')
+        const imgEl = document.querySelector('img')
+
+        function generarQR(link, dimensiones = 300) {
+            imgEl.src = `https://chart.googleapis.com/chart?cht=qr&chs=${dimensiones}x${dimensiones}&chl=${link}`
+        }
+
+        formEl.addEventListener('submit', (e) => {
+            e.preventDefault()
+            generarQR(linkEl.value, rangeEl.value.toString())
+            console.log(rangeEl)
+        })
+    </script>
+</body>
+</html>

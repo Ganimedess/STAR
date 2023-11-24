@@ -101,13 +101,13 @@ function App() {
         <div className="grid grid-second">
           <img src={mockup} alt="interfaz freakit" className='md:p-10 img-second w-full max-w-[400px] md:max-w-full m-auto' />
           <div className="text-second">
-            <h2 className='text-4xl lg:text-5xl font-medium'>¡Haz amigos con tus mismos intereses!</h2>
-            <p className='py-6 text-xl'>Elige amigos por su personalidad gracias a nuestro test psicológico.</p>
+            <h2 className='text-4xl lg:text-5xl font-medium'>¡Haz amigxs con tus mismos intereses!</h2>
+            <p className='py-6 text-xl'>Elige amigxs por su personalidad gracias a nuestro test psicológico.</p>
           </div>
           <div className='bg-white rounded-[40px] shadow-xl shadow-primary/30 w-fit px-5 lg:px-7 card-second m-auto md:ml-0'>
-            <p className='py-6 text-lg text-center'><b>¡Ya disponible en 4 paises!</b><br />España, México, Chile y Colombia <br />
+            {/*<p className='py-6 text-lg text-center'><b>¡Ya disponible en 4 paises!</b><br />España, México, Chile y Colombia <br />
             <img className='max-w-[250px] w-full m-auto mt-0' src={banderas} alt="banderas de España, México, Chile y Colombia" />
-            </p>
+            </p>*/}
           </div>
         </div>
       </section>
@@ -148,7 +148,7 @@ function App() {
                 <path fillRule="evenodd" d="M7.646 10.854a.5.5 0 0 0 .708 0l2-2a.5.5 0 0 0-.708-.708L8.5 9.293V5.5a.5.5 0 0 0-1 0v3.793L6.354 8.146a.5.5 0 1 0-.708.708l2 2z"/>
                 <path d="M4.406 3.342A5.53 5.53 0 0 1 8 2c2.69 0 4.923 2 5.166 4.579C14.758 6.804 16 8.137 16 9.773 16 11.569 14.502 13 12.687 13H3.781C1.708 13 0 11.366 0 9.318c0-1.763 1.266-3.223 2.942-3.593.143-.863.698-1.723 1.464-2.383zm.653.757c-.757.653-1.153 1.44-1.153 2.056v.448l-.445.049C2.064 6.805 1 7.952 1 9.318 1 10.785 2.23 12 3.781 12h8.906C13.98 12 15 10.988 15 9.773c0-1.216-1.02-2.228-2.313-2.228h-.5v-.5C12.188 4.825 10.328 3 8 3a4.53 4.53 0 0 0-2.941 1.1z"/>
               </svg>
-              <div className='text-primary pl-5'>
+              <div className='text-primary pl-5 flex flex-col justify-center'>
                 <h4 className='text-2xl lg:text-3xl mb-0 lg:mb-2' >Descarga la app</h4>
                 <p className='text-md' >Está disponible para IOS y Android</p>
               </div>
@@ -159,7 +159,7 @@ function App() {
                 <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z"/>
                 <path d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z"/>
               </svg>
-              <div className='text-primary pl-5'>
+              <div className='text-primary pl-5 flex flex-col justify-center'>
                 <h4 className='text-2xl lg:text-3xl mb-0 lg:mb-2' >Haz el test</h4>
                 <p className='text-md' >Así sabrás a qué personaje de anime te pareces</p>
               </div>
@@ -169,7 +169,7 @@ function App() {
                 <path d="M1 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
                 <path fillRule="evenodd" d="M13.5 5a.5.5 0 0 1 .5.5V7h1.5a.5.5 0 0 1 0 1H14v1.5a.5.5 0 0 1-1 0V8h-1.5a.5.5 0 0 1 0-1H13V5.5a.5.5 0 0 1 .5-.5z"/>
               </svg>
-              <div className='text-primary pl-5'>
+              <div className='text-primary pl-5 flex flex-col justify-center'>
                 <h4 className='text-2xl lg:text-3xl mb-0 lg:mb-2' >Encuentra gente</h4>
                 <p className='text-md' >Mira los perfiles de otros usuarios</p>
               </div>
@@ -178,7 +178,7 @@ function App() {
               <svg xmlns="http://www.w3.org/2000/svg" height="auto" fill="currentColor" className="bi bi-chat-heart" viewBox="0 0 16 16">
                 <path fillRule="evenodd" d="M2.965 12.695a1 1 0 0 0-.287-.801C1.618 10.83 1 9.468 1 8c0-3.192 3.004-6 7-6s7 2.808 7 6c0 3.193-3.004 6-7 6a8.06 8.06 0 0 1-2.088-.272 1 1 0 0 0-.711.074c-.387.196-1.24.57-2.634.893a10.97 10.97 0 0 0 .398-2Zm-.8 3.108.02-.004c1.83-.363 2.948-.842 3.468-1.105A9.06 9.06 0 0 0 8 15c4.418 0 8-3.134 8-7s-3.582-7-8-7-8 3.134-8 7c0 1.76.743 3.37 1.97 4.6a10.437 10.437 0 0 1-.524 2.318l-.003.011a10.722 10.722 0 0 1-.244.637c-.079.186.074.394.273.362a21.673 21.673 0 0 0 .693-.125ZM8 5.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132Z"/>
               </svg>
-              <div className='text-primary pl-5'>
+              <div className='text-primary pl-5 flex flex-col justify-center'>
                 <h4 className='text-2xl lg:text-3xl mb-0 lg:mb-2' >Chatea</h4>
                 <p className='text-md' >Si ambos os gustáis, It&apos;s a UWU!</p>
               </div>

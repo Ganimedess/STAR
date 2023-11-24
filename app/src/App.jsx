@@ -1,7 +1,7 @@
 import React, { useEffect  } from 'react'
 import './App.css';
 import NavBar from './components/NavBar';
-import Hero from './components/Hero';
+import Hero from './components/Cabecera';
 import Work from './components/Work';
 import Freakit from './components/FreakitPage'
 import Roble from './components/RoblePage';
