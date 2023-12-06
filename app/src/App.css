@@ -183,3 +183,8 @@ footer a:hover {
   opacity: 1;
   transform: translateX(0);
 }
+
+/*------------ 05 / 12 / 2023 ---------*/
+.foto-cabecera {
+  max-height: 500px;
+}

@@ -172,3 +172,12 @@
   transform: translateX(0);
 }
 
+#instrucciones-tarjetas svg {
+  max-height: 80px;
+}
+#instructions>div {
+  align-items: center;
+}
+#instructions video {
+  border-radius: 40px;
+}

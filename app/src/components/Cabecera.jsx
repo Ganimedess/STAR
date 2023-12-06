@@ -4,11 +4,11 @@ import resume from '../assets/Resume-Said.pdf';
 
 const About = () => {
   return (
-    <section id="about" className="h-100 flex flex-wrap items-center min-h-screen">
+    <section id="about" className="flex flex-wrap items-center min-h-screen">
         <div className="aparece grid grid-cols-12 gap-4 w-full">
             <div className="col-start-2 lg:col-start-3 col-span-10 lg:col-span-9 grid grid-cols-9 gap-4 gap-y-9">
                 <div className="col-span-full md:col-span-4">
-                    <h1 className="text-3xl mb-8 leading-normal">Hi, this is<br /><b>Said Sel-lam Palomino</b>.
+                    <h1 className="text-4xl mb-8 leading-normal">Hi, this is<br /><b>Said Sel-lam Palomino</b>.
                     <br />I’m a web developer and graphic designer based in Madrid.</h1>
                     <p className="text-lg">I am a creative and versatile professional with a degree in graphic design and a passion for front-end development. With hands-on experience in React and WordPress, I love crafting visually captivating and user-friendly digital experiences.
                     </p><p className="text-lg mt-3">
@@ -24,7 +24,7 @@ const About = () => {
 
                 </div>
                 <div className="col-span-full md:col-start-6 md:col-span-4 mt-6 md:mt-0 max-h-[80vh] overflow-hidden">
-                    <img className="" src={foto} alt="self portrait" />
+                    <img className="foto-cabecera" src={foto} alt="self portrait" />
                 </div>
             </div>
         </div>

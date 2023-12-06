@@ -142,7 +142,7 @@ function App() {
       <section id='instructions' className="max-w-screen-lg m-auto mt-12 lg:mt-40 p-10 lg:p-0 aparece">
         <h3 className='text-3xl'>¿Cómo funciona?</h3>
         <div className='flex flex-wrap'>
-          <div className='flex flex-col justify-center my-12 max-md:w-full'>
+          <div id='instrucciones-tarjetas' className='flex flex-col justify-center my-12 max-md:w-full'>
             <div className='bg-white p-4 lg:p-6 rounded shadow-lg shadow-primary/30 flex'>
               <svg xmlns="http://www.w3.org/2000/svg" height="auto" className="bi bi-cloud-arrow-down" viewBox="0 0 16 16">
                 <path fillRule="evenodd" d="M7.646 10.854a.5.5 0 0 0 .708 0l2-2a.5.5 0 0 0-.708-.708L8.5 9.293V5.5a.5.5 0 0 0-1 0v3.793L6.354 8.146a.5.5 0 1 0-.708.708l2 2z"/>
@@ -204,7 +204,7 @@ function App() {
         </div>
         <h3 className='text-3xl mb-12'>Equipo:</h3>
         <div className='flex flex-wrap max-md:flex-col md:flex-nowrap justify-center md:justify-between max-md:items-center'>
-          <div className="card max-w-[250px] lg:max-w-[300px] shadow-xl shadow-primary/30 mr-3 bg-base-100/90">
+          <div className="card max-w-[250px] lg:max-w-[300px] shadow-xl shadow-primary/30 mr-3 bg-base-100/90 rounded-2xl overflow-hidden">
             <figure><img src={amanda} alt="avatar de Amanda"className='w-full' /></figure>
             <div className="card-body">
               <h4 className="card-title">Amanda</h4>
@@ -212,7 +212,7 @@ function App() {
               <p className='text-sm'>`No importa qué tan difícil o imposible sea, no pierdas de vista tu objetivo`</p>
             </div>
           </div>
-          <div className="card max-w-[250px] lg:max-w-[300px] shadow-xl shadow-primary/30 mr-3 bg-base-100/90 my-5 md:my-0">
+          <div className="card max-w-[250px] lg:max-w-[300px] shadow-xl shadow-primary/30 mr-3 bg-base-100/90 my-5 md:my-0 rounded-2xl overflow-hidden">
             <figure><img src={alba} alt="avatar de Alba"className='w-full' /></figure>
             <div className="card-body">
               <h4 className="card-title">Alba</h4>
@@ -220,7 +220,7 @@ function App() {
               <p className='text-sm'>`Hazlo o no lo hagas, pero no lo intentes`</p>
             </div>
           </div>
-          <div className="card max-w-[250px] lg:max-w-[300px] shadow-xl shadow-primary/30 bg-base-100/90">
+          <div className="card max-w-[250px] lg:max-w-[300px] shadow-xl shadow-primary/30 bg-base-100/90 rounded-2xl overflow-hidden">
             <figure><img src={jon} alt="avatar de Jon"className='w-full' /></figure>
             <div className="card-body">
               <h4 className="card-title">Jon</h4>
