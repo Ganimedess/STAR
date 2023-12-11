@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import screen0 from '../assets/sf0.png'
 import screen1 from '../assets/sf1.png'
 import screen2 from '../assets/sf2.png'
 import screen3 from '../assets/sf3.png'
@@ -16,7 +17,7 @@ const FreakitPage = () => {
 
   return (
     <>
-    <section id='proyect' className="aparece min-h-[50vh] py-24 flex items-center">
+    <section id='proyect' className="min-h-[50vh] py-24 flex items-center">
       <div className="grid grid-cols-12 gap-4 w-full">
         <div className="col-span-8 col-start-2 md:col-start-3">
             <h1 className="text-6xl font-bold">Freakit!</h1>
@@ -41,8 +42,9 @@ const FreakitPage = () => {
         </div>
       </div>
     </section>
-    <section className="w-full bg-slate-900 pt-12">
-      <div className='aparece my-12 flex flex-col items-center'>
+    <section className="w-full bg-slate-900 py-12">
+      <div className='my-12 flex flex-col items-center mx-auto max-w-[1200px]'>
+      <img loading='lazy' src={screen0} alt="freakit mockup" />
         <img loading='lazy' src={screen1} alt="freakit web hero" />
         <img loading='lazy' src={screen2} alt="freakit web mockup" />
         <img loading='lazy' src={screen3} alt="freakit web arguments" />

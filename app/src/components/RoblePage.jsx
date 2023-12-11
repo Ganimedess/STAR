@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import screen0 from '../assets/sr0.jpg'
 import screen1 from '../assets/sr1.png'
 import screen2 from '../assets/sr2.png'
 import screen3 from '../assets/sr3.png'
@@ -11,7 +12,7 @@ const RoblePage = () => {
 
   return (
     <>
-      <section id='proyect' className="aparece min-h-[50vh] py-24 flex items-center">
+      <section id='proyect' className="min-h-[50vh] py-24 flex items-center">
         <div className="grid grid-cols-12 gap-4 w-full">
           <div className="col-span-8 col-start-2 md:col-start-3">
               <h1 className="text-6xl font-bold">El Roble</h1>
@@ -22,7 +23,7 @@ const RoblePage = () => {
             <span className='text-slate-900'>Description:</span>
             <p className="text-xl">'El Roble' is a non-profit association focused on complementary therapies and natural medicine. In this web project, they aimed to promote the association, its philosophy, and the activities they carry out.</p>
             <a rel='noreferrer' target='_blank' href="https://elroble.uno/"><button className="biggie text-xl px-4 py-1 rounded-lg bg-white hover:bg-verde mt-9 mr-7">Visit →</button></a>
-            <Link to="/work/Freakit!" onClick={gotop}><span className='biggie text-xl text-slate-900 hover:bg-verde px-2 inline-block'>Go to next proyect →</span></Link>
+            <Link to="/work/Centromc" onClick={gotop}><span className='biggie text-xl text-slate-900 hover:bg-verde px-2 inline-block'>Go to next proyect →</span></Link>
           </div>
           <div className="col-span-10 md:col-span-4 col-start-2 md:col-start-8 mb-12">
           <span className='text-slate-900'>Type:</span>
@@ -37,8 +38,9 @@ const RoblePage = () => {
         </div>
       </section>
 
-      <section className="w-full bg-slate-900 pt-12">
-        <div className='aparece my-12 flex flex-col items-center'>
+      <section className="w-full bg-slate-900 py-12">
+        <div className='my-12 flex flex-col items-center mx-auto max-w-[1200px]'>
+          <img loading='lazy' src={screen0} alt="roble mockup" />
           <img loading='lazy' src={screen1} alt="roble web part1" />
           <img loading='lazy' src={screen2} alt="roble web part2" />
           <img loading='lazy' src={screen3} alt="roble web part3" />

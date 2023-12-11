@@ -4,11 +4,11 @@ import resume from '../assets/Resume-Said.pdf';
 
 const About = () => {
   return (
-    <section id="about" className="flex flex-wrap items-center min-h-screen">
+    <section id="about" className="flex flex-wrap items-center mb-7 mt-16">
         <div className="aparece grid grid-cols-12 gap-4 w-full">
             <div className="col-start-2 lg:col-start-3 col-span-10 lg:col-span-9 grid grid-cols-9 gap-4 gap-y-9">
-                <div className="col-span-full md:col-span-4">
-                    <h1 className="text-4xl mb-8 leading-normal">Hi, this is<br /><b>Said Sel-lam Palomino</b>.
+                <div className="col-span-full lg:col-span-4">
+                    <h1 className="text-6xl max-md:text-4xl mb-8">Hello! I am<br /><span className='text-purpura'>Said Sel-lam Palomino</span>.
                     <br />I’m a web developer and graphic designer based in Madrid.</h1>
                     <p className="text-lg">I am a creative and versatile professional with a degree in graphic design and a passion for front-end development. With hands-on experience in React and WordPress, I love crafting visually captivating and user-friendly digital experiences.
                     </p><p className="text-lg mt-3">
@@ -23,7 +23,7 @@ const About = () => {
                     </a>
 
                 </div>
-                <div className="col-span-full md:col-start-6 md:col-span-4 mt-6 md:mt-0 max-h-[80vh] overflow-hidden">
+                <div className="col-span-full lg:col-start-6 lg:col-span-4 mt-6 lg:mt-0 max-h-[80vh] overflow-hidden">
                     <img className="foto-cabecera" src={foto} alt="self portrait" />
                 </div>
             </div>

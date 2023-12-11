@@ -4,33 +4,33 @@ import resume from '../assets/Resume-Said.pdf';
 
 const About = () => {
   return (
-    <section id="about" className="h-100 flex flex-wrap items-center min-h-screen pt-36 max-md:pt-24">
-        
+    <section id="about" className="h-100 flex flex-wrap items-center min-h-screen pt-20 max-md:pt-24">
+
         <div id="skills" className="aparece grid grid-cols-12 gap-4 w-full mt-10 md:mt-20">
-            <div className="col-start-2 md:col-start-3 col-span-10 md:col-span-9">
+            <div className="col-start-2 lg:col-start-3 col-span-10 lg:col-span-9 ">
 
                 <h6 className="text-4xl font-bold mb-7 sm:mb-12 block">Skills</h6>
-                <p className="text-xl mb-7">Some of the tools I use to manifest ideas as digital products:</p>
+                <p className="text-xl mb-7">My favorite tools for creating digital products:</p>
                 <div className="">
-                    <p className="sm:text-xl text-slate-900 bg-white p-4 mt-0 mb-4 mx-4 ml-0 inline-block">HTML</p>
-                    <p className="sm:text-xl text-slate-900 bg-white p-4 mt-0 mb-4 mx-4 ml-0 inline-block">CSS3</p>
-                    <p className="sm:text-xl text-slate-900 bg-white p-4 mt-0 mb-4 mx-4 ml-0 inline-block">Javascript/ES6</p>
-                    <p className="sm:text-xl text-slate-900 bg-white p-4 mt-0 mb-4 mx-4 ml-0 inline-block">Bootstrap</p>
-                    <p className="sm:text-xl text-slate-900 bg-white p-4 mt-0 mb-4 mx-4 ml-0 inline-block">Less</p>
-                    <p className="sm:text-xl text-slate-900 bg-white p-4 mt-0 mb-4 mx-4 ml-0 inline-block">TailWind</p>
-                    <p className="sm:text-xl text-slate-900 bg-white p-4 mt-0 mb-4 mx-4 ml-0 inline-block">ReactJs</p>
-                    <p className="sm:text-xl text-slate-900 bg-white p-4 mt-0 mb-4 mx-4 ml-0 inline-block">WordPress</p>
-                    <p className="sm:text-xl text-slate-900 bg-white p-4 mt-0 mb-4 mx-4 ml-0 inline-block">GIT/Github</p>
-                    <p className="sm:text-xl text-slate-900 bg-white p-4 mt-0 mb-4 mx-4 ml-0 inline-block">Adobe Illustrator</p>
-                    <p className="sm:text-xl text-slate-900 bg-white p-4 mt-0 mb-4 mx-4 ml-0 inline-block">Adobe Photoshop</p>
-                    <p className="sm:text-xl text-slate-900 bg-white p-4 mt-0 mb-4 mx-4 ml-0 inline-block">Figma</p>
+                    <p className="sm:text-xl text-slate-900 bg-white/25 p-4 mt-0 mt-4 mx-4 ml-0 inline-block">HTML</p>
+                    <p className="sm:text-xl text-slate-900 bg-white/25 p-4 mt-0 mt-4 mx-4 ml-0 inline-block">CSS3</p>
+                    <p className="sm:text-xl text-slate-900 bg-white/25 p-4 mt-0 mt-4 mx-4 ml-0 inline-block">Javascript/ES6</p>
+                    <p className="sm:text-xl text-slate-900 bg-white/25 p-4 mt-0 mt-4 mx-4 ml-0 inline-block">Bootstrap</p>
+                    <p className="sm:text-xl text-slate-900 bg-white/25 p-4 mt-0 mt-4 mx-4 ml-0 inline-block">Less</p>
+                    <p className="sm:text-xl text-slate-900 bg-white/25 p-4 mt-0 mt-4 mx-4 ml-0 inline-block">TailWind</p>
+                    <p className="sm:text-xl text-slate-900 bg-white/25 p-4 mt-0 mt-4 mx-4 ml-0 inline-block">ReactJs</p>
+                    <p className="sm:text-xl text-slate-900 bg-white/25 p-4 mt-0 mt-4 mx-4 ml-0 inline-block">WordPress</p>
+                    <p className="sm:text-xl text-slate-900 bg-white/25 p-4 mt-0 mt-4 mx-4 ml-0 inline-block">GIT/Github</p>
+                    <p className="sm:text-xl text-slate-900 bg-white/25 p-4 mt-0 mt-4 mx-4 ml-0 inline-block">Adobe Illustrator</p>
+                    <p className="sm:text-xl text-slate-900 bg-white/25 p-4 mt-0 mt-4 mx-4 ml-0 inline-block">Adobe Photoshop</p>
+                    <p className="sm:text-xl text-slate-900 bg-white/25 p-4 mt-0 mt-4 mx-4 ml-0 inline-block">Figma</p>
                 </div>
 
             </div>
         </div>
 
         <div id="experience" className="grid grid-cols-12 gap-4 w-full mt-10 md:mt-20">
-            <div className='aparece col-start-2 md:col-start-3 col-span-10 md:col-span-9 grid grid-cols-8 md:grid-cols-9 gap-4 gap-y-8'>
+            <div className='aparece col-start-2 lg:col-start-3 col-span-10 lg:col-span-9  grid grid-cols-8 md:grid-cols-9 gap-4 gap-y-8'>
                 <h6 className="text-4xl font-bold sm:mb-5 col-span-full">Experience</h6>
                 <div className="col-span-full grid grid-cols-9 gap-4 text-slate-900">
                     <div className="col-span-7">
@@ -61,8 +61,8 @@ const About = () => {
                     </div>
                 </div>
             </div>
-            <div className='aparece col-start-2 md:col-start-3 col-span-10 md:col-span-9 grid grid-cols-8 md:grid-cols-9 gap-4 gap-y-8 mt-6'>
-                <h6 className="text-4xl font-bold sm:mb-5 col-span-full mt-5">Education</h6>
+            <div className='aparece col-start-2 lg:col-start-3 col-span-10 lg:col-span-9  grid grid-cols-8 md:grid-cols-9 gap-4 gap-y-8 mt-10'>
+                <h6 className="text-4xl font-bold sm:mb-5 col-span-full">Education</h6>
                 <div className="col-span-full grid grid-cols-9 gap-4 text-slate-900">
                     <div className="col-span-7">
                         <p className='text-lg mb-2 font-semibold'>Graphic Design Bachelor Degree:</p>

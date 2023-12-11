@@ -3,7 +3,8 @@ import './App.css';
 import NavBar from './components/NavBar';
 import Hero from './components/Cabecera';
 import Work from './components/Work';
-import Freakit from './components/FreakitPage'
+import Centromc from './components/Centromc';
+import Freakit from './components/FreakitPage';
 import Roble from './components/RoblePage';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
@@ -15,16 +16,20 @@ import NotFound from './components/NotFound';
 function App() {
   const location = useLocation();
 
+  let options = {
+    threshold: 0.5,
+  }
+
   useEffect(() => {
 
     const observer = new IntersectionObserver((entries)=> {
       entries.forEach((entry)=> {
           if (entry.isIntersecting) {
               entry.target.classList.add('mostrar')
-          } else {
+          } /*else {
               entry.target.classList.remove('mostrar')
-          }
-      })
+          }*/
+      }, options)
   } )
 
   const elementosAnimados = document.querySelectorAll('.aparece')
@@ -49,8 +54,9 @@ function App() {
               <Work />
               <About />
               <Contact /></>} />
-            <Route path="/work/freakit!" element={<><Freakit/></>} />
-            <Route path="/work/elRoble" element={<><Roble/></>} />
+              <Route path="/work/centromc" element={<><Centromc/></>} />
+              <Route path="/work/freakit!" element={<><Freakit/></>} />
+              <Route path="/work/elRoble" element={<><Roble/></>} />
             <Route path='*' element={<NotFound />}/>
           </Routes>
         </main>

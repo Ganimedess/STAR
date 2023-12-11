@@ -6,7 +6,7 @@ import github from '../assets/github.png';
 
 const Contact = () => {
   return (
-    <section id="contact" className="aparece mt-48 max-md:mt-24 flex items-center mb-36">
+    <section id="contact" className="aparece mt-36 max-md:mt-24 flex items-center mb-36">
         <div className="grid grid-cols-12 gap-4 w-full">
             <div className="col-start-2 lg:col-start-3 col-span-10 lg:col-span-8 grid grid-cols-8 gap-4 gap-y-9">
                 <div className="col-span-full">

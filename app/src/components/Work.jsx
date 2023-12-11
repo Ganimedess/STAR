@@ -1,6 +1,7 @@
 import React from 'react'
 import freakitThumbnail from '../assets/thumb-freakit.png'
 import elRobleThumbnail from '../assets/thumb-roble.png'
+import centromcThumbnail from '../assets/thumb-centromc.png'
 import BeThumbnail from '../assets/thumb-be.png'
 import { Link } from 'react-router-dom'
 
@@ -22,36 +23,51 @@ const Work = () => {
 
   return (
     <section id="work" className="flex items-start">
-        <div className=" grid grid-cols-12 gap-4 w-full pt-36 max-md:pt-24">
+        <div className=" grid grid-cols-12 gap-4 w-full pt-24 max-md:pt-24">
 
-            <div className="aparece lg:col-start-3 col-span-12 lg:col-span-8 grid grid-cols-8 gap-2 md:gap-16 p-3 lg:p-0">
-                <p className="  col-span-full text-2xl text-center mb-6 md:mb-0">Selected projects:</p>
-                <Link onClick={scrollTop} to='/work/Freakit!' className='  project text-slate-900 col-span-4 bg-[#ffffffb0] hover:bg-white rounded-lg biggie overflow-hidden'>
-                    <div className="items-center d-flex">
-                        
-                        <div className="col-span-full md:col-span-6 flex flex-col justify-center text-center md:text-left p-5">
-                            <h6 className="text-3xl md:text-4xl font-bold block fontCool text-center">Freakit!</h6>
-                            <p className="mt-3 text-xl md:text-2xl mim-md:pt-8 text-center">Web page for a dating App</p>
+            <div className="aparece col-start-2 lg:col-start-3 col-span-10 lg:col-span-9  grid grid-cols-8 gap-2 md:gap-16 p-3 lg:p-0">
+                <p className="  col-span-full text-2xl mb-6 md:mb-0">Selected projects:</p>
+                <Link onClick={scrollTop} to='/work/Centromc' className='project text-slate-900 col-span-4 2xl:col-span-2 bg-white rounded-lg biggie overflow-hidden'>
+                    <div className="items-stretch flex flex-col h-full">
+                        <div className="col-span-full md:col-span-6 flex flex-col justify-center text-center md:text-left p-2 md:p-5">
+                            <h6 className="text-2xl md:text-4xl font-bold block fontCool text-center">Mímate y Cuídate</h6>
+                            <p className="mt-3 text-md md:text-2xl mim-md:pt-8 text-center">Luxury beauty center</p>
                         </div>
-                        <img className='col-span-full hidden md:block' src={freakitThumbnail} alt="freakit thumbnail" />
+                        <div className='col-span-full hidden md:block h-full'>
+                            <img className='object-cover h-full w-full' src={centromcThumbnail} alt="Mímate y cuídate thumbnail" />
+                        </div>
                     </div>
                 </Link>
-                <Link onClick={scrollTop} to='/work/elRoble' className='  project text-slate-900 col-span-4 bg-[#ffffffb0] hover:bg-white rounded-lg biggie overflow-hidden'>
-                    <div className="items-center d-flex">
-                        
-                        <div className="col-span-full md:col-span-6 flex flex-col justify-center text-center md:text-left p-5">
-                            <h6 className="text-3xl md:text-4xl font-bold block fontCool text-center">El Roble</h6>
-                            <p className="mt-3 text-xl md:text-2xl mim-md:pt-8 text-center">Alternative therapy center website</p>
+                <Link onClick={scrollTop} to='/work/Freakit!' className='project text-slate-900 col-span-4 2xl:col-span-2 bg-white rounded-lg biggie overflow-hidden'>
+                    <div className="items-stretch flex flex-col h-full">
+                        <div className="col-span-full md:col-span-6 flex flex-col justify-center text-center md:text-left p-2 md:p-5">
+                            <h6 className="text-2xl md:text-4xl font-bold block fontCool text-center">Freakit!</h6>
+                            <p className="mt-3 text-md md:text-2xl mim-md:pt-8 text-center">Web page for a dating App</p>
                         </div>
-                        <img className='col-span-full hidden md:block' src={elRobleThumbnail} alt="el roble thumbnail" />
+                        <div className='col-span-full hidden md:block h-full'>
+                            <img className='object-cover h-full w-full' src={freakitThumbnail} alt="freakit thumbnail" />
+                        </div>
                     </div>
                 </Link>
-                <a href='https://www.behance.net/said-sellam' rel='noreferrer' target='_blank' className='  project text-slate-900 col-span-full bg-[#ffffffb0] hover:bg-white rounded-lg biggie overflow-hidden'>
-                    <div className="md:grid grid-cols-8 gap-12 py-3 md:py-0">
-                        <img className='col-span-2 hidden md:block' src={BeThumbnail} alt="Behance profile thumbnail" />
-                        <div className="col-span-full md:col-span-6 flex flex-col justify-center text-center md:text-left">
-                            <h6 className="text-3xl md:text-4xl font-bold block fontCool">More projects</h6>
-                            <p className="mt-3 text-xl md:text-2xl mim-md:pt-8">Check my Behance profile.</p>
+                <Link onClick={scrollTop} to='/work/elRoble' className='project text-slate-900 col-span-4 2xl:col-span-2 bg-white rounded-lg biggie overflow-hidden'>
+                    <div className="items-stretch flex flex-col h-full">
+                        <div className="col-span-full md:col-span-6 flex flex-col justify-center text-center md:text-left p-2 md:p-5">
+                            <h6 className="text-2xl md:text-4xl font-bold block fontCool text-center">El Roble</h6>
+                            <p className="mt-3 text-md md:text-2xl mim-md:pt-8 text-center">Alternative therapy center</p>
+                        </div>
+                        <div className='col-span-full hidden md:block h-full'>
+                            <img className='object-cover h-full w-full' src={elRobleThumbnail} alt="el roble thumbnail" />
+                        </div>
+                    </div>
+                </Link>
+                <a href='https://www.behance.net/said-sellam' rel='noreferrer' target='_blank' className='  project text-slate-900 col-span-4 2xl:col-span-2 bg-[#ffffffb0] hover:bg-white rounded-lg biggie overflow-hidden'>
+                    <div className="ititems-stretch flex flex-col h-full">
+                        <div className="col-span-full md:col-span-6 flex flex-col justify-center text-center md:text-left p-2 md:p-5">
+                            <h6 className="text-2xl md:text-4xl font-bold block fontCool">More projects...</h6>
+                            <p className="mt-3 text-md md:text-2xl mim-md:pt-8">Check my Behance profile.</p>
+                        </div>
+                        <div className='col-span-full hidden md:block h-full'>
+                            <img className='object-cover h-full w-full' src={BeThumbnail} alt="behance profile thumbnail" />
                         </div>
                     </div>
                 </a>

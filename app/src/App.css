@@ -1,8 +1,8 @@
 :root {
   --dBlue4: #463C32;
   --dBlue5: #264653;
-  --dBlue6: #060C08;
-  --dPurp: #e2dddd;
+  --dBlue6: #09060c;
+  --dPurp: #c7cccb;
   --fWhite: #fff;
   --fYellow: #E9C46B;
   --fPurple: #787cef;
@@ -169,7 +169,7 @@ footer a:hover {
 
 .aparece {
   opacity: 0;
-  transform: translateX(-90px);
+  transform: translateY(90px);
   transition: all 1s;
 }
 
@@ -181,7 +181,7 @@ footer a:hover {
 
 .mostrar {
   opacity: 1;
-  transform: translateX(0);
+  transform: translateY(0);
 }
 
 /*------------ 05 / 12 / 2023 ---------*/
