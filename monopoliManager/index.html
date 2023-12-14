@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monopoli</title>
+    <style>
+        elemento-dados {
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <elemento-dados></elemento-dados>
+    <script type="module">
+        import './dados.js';
+
+        const elementoDados = document.querySelector('elemento-dados');
+
+        // Obtener el resultado directamente
+        elementoDados.superRoll().then(resultado => {
+            console.log('Resultado de superRoll:', resultado)})
+
+    </script>
+</body>
+</html>

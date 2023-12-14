@@ -181,3 +181,16 @@
 #instructions video {
   border-radius: 40px;
 }
+
+@keyframes boing {
+  0% {
+    transform: rotate(-10deg)
+  }
+  100% {
+    transform: rotate(10deg)
+  }
+}
+
+.boing {
+  animation: boing 0.35s ease-in-out alternate infinite
+}

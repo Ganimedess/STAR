@@ -1,0 +1,17 @@
+
+.dado {
+    display: inline-block;
+    border: 1px solid black;
+    border-radius: 4px;
+    width: 10em; height: 10em;
+    background-color: honeydew;
+    position: relative;
+    font-size: 12px;
+}
+.dado svg {
+    position: absolute;
+    width: 10em; height: 10em;
+}
+circle { fill: rgb(19, 32, 41); }
+.gris { background: rgba(30, 30, 0, 0.2); }
+.roll { font-size: 3rem; }

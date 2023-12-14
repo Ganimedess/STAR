@@ -15,6 +15,7 @@ import PoliticaPrivacidad from './components/PoliticaPrivacidad.jsx'
 import PreguntasFrecuentes from './components/PreguntasFrecuentes.jsx'
 import ReglasComunidad from './components/ReglasComunidad.jsx'
 import TerminosCondiciones from './components/TerminosCondiciones.jsx'
+import Premio from './components/Premio.jsx'
 
 import './index.css'
 
@@ -59,6 +60,10 @@ const rutas = createBrowserRouter([
         {
           path: "/politica-privacidad",
           element: <PoliticaPrivacidad />,
+        },
+        {
+          path: "/premio",
+          element: <Premio />,
         },
     ],
   },

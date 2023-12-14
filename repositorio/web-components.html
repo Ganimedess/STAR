@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Components Example</title>
+</head>
+<body>
+
+  <!-- Custom Element Definition -->
+  <script>
+    // Define a custom element class
+    class MyElement extends HTMLElement {
+      // Connected callback is invoked when the element is added to the DOM
+      connectedCallback() {
+        this.innerHTML = 'Hello, Web Component!';
+      }
+    }
+
+    // Register the custom element
+    customElements.define('my-element', MyElement);
+  </script>
+
+  <!-- Shadow DOM -->
+  <script>
+    // Create a new custom element using shadow DOM
+    class MyElementWithShadow extends HTMLElement {
+      constructor() {
+        super();
+        // Attach a shadow DOM with an open mode
+        const shadow = this.attachShadow({ mode: 'open' });
+        shadow.innerHTML = '<p>I am inside the shadow DOM!</p>';
+      }
+    }
+
+    // Register the custom element with shadow DOM
+    customElements.define('element-with-shadow', MyElementWithShadow);
+  </script>
+
+  <!-- HTML Template -->
+  <template id="my-template">
+    <p>This is a template.</p>
+  </template>
+
+  <!-- Using HTML Template with JavaScript -->
+  <script>
+    // Access the template and clone it
+    const template = document.getElementById('my-template');
+    const clone = document.importNode(template.content, true);
+
+    // Append the cloned template to the document
+    document.body.appendChild(clone);
+  </script>
+
+  <!-- ES6 Modules -->
+  <script type="module">
+    // Create a simple module with an exported function
+    export function myFunction() {
+      console.log('Hello from myFunction!');
+    }
+  </script>
+  <script>
+    // Import and use the function in another module
+    import { myFunction } from './module.js';
+    myFunction();
+  </script>
+
+  <!-- Lifecycle Callbacks -->
+  <script>
+    // Define a custom element with a connectedCallback
+    class ElementWithLifecycle extends HTMLElement {
+      connectedCallback() {
+        console.log('Element added to the DOM');
+      }
+    }
+
+    // Register the custom element
+    customElements.define('element-with-lifecycle', ElementWithLifecycle);
+  </script>
+
+  <!-- Example Usage of Custom Elements -->
+  <my-element></my-element>
+  <element-with-shadow></element-with-shadow>
+  <element-with-lifecycle></element-with-lifecycle>
+
+</body>
+</html>
