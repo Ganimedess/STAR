@@ -12,15 +12,25 @@
 </head>
 <body>
     <elemento-dados></elemento-dados>
-    <script type="module">
-        import './dados.js';
 
-        const elementoDados = document.querySelector('elemento-dados');
+<script type="module">
+    import './dados.js';
 
-        // Obtener el resultado directamente
-        elementoDados.superRoll().then(resultado => {
-            console.log('Resultado de superRoll:', resultado)})
+    const elementoDados = document.querySelector('elemento-dados');
+    elementoDados.superRoll().then(resultado => {
+        console.log('Resultado de superRoll:', resultado)})
 
-    </script>
+    /*
+    LISTA TAREAS:
+    tablero en svg y sistema de turnos
+    cuando te toca le das a un botón que lanza los dados y te dice dónde moverte a continuación
+    se indica con una imagen de la casilla flanqueada por las casillas adjacentes para más contexto
+        (esto lo puedo hacer con un sólo PNG o con una plantilla que reciba datos)
+    además si caes en una casilla de suerte o de caja, te dice directamente lo que te ha salido
+    estaría bien añadir un botón de retroceso
+    */
+
+
+</script>
 </body>
 </html>
