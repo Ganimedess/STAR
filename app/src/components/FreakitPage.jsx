@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import ProjectPage from './ProjectPage'
 import screen0 from '../assets/sf0.png'
 import screen1 from '../assets/sf1.png'
 import screen2 from '../assets/sf2.png'
@@ -10,51 +10,31 @@ import screen6 from '../assets/sf6.png'
 import screen7 from '../assets/sf7.png'
 
 const FreakitPage = () => {
-  let gotop = () => {
-    document.querySelector('.App').scroll(0,0)
-  }
-
 
   return (
-    <>
-    <section id='proyect' className="min-h-[50vh] py-24 flex items-center">
-      <div className="grid grid-cols-12 gap-4 w-full">
-        <div className="col-span-8 col-start-2 md:col-start-3">
-            <h1 className="text-6xl font-bold">Freakit!</h1>
-        </div>
 
-        <div className="col-span-10 md:col-span-4 col-start-2 md:col-start-3 mb-5 md:mb-12">
-          <h2 className="text-xl italic mb-10">Dating app for otakus</h2>
-          <span className='text-slate-900'>Description:</span>
-          <p className="text-xl">This is a dating app for otakus with a unique feature. When you create your profile, you take a personality test, and you are matched with an anime character who is similar to you. This way, Freakit! focuses on personality and shared interests rather than physical appearance.</p>
-          <a target="_blank" rel='noreferrer' href="https://www.freakitapp.es"><button className="biggie text-xl px-4 py-1 rounded-lg bg-white hover:bg-verde mt-9 mr-7">Visit →</button></a>
-          <Link to="/work/elRoble" onClick={gotop}><span className='biggie text-xl text-slate-900 hover:bg-verde px-2 inline-block'>Go to next proyect →</span></Link>
-        </div>
-        <div className="col-span-10 md:col-span-4 col-start-2 md:col-start-8 mb-12">
-        <span className='text-slate-900'>Type:</span>
-          <p className="text-xl mb-5">Web design and development</p>
-
-          <span className='text-slate-900'>logic:</span>
-          <p className="text-xl mb-5">React</p>
-
-          <span className='text-slate-900'>styles:</span>
-          <p className="text-xl">Tailwind CSS + daisyUI</p>
-        </div>
-      </div>
-    </section>
-    <section className="w-full bg-slate-900 py-12">
-      <div className='my-12 flex flex-col items-center mx-auto max-w-[1200px]'>
+    <ProjectPage
+    title="Freakit!"
+    subtitle="Dating app for otakus"
+    description="This is a dating app for otakus with a unique feature. When you create your profile, you take a personality test, and you are matched with an anime character who is similar to you. This way, Freakit! focuses on personality and shared interests rather than physical appearance."
+    link="https://www.freakitapp.es"
+    type="Web design and development"
+    logic="React"
+    styles="Tailwind CSS + daisyUI"
+    nextProject='elRoble'
+    >
       <img loading='lazy' src={screen0} alt="freakit mockup" />
-        <img loading='lazy' src={screen1} alt="freakit web hero" />
-        <img loading='lazy' src={screen2} alt="freakit web mockup" />
-        <img loading='lazy' src={screen3} alt="freakit web arguments" />
-        <img loading='lazy' src={screen4} alt="freakit web video" />
-        <img loading='lazy' src={screen5} alt="freakit web carousel" />
-        <img loading='lazy' src={screen6} alt="freakit web team" />
-        <img loading='lazy' src={screen7} alt="freakit web media" />
-      </div>
-    </section>
-  </>
+      <img loading='lazy' src={screen1} alt="freakit web hero" />
+      <img loading='lazy' src={screen2} alt="freakit web mockup" />
+      <img loading='lazy' src={screen3} alt="freakit web arguments" />
+      <img loading='lazy' src={screen4} alt="freakit web video" />
+      <img loading='lazy' src={screen5} alt="freakit web carousel" />
+      <img loading='lazy' src={screen6} alt="freakit web team" />
+      <img loading='lazy' src={screen7} alt="freakit web media" />
+
+
+    </ProjectPage>
+
   )
 }
 

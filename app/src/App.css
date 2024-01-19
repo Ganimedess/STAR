@@ -2,7 +2,7 @@
   --dBlue4: #463C32;
   --dBlue5: #264653;
   --dBlue6: #09060c;
-  --dPurp: #c7cccb;
+  --dPurp: #d7dad9;
   --fWhite: #fff;
   --fYellow: #E9C46B;
   --fPurple: #787cef;
@@ -32,10 +32,6 @@ html::-webkit-scrollbar, body::-webkit-scrollbar {
 }
 section {
   position: relative;
-  z-index: 100;
-}
-header {
-  z-index: 101;
 }
 
 footer {
@@ -97,7 +93,7 @@ svg {
 
 
 
-.project {
+.round10 {
   border-radius: 10px;
 }
 .project:hover {
@@ -121,7 +117,16 @@ footer a:hover {
   -o-transform: scale(1.05);
 }
 
-
+.overlayTop {
+  opacity: .2;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: linear-gradient(to bottom, #09060c 0%, rgba(9, 6, 12, 0) 100%);
+  pointer-events: none; /* Allows interaction with elements behind the overlay */
+}
 
 
 /* overlay wiggle */
@@ -187,4 +192,10 @@ footer a:hover {
 /*------------ 05 / 12 / 2023 ---------*/
 .foto-cabecera {
   max-height: 500px;
+}
+
+.upButton {
+  position: fixed;
+  bottom: 0px;
+  background-color: white;
 }

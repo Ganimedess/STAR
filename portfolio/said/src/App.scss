@@ -1,0 +1,48 @@
+$marron: #463C32;
+$pino: #264653;
+$negro: #09060c;
+$oscuro: #222;
+$gris: #d7dad9;
+$blanco: #fff;
+$amarillo: #E9C46B;
+$morado: #787cef;
+$verde: #2A9D8E;
+$oliva: #8eedc6;
+$rojo: #E66F51;
+
+@font-face {
+  font-family: myFirstFont;
+  src: url(assets/GT-Super-Display-Super-Italic-Trial.otf);
+}
+
+#hero {
+  font-size: 1vw;
+  min-height: 100vh;
+  position: sticky;
+  top: 0;
+  grid-template-rows: 50px auto auto 1fr;
+  color: $oscuro;
+  background-color: $gris;
+  .boton-hero svg {
+    stroke: $blanco;
+    margin-right: 8px;
+  }
+  h1 { font-size: 4em; }
+  p { font-size: 1.5em; }
+  .boton-hero {
+    font-size: 1.5em;
+    padding: .4em .7em;
+  }
+}
+
+#portfolio {
+  position: relative;
+  z-index: 2;
+  background-color: $negro;
+  grid-template-rows: 400px auto;
+  .projectCard {
+    aspect-ratio: 1;
+    background-size: cover;
+  }
+}
+

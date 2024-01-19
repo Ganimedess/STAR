@@ -6,16 +6,6 @@ const NavBar = () => {
   function scrollTop() {
     document.querySelector(".App").scrollTo(0,0);
   }
-  async function scrollAbout() {
-    waitForElm('#about').then((elm) => {
-      document.querySelector('.App').scrollTo(0,elm.offsetTop)
-    });
-  }
-  async function scrollWork() {
-    waitForElm('#work').then((elm) => {
-      document.querySelector('.App').scrollTo(0,elm.offsetTop)
-    });
-  }
   async function scrollContact() {
     waitForElm('#contact').then((elm) => {
       document.querySelector('.App').scrollTo(0,elm.offsetTop)
@@ -44,29 +34,26 @@ const NavBar = () => {
 
 
   return (
-    <header className="max-w-7xl absolute top-0 sticky mx-auto">
+    <>
+    <header className="max-w-7xl top-0 left-[50%] translate-x-[-50%] fixed w-full mx-auto z-20">
       <div className="px-9 min-[1300px]:px-0">
         <div className="w-full pt-8 max-w-7xl text-xs sm:text-lg md:text-xl w-full text-slate-900">
 
-          <ul className="flex w-full justify-between" role="tabpanel">
-            <li className="px-1 bg-[#e2dddddd] hover:bg-verde biggie" key='1'>
-              <Link to='/' onClick={scrollTop} className="px-1 cursor-pointer">Portfolio 2023</Link>
+          <ul className="flex w-full justify-between h-0" role="tabpanel">
+            <li className="biggie" key='1'>
+              <Link to='/' onClick={scrollTop} className="p-1 px-2 cursor-pointer bg-white hover:bg-verde">Portfolio 2023</Link>
             </li>
-            {/*
-            <li className="max-sm:pl-5 px-1 hover:bg-white biggie" key='3'>
-              <Link to="/" onClick={scrollWork}>Work</Link>
-            </li>
-            <li className="max-sm:pl-5 px-1 max-sm:hidden hover:bg-white biggie" key='2'>
-              <Link to="/" onClick={scrollAbout}>About me</Link>
-            </li>
-            */}
-            <li className="max-sm:pl-5 biggie" key='4'>
+            <li className="max-sm:pl-5 biggie" key='2'>
               <Link to="/" onClick={scrollContact} className="buttonNav p-2 px-3 rounded-lg bg-white hover:bg-verde hover:text-black">Reach out</Link>
             </li>
           </ul>
+
         </div>
       </div>
     </header>
+
+    <div className="overlayTop"></div>
+    </>
   );
 };
 

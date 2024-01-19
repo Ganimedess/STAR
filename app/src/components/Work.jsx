@@ -1,68 +1,24 @@
 import React from 'react'
+import ProjectCard from './ProjectCard'
 import freakitThumbnail from '../assets/thumb-freakit.png'
 import elRobleThumbnail from '../assets/thumb-roble.png'
 import centromcThumbnail from '../assets/thumb-centromc.png'
 import BeThumbnail from '../assets/thumb-be.png'
-import { Link } from 'react-router-dom'
 
 const Work = () => {
-    function scrollTop() {
-        document.querySelector(".App").scrollTo(0,0);
-      }
-    //manage the blur effect on proyects names and pictures
-    function hoverIn(e) {
-        e.target.classList.add('proyect-hide')
-        const sibling = e.target.nextSibling ? e.target.nextSibling : e.target.previousSibling
-        sibling.classList.add('proyect-hide')
-    }
-    function hoverOut(e) {
-        e.target.classList.remove('proyect-hide')
-        const sibling = e.target.nextSibling ? e.target.nextSibling : e.target.previousSibling
-        sibling.classList.remove('proyect-hide')
-    }
 
   return (
-    <section id="work" className="flex items-start">
-        <div className=" grid grid-cols-12 gap-4 w-full pt-24 max-md:pt-24">
+    <section id="work" className="flex items-start bg-slate-900">
+        <div className=" grid grid-cols-12 gap-4 w-full py-24 max-md:py-24">
 
-            <div className="aparece col-start-2 lg:col-start-3 col-span-10 lg:col-span-9  grid grid-cols-8 gap-2 md:gap-16 p-3 lg:p-0">
-                <p className="  col-span-full text-2xl mb-6 md:mb-0">Selected projects:</p>
-                <Link onClick={scrollTop} to='/work/Centromc' className='project text-slate-900 col-span-4 2xl:col-span-2 bg-white rounded-lg biggie overflow-hidden'>
-                    <div className="items-stretch flex flex-col h-full">
-                        <div className="col-span-full md:col-span-6 flex flex-col justify-center text-center md:text-left p-2 md:p-5">
-                            <h6 className="text-2xl md:text-4xl font-bold block fontCool text-center">Mímate y Cuídate</h6>
-                            <p className="mt-3 text-md md:text-2xl mim-md:pt-8 text-center">Luxury beauty center</p>
-                        </div>
-                        <div className='col-span-full hidden md:block h-full'>
-                            <img className='object-cover h-full w-full' src={centromcThumbnail} alt="Mímate y cuídate thumbnail" />
-                        </div>
-                    </div>
-                </Link>
-                <Link onClick={scrollTop} to='/work/Freakit!' className='project text-slate-900 col-span-4 2xl:col-span-2 bg-white rounded-lg biggie overflow-hidden'>
-                    <div className="items-stretch flex flex-col h-full">
-                        <div className="col-span-full md:col-span-6 flex flex-col justify-center text-center md:text-left p-2 md:p-5">
-                            <h6 className="text-2xl md:text-4xl font-bold block fontCool text-center">Freakit!</h6>
-                            <p className="mt-3 text-md md:text-2xl mim-md:pt-8 text-center">Web page for a dating App</p>
-                        </div>
-                        <div className='col-span-full hidden md:block h-full'>
-                            <img className='object-cover h-full w-full' src={freakitThumbnail} alt="freakit thumbnail" />
-                        </div>
-                    </div>
-                </Link>
-                <Link onClick={scrollTop} to='/work/elRoble' className='project text-slate-900 col-span-4 2xl:col-span-2 bg-white rounded-lg biggie overflow-hidden'>
-                    <div className="items-stretch flex flex-col h-full">
-                        <div className="col-span-full md:col-span-6 flex flex-col justify-center text-center md:text-left p-2 md:p-5">
-                            <h6 className="text-2xl md:text-4xl font-bold block fontCool text-center">El Roble</h6>
-                            <p className="mt-3 text-md md:text-2xl mim-md:pt-8 text-center">Alternative therapy center</p>
-                        </div>
-                        <div className='col-span-full hidden md:block h-full'>
-                            <img className='object-cover h-full w-full' src={elRobleThumbnail} alt="el roble thumbnail" />
-                        </div>
-                    </div>
-                </Link>
-                <a href='https://www.behance.net/said-sellam' rel='noreferrer' target='_blank' className='  project text-slate-900 col-span-4 2xl:col-span-2 bg-[#ffffffb0] hover:bg-white rounded-lg biggie overflow-hidden'>
+            <div className="aparece col-start-2 lg:col-start-3 col-span-10 lg:col-span-9  grid grid-cols-8 gap-2 md:gap-12 p-3 lg:p-0">
+                <p className="text-white  col-span-full text-2xl mb-6 md:mb-0">Selected projects:</p>
+                <ProjectCard thumbnail={centromcThumbnail} link='/work/centromc' title='Mímate y Cuídate' description='Luxury beauty center'/>
+                <ProjectCard thumbnail={freakitThumbnail} link='/work/freakit!' title='Freakit!' description='Landing for a dating app'/>
+                <ProjectCard thumbnail={elRobleThumbnail} link='/work/elRoble' title='El Roble' description='Alternative therapy center'/>
+                <a href='https://www.behance.net/said-sellam' rel='noreferrer' target='_blank' className='round10 project text-slate-900 col-span-4 bg-[#ffffffe0] hover:bg-white overflow-hidden'>
                     <div className="ititems-stretch flex flex-col h-full">
-                        <div className="col-span-full md:col-span-6 flex flex-col justify-center text-center md:text-left p-2 md:p-5">
+                        <div className="col-span-full md:col-span-6 flex flex-col justify-center text-center md:text-left p-2 md:p-5 md:px-7">
                             <h6 className="text-2xl md:text-4xl font-bold block fontCool">More projects...</h6>
                             <p className="mt-3 text-md md:text-2xl mim-md:pt-8">Check my Behance profile.</p>
                         </div>

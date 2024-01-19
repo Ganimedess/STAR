@@ -1,7 +1,7 @@
 import React, { useEffect  } from 'react'
 import './App.css';
 import NavBar from './components/NavBar';
-import Hero from './components/Cabecera';
+import Cabecera from './components/Cabecera';
 import Work from './components/Work';
 import Centromc from './components/Centromc';
 import Freakit from './components/FreakitPage';
@@ -11,14 +11,11 @@ import Footer from './components/Footer';
 import About from './components/About';
 import { Route, Routes, useLocation  } from 'react-router-dom';
 import OverlayLong from './components/OverlayLong';
+import Overlay from './components/Overlay';
 import NotFound from './components/NotFound';
 
 function App() {
   const location = useLocation();
-
-  let options = {
-    threshold: 0.5,
-  }
 
   useEffect(() => {
 
@@ -29,7 +26,9 @@ function App() {
           } /*else {
               entry.target.classList.remove('mostrar')
           }*/
-      }, options)
+      }, {
+        threshold: 0.5,
+      })
   } )
 
   const elementosAnimados = document.querySelectorAll('.aparece')
@@ -40,23 +39,25 @@ function App() {
 
   return (
     <>
+    <NavBar/>
       <div className="App text-slate-900 aparecer">
+      
     <Routes>
           <Route path="/" element={<><OverlayLong/></>} />
-          <Route path='*' element={<></>}/>
+          <Route path='*' element={<><Overlay/></>}/>
         </Routes>
 
-        <main className="AppMain container mx-auto max-w-full static enfocar">
-        <NavBar/>
+        <main className="AppMain container mx-auto max-w-full relative enfocar">
+          
           <Routes>
             <Route path="/" element={<>
-              <Hero />
+              <Cabecera />
               <Work />
               <About />
               <Contact /></>} />
-              <Route path="/work/centromc" element={<><Centromc/></>} />
-              <Route path="/work/freakit!" element={<><Freakit/></>} />
-              <Route path="/work/elRoble" element={<><Roble/></>} />
+            <Route path="/work/centromc" element={<><Centromc/></>} />
+            <Route path="/work/freakit!" element={<><Freakit/></>} />
+            <Route path="/work/elRoble" element={<><Roble/></>} />
             <Route path='*' element={<NotFound />}/>
           </Routes>
         </main>
