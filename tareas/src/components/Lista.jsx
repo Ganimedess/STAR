@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import { useState, useRef, useEffect } from 'react'
+import { useState, useRef } from 'react'
 import Tarea from './Tarea.jsx'
 
 function Lista({titulo, editable}) {
@@ -17,6 +17,12 @@ function Lista({titulo, editable}) {
   }
   //almacena el estado de la interfaz que puede ser -> botón o textarea
   const [spawn, editSpawn] = useState(true)
+  //almacena el índice que va aumentando (para numerar las tareas)
+  const [indice, editIndice] = useState(0)
+  const aumentaIndice = () => {
+    if (indice < 99) editIndice(indice+1)
+    else editIndice(0)
+  }
 
   //cambia la interfaz al clicar fuera
   const handleBlur = () => {
@@ -38,20 +44,14 @@ function Lista({titulo, editable}) {
             newItem.tarea = nuevaTarea
             return newItem
           }
-          console.log(listaObj)
           return item
         })
         editListaObj(nuevaLista)
+        editEditando(null)
       }
     }
     editNuevaTarea('')
     editSpawn(true)
-  }
-  //almacena el índice que va aumentando
-  const [indice, editIndice] = useState(0)
-  const aumentaIndice = () => {
-    if (indice < 99) editIndice(indice+1)
-    else editIndice(0)
   }
   //vigila que al pulsar enter se añada la tarea
   const handleKeyDown = (e) => {
@@ -65,17 +65,27 @@ function Lista({titulo, editable}) {
     editEditando(posicion)
   }
   }
+  //
+  const borrarTarea = (indice) => {
+    const nuevaLista = listaObj.filter(tarea => tarea.indice !== indice)
+    editListaObj(nuevaLista)
+  }
 
   return (
     <>
-    <div id={titulo} className=''>
+    <div id={titulo} className={editable ? 'editable' : 'no-editable'}>
 
       <ul className='lista w-250'>
         {
         //mapeamos los elementos que hay en la lista (así se actualiza automáticamente)
         listaObj.map((elemento) => (
           <li key={elemento.indice} className='tarea'>
-            <Tarea indice={elemento.indice} pasaInfo={editarTarea}>{elemento.tarea}</Tarea>
+            <Tarea
+            indice={elemento.indice}
+            pasaInfo={editarTarea}
+            deletea={borrarTarea} >
+              {elemento.tarea}
+            </Tarea>
           </li>
         ))
         }
@@ -84,13 +94,21 @@ function Lista({titulo, editable}) {
       <div className={editable ? '' : 'hidden'}>
         {//renderizado condicional del botón o del input
         spawn ? (
-          <button className='buttonTarea crear-elemento w-250' onClick={() => editSpawn(false)}>
+          <button className='buttonEdit crear-elemento w-250' onClick={() => editSpawn(false)}>
           + nueva
           </button>
         ) : (
-          <form className='inputForm w-250' onBlur={handleBlur}>
-            <textarea autoFocus ref={editor} className='w-full' onChange={actualizarNuevaTarea} onKeyDown={handleKeyDown}  value={nuevaTarea} />
-            <button className='w-full' type='button' onMouseDown={() => subirTarea()} >ok</button>
+          <form className='inputForm w-full' onBlur={handleBlur}>
+            <textarea
+            autoFocus
+            ref={editor}
+            className='w-full'
+            onChange={actualizarNuevaTarea}
+            onKeyDown={handleKeyDown}
+            value={nuevaTarea} />
+
+            <button
+            className='w-full' type='button' onMouseDown={() => subirTarea()} >ok</button>
           </form>
         )
         }

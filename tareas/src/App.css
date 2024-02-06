@@ -4,6 +4,7 @@
   padding: 2rem;
   text-align: center;
 }
+* { box-sizing: border-box; }
 
 .logo {
   height: 6em;
@@ -73,7 +74,7 @@
   margin: 4px 0px;
   background-color: #323232;
 }
-.tarea label {
+.tarea label, .buttonDelete {
   padding: 4px; padding-top: 0px;
   display: inline-block;
 }
@@ -88,18 +89,39 @@
 .rutinas li {
   background-color: #121212;
 }
-.rutinas .buttonTarea {
+.rutinas .buttonEdit {
   border-color: #242424;
   background: #005C97;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #363795, #005C97);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #363795, #005C97); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     }
-.rutinas .buttonTarea:hover {
+.rutinas .buttonEdit:hover {
   border-color: rgb(204, 209, 211);
 }
-.rutinas .buttonTarea::after {
+.rutinas .buttonEdit::after {
   content: ' rutina'
 }
-.tareas .buttonTarea::after {
+.tareas .buttonEdit::after {
   content: ' tarea'
+}
+.no-editable .cajaTarea {
+  overflow: hidden !important;
+}
+.cajaTarea {
+  display: flex;
+  overflow: scroll;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.cajaTarea ::-webkit-scrollbar {
+  display: none;
+}
+.cajaTarea label, .buttonDelete {
+  min-width: 100%;
+  scroll-snap-align: center;
+}
+.buttonDelete {
+  background-color: brown;
 }
