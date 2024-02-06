@@ -42,10 +42,18 @@
 }
 
 /* *************************************** */
-.line-through { text-decoration: line-through; }
-.w-full { width: 100%; }
-.w-250 { width: 250px; }
-.text-left { text-align: left; }
+.line-through { text-decoration: line-through;}
+.w-full { width: 100%;}
+.w-250 { width: 250px;}
+.text-left { text-align: left;}
+.no-select { user-select: none;}
+.hidden { display: none;}
+.roboto-mono {
+  font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
 
 .interfaz {
   border: #484848 2px solid;
@@ -60,7 +68,7 @@
 .tarea {
   max-width: 250px;
   overflow: hidden;
-  word-break: break-all;
+  word-break: break-word;
   white-space: normal;
   margin: 4px 0px;
   background-color: #323232;
@@ -72,5 +80,26 @@
 .tarea input { margin-right: 8px; }
 .tituloLista {
   color: #656565 !important;
-  padding: 0px !important;
+  padding: 0px 4px !important;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  margin: 8px 0;
+}
+.rutinas li {
+  background-color: #121212;
+}
+.rutinas .buttonTarea {
+  border-color: #242424;
+  background: #005C97;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #363795, #005C97);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #363795, #005C97); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    }
+.rutinas .buttonTarea:hover {
+  border-color: rgb(204, 209, 211);
+}
+.rutinas .buttonTarea::after {
+  content: ' rutina'
+}
+.tareas .buttonTarea::after {
+  content: ' tarea'
 }

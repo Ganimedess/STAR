@@ -1,30 +1,48 @@
 import PropTypes from 'prop-types';
-import { useState } from 'react'
+import { useState, useRef, useEffect } from 'react'
 import Tarea from './Tarea.jsx'
 
-function Lista({titulo}) {
+function Lista({titulo, editable}) {
+
   //almacena la lista de tareas
   const [listaObj, editListaObj] = useState([])
-
+  //al editar, almacena el índice del objeto a editar
+  const [editando, editEditando] = useState(null)
+  //referencia el textarea
+  const editor = useRef(null)
   //almacena el valor del input para pasárselo a otros métodos
   const [nuevaTarea, editNuevaTarea] = useState('')
   const actualizarNuevaTarea = (event) => {
     editNuevaTarea(event.target.value)
   }
-  //evento que salta al darle ok
-  const handleSubmit = (event) => {
-    event.preventDefault()
-    subirTarea(nuevaTarea)
-  }
-  //almacena el estado de la interfaz que puede ser ? botón : textinput
+  //almacena el estado de la interfaz que puede ser -> botón o textarea
   const [spawn, editSpawn] = useState(true)
-  const crearTarea = () => editSpawn(false)
-  const subirTarea = (nuevaTarea) => {
+
+  //cambia la interfaz al clicar fuera
+  const handleBlur = () => {
+    editSpawn(true)
+    editNuevaTarea('')
+  }
+  //subir una tarea NUEVA
+  const subirTarea = () => {
     //spread sintax: se crea una copia del array y se agrega un nuevo elemento con el valor del input
-    if(nuevaTarea != '') {
-        const nuevoObj = {tarea : nuevaTarea, indice : indice}
+    if(nuevaTarea !== '') {
+      if (editando === null) {
+        const nuevoObj = {tarea : nuevaTarea, indice : titulo+indice}
         editListaObj([...listaObj, nuevoObj])
         aumentaIndice()
+      } else {
+        const nuevaLista = listaObj.map((item) => {
+          if (item.indice == editando) {
+            let newItem = {...item}
+            newItem.tarea = nuevaTarea
+            return newItem
+          }
+          console.log(listaObj)
+          return item
+        })
+        editListaObj(nuevaLista)
+      }
     }
     editNuevaTarea('')
     editSpawn(true)
@@ -39,40 +57,52 @@ function Lista({titulo}) {
   const handleKeyDown = (e) => {
     if (e.key === 'Enter') subirTarea(nuevaTarea)
   }
-
+  //
+  const editarTarea = (posicion, contenido) => {
+  if(editable) {
+    editNuevaTarea(contenido)
+    editSpawn(false) //mostrar editor
+    editEditando(posicion)
+  }
+  }
 
   return (
     <>
-    <div id={titulo} className='interfaz'>
-      <h3 className='tituloLista'>{titulo}</h3>
+    <div id={titulo} className=''>
 
-      <ul className='lista'>
+      <ul className='lista w-250'>
         {
         //mapeamos los elementos que hay en la lista (así se actualiza automáticamente)
         listaObj.map((elemento) => (
-          <Tarea key={titulo+elemento.indice} indice={titulo+elemento.indice}>{elemento.tarea}</Tarea>
+          <li key={elemento.indice} className='tarea'>
+            <Tarea indice={elemento.indice} pasaInfo={editarTarea}>{elemento.tarea}</Tarea>
+          </li>
         ))
         }
       </ul>
 
-      {//renderizado condicional del botón o del input
-      spawn ? (
-        <button id="buttonTarea" className='crear-elemento w-250' onClick={crearTarea}>
-        + nueva tarea
-        </button>
-      ) : (
-        <form id="inputForm" onSubmit={handleSubmit} className='w-250'>
-          <textarea autoFocus={true} className='w-full ' onChange={actualizarNuevaTarea} onKeyDown={handleKeyDown} /><button className='w-full' type='submit'>ok</button>
-        </form>
-      )
-      }
+      <div className={editable ? '' : 'hidden'}>
+        {//renderizado condicional del botón o del input
+        spawn ? (
+          <button className='buttonTarea crear-elemento w-250' onClick={() => editSpawn(false)}>
+          + nueva
+          </button>
+        ) : (
+          <form className='inputForm w-250' onBlur={handleBlur}>
+            <textarea autoFocus ref={editor} className='w-full' onChange={actualizarNuevaTarea} onKeyDown={handleKeyDown}  value={nuevaTarea} />
+            <button className='w-full' type='button' onMouseDown={() => subirTarea()} >ok</button>
+          </form>
+        )
+        }
+      </div>
     </div>
     </>
   )
 }
 
 Lista.propTypes = {
-    titulo: PropTypes.oneOfType([PropTypes.string]).isRequired,
+    titulo: PropTypes.string.isRequired,
+    editable: PropTypes.bool.isRequired,
 }
 
 export default Lista

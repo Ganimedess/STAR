@@ -1,11 +1,15 @@
 import PropTypes from 'prop-types';
 import { useState } from 'react';
 
-function Tarea({children, indice}) {
-
+function Tarea({indice, children, pasaInfo}) {
+    //almacena si la tarea está marcada o no, para tachar el texto de manera acorde
     const [marcada, editMarcada] = useState(false)
     const handleCheck = (e) => editMarcada(e.target.checked)
-
+    //función para pasar info hacia 'arriba' (lista)
+    const editarTarea = () => {
+        editMarcada(false)
+        pasaInfo(indice, children)
+    }
     /*
     const [valor, editValor] = useState(children)
     const editarTarea = (nuevoValor) => {
@@ -14,17 +18,16 @@ function Tarea({children, indice}) {
     */
 
     return(
-    <li className='tarea text-left w-full' >
-        <label htmlFor={indice} className={`w-full ${marcada ? 'line-through' : ''}`}>
-            <input onChange={handleCheck} id={indice} type="checkbox" />{children}
-        </label>
-    </li>
+    <label htmlFor={indice} className={`text-left w-full no-select ${marcada ? 'line-through' : ''}`} onDoubleClick={editarTarea}>
+        <input onChange={handleCheck} id={indice} type="checkbox" checked={marcada} />{children}
+    </label>
     )
 }
 
 Tarea.propTypes = {
     children: PropTypes.node.isRequired,
     indice: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,
+    pasaInfo: PropTypes.func.isRequired,
 };
 
 export default Tarea

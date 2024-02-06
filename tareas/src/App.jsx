@@ -1,6 +1,11 @@
-
+import { useState } from 'react'
 import './App.css'
-import Lista from './components/Lista.jsx'
+import Bloque from './components/Bloque.jsx'
+
+const MODOS = {
+  rutinas: true,
+  tareas: false,
+}
 
 function App() {
     /*
@@ -9,15 +14,16 @@ function App() {
     -añadir posibilidad de editar y borrar tareas
     -añadir lógica común para crear un solo objeto con la info de tareas
     */
+  const [modo, editModo] = useState(MODOS.tareas)
+  const cambiaModo = () => {
+    modo ? editModo(MODOS.tareas) : editModo(MODOS.rutinas)
+  }
+
   return (
     <>
-    {/*
-    AQUÍ UN SWITCH PARA CAMBIAR DE TAREAS A RUTINAS
-    */}
-    <Lista titulo='diaria' />
-    <Lista titulo='semanal' />
-    <Lista titulo='mensual' />
-    <Lista titulo='anual' />
+    <button onClick={cambiaModo}>modo {modo ? 'rutinas' : 'tareas'}</button>
+    <div style={{paddingBottom: '16px'}} ></div>
+    <Bloque titulo='dia' modo={modo} />
     </>
   )
 }
