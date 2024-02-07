@@ -75,7 +75,7 @@ function Lista({titulo, editable}) {
     <>
     <div id={titulo} className={editable ? 'editable' : 'no-editable'}>
 
-      <ul className='lista w-250'>
+      <ul className='lista w-max'>
         {
         //mapeamos los elementos que hay en la lista (así se actualiza automáticamente)
         listaObj.map((elemento) => (
@@ -94,7 +94,7 @@ function Lista({titulo, editable}) {
       <div className={editable ? '' : 'hidden'}>
         {//renderizado condicional del botón o del input
         spawn ? (
-          <button className='buttonEdit crear-elemento w-250' onClick={() => editSpawn(false)}>
+          <button className='buttonEdit crear-elemento w-max' onClick={() => editSpawn(false)}>
           + nueva
           </button>
         ) : (

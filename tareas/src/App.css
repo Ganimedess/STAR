@@ -4,8 +4,11 @@
   padding: 2rem;
   text-align: center;
 }
-* { box-sizing: border-box; }
-
+* {
+  box-sizing: border-box;
+  color: white;
+}
+html { background-color: #242424;}
 .logo {
   height: 6em;
   padding: 1.5em;
@@ -45,7 +48,7 @@
 /* *************************************** */
 .line-through { text-decoration: line-through;}
 .w-full { width: 100%;}
-.w-250 { width: 250px;}
+.w-max { width: 100%; max-width: 580px; min-width: 300px;}
 .text-left { text-align: left;}
 .no-select { user-select: none;}
 .hidden { display: none;}
