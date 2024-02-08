@@ -1,11 +1,15 @@
 import PropTypes from 'prop-types';
 import { useState, useRef } from 'react';
 
-function Tarea({indice, children, pasaInfo, deletea}) {
+function Tarea({indice, children, pasaInfo, deletea, completado}) {
     const tarea = useRef(null)
     //almacena si la tarea está marcada o no, para tachar el texto de manera acorde
     const [marcada, editMarcada] = useState(false)
-    const handleCheck = (e) => editMarcada(e.target.checked)
+    const handleCheck = (e) => {
+        editMarcada(e.target.checked)
+        //pasamos la info a la lista
+        completado(indice, e.target.checked)
+    }
     //función para pasar info hacia 'arriba' (lista)
     const editarTarea = () => {
         editMarcada(false)
@@ -53,6 +57,7 @@ Tarea.propTypes = {
     indice: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,
     pasaInfo: PropTypes.func.isRequired,
     deletea: PropTypes.func.isRequired,
+    completado: PropTypes. func.isRequired,
 };
 
 export default Tarea

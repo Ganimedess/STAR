@@ -1,11 +1,23 @@
 import PropTypes from 'prop-types';
-import { useState, useRef } from 'react'
+import { useState, useRef, useEffect } from 'react'
 import Tarea from './Tarea.jsx'
 
-function Lista({titulo, editable}) {
+function Lista({titulo, editable, datosGuardados, backUpFunc}) {
 
   //almacena la lista de tareas
   const [listaObj, editListaObj] = useState([])
+  //actualiza datos en caché
+  useEffect(() => {
+    backUpFunc(titulo, listaObj)
+  }, [listaObj])
+
+  // Actualiza datos en caché solo cuando datosGuardados cambia
+  useEffect(() => {
+    if (datosGuardados) {
+      editListaObj(datosGuardados[titulo])
+    }
+  }, [datosGuardados, titulo])
+
   //al editar, almacena el índice del objeto a editar
   const [editando, editEditando] = useState(null)
   //referencia el textarea
@@ -34,7 +46,12 @@ function Lista({titulo, editable}) {
     //spread sintax: se crea una copia del array y se agrega un nuevo elemento con el valor del input
     if(nuevaTarea !== '') {
       if (editando === null) {
-        const nuevoObj = {tarea : nuevaTarea, indice : titulo+indice}
+        //creamos un nuevo elemento
+        const nuevoObj = {
+          tarea : nuevaTarea,
+          indice : titulo+indice,
+          completado: false,
+        }
         editListaObj([...listaObj, nuevoObj])
         aumentaIndice()
       } else {
@@ -70,6 +87,15 @@ function Lista({titulo, editable}) {
     const nuevaLista = listaObj.filter(tarea => tarea.indice !== indice)
     editListaObj(nuevaLista)
   }
+  //marca y desmarca una tarea en la lista
+  const marcaTarea = (identificador, completado) => {
+    let listaMarcada = [...listaObj]
+    listaMarcada.find(tarea => tarea.indice == identificador).completado = completado
+    editListaObj(listaMarcada)
+  }
+
+
+
 
   return (
     <>
@@ -79,16 +105,16 @@ function Lista({titulo, editable}) {
         {
         //mapeamos los elementos que hay en la lista (así se actualiza automáticamente)
         listaObj.map((elemento) => (
-          <li key={elemento.indice} className='tarea'>
+          <li key={elemento.indice} className='tarea w-max'>
             <Tarea
             indice={elemento.indice}
             pasaInfo={editarTarea}
-            deletea={borrarTarea} >
+            deletea={borrarTarea}
+            completado={marcaTarea} >
               {elemento.tarea}
             </Tarea>
           </li>
-        ))
-        }
+        )) }
       </ul>
 
       <div className={editable ? '' : 'hidden'}>
@@ -121,6 +147,8 @@ function Lista({titulo, editable}) {
 Lista.propTypes = {
     titulo: PropTypes.string.isRequired,
     editable: PropTypes.bool.isRequired,
+    datosGuardados: PropTypes.object,
+    backUpFunc: PropTypes.func.isRequired,
 }
 
 export default Lista
