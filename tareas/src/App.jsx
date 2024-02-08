@@ -41,7 +41,10 @@ function App() {
     <Bloque titulo='sem' modo={modo} datos={datos} />
     <Bloque titulo='mes' modo={modo} datos={datos} />
     <Bloque titulo='año' modo={modo} datos={datos} />
-    <button onClick={() => localStorage.removeItem('infoTareas')}>borra caché</button>
+    <button onClick={() => {
+      localStorage.removeItem('infoTareas')
+      location.reload();
+      }}>borra caché</button>
     </>
   )
 }
