@@ -29,17 +29,22 @@ function Lista({titulo, editable, datosGuardados, backUpFunc}) {
   }
   //almacena el estado de la interfaz que puede ser -> botón o textarea
   const [spawn, editSpawn] = useState(true)
-  //almacena el índice que va aumentando (para numerar las tareas)
-  const [indice, editIndice] = useState(0)
-  const aumentaIndice = () => {
-    if (indice < 99) editIndice(indice+1)
-    else editIndice(0)
-  }
-
   //cambia la interfaz al clicar fuera
   const handleBlur = () => {
     editSpawn(true)
     editNuevaTarea('')
+  }
+
+  //nueva tarea
+  const crearNuevaTarea = (contenido) => {
+    const fechaCreacion = new Date()
+    const tareaNueva = {
+      tarea : contenido,
+      fecha : fechaCreacion,
+      indice : fechaCreacion.getTime(),
+      completado: false,
+    }
+    return tareaNueva
   }
   //subir una tarea NUEVA
   const subirTarea = () => {
@@ -47,13 +52,8 @@ function Lista({titulo, editable, datosGuardados, backUpFunc}) {
     if(nuevaTarea !== '') {
       if (editando === null) {
         //creamos un nuevo elemento
-        const nuevoObj = {
-          tarea : nuevaTarea,
-          indice : titulo+indice,
-          completado: false,
-        }
+        const nuevoObj = crearNuevaTarea(nuevaTarea)
         editListaObj([...listaObj, nuevoObj])
-        aumentaIndice()
       } else {
         const nuevaLista = listaObj.map((item) => {
           if (item.indice == editando) {
@@ -96,7 +96,6 @@ function Lista({titulo, editable, datosGuardados, backUpFunc}) {
 
 
 
-
   return (
     <>
     <div id={titulo} className={editable ? 'editable' : 'no-editable'}>
@@ -108,9 +107,10 @@ function Lista({titulo, editable, datosGuardados, backUpFunc}) {
           <li key={elemento.indice} className='tarea w-max'>
             <Tarea
             indice={elemento.indice}
+            completado={elemento.completado}
             pasaInfo={editarTarea}
             deletea={borrarTarea}
-            completado={marcaTarea} >
+            marcaTarea={marcaTarea} >
               {elemento.tarea}
             </Tarea>
           </li>

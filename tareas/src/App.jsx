@@ -26,6 +26,10 @@ function App() {
       'tareasmes' : [],
       'rutinasaño' : [],
       'tareasaño' : [],
+      puntos: {
+        totales : 0,
+        historial : [],
+      },
     }
     localStorage.setItem('infoTareas', JSON.stringify(inicio))
   }
