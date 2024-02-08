@@ -6,19 +6,7 @@ function Lista({titulo, editable, datosGuardados, backUpFunc}) {
 
   //almacena la lista de tareas
   const [listaObj, editListaObj] = useState([])
-  //actualiza datos en caché
-  useEffect(() => {
-    backUpFunc(titulo, listaObj)
-  }, [listaObj])
-
-  // Actualiza datos en caché solo cuando datosGuardados cambia
-  useEffect(() => {
-    if (datosGuardados) {
-      editListaObj(datosGuardados[titulo])
-    }
-  }, [datosGuardados, titulo])
-
-  //al editar, almacena el índice del objeto a editar
+  //al editar, almacena el índice del objeto
   const [editando, editEditando] = useState(null)
   //referencia el textarea
   const editor = useRef(null)
@@ -35,7 +23,18 @@ function Lista({titulo, editable, datosGuardados, backUpFunc}) {
     editNuevaTarea('')
   }
 
-  //nueva tarea
+  //guarda datos al hacer cambios en la lista
+  useEffect(() => {
+    backUpFunc(titulo, listaObj)
+  }, [listaObj])
+  //refresca la lista al inicio con los datos guardados
+  useEffect(() => {
+    if (datosGuardados) {
+      editListaObj(datosGuardados[titulo])
+    }
+  }, [datosGuardados, titulo])
+
+  //constructor de tareas
   const crearNuevaTarea = (contenido) => {
     const fechaCreacion = new Date()
     const tareaNueva = {
@@ -46,7 +45,7 @@ function Lista({titulo, editable, datosGuardados, backUpFunc}) {
     }
     return tareaNueva
   }
-  //subir una tarea NUEVA
+  //administrador de tareas: crea nueva tarea o edita una existente
   const subirTarea = () => {
     //spread sintax: se crea una copia del array y se agrega un nuevo elemento con el valor del input
     if(nuevaTarea !== '') {
@@ -70,19 +69,20 @@ function Lista({titulo, editable, datosGuardados, backUpFunc}) {
     editNuevaTarea('')
     editSpawn(true)
   }
+  //cambia de modo creación a modo edición
+  const editarTarea = (posicion, contenido) => {
+    if(editable) {
+      editNuevaTarea(contenido)
+      editSpawn(false) //mostrar editor
+      editEditando(posicion)
+    }
+  }
   //vigila que al pulsar enter se añada la tarea
   const handleKeyDown = (e) => {
     if (e.key === 'Enter') subirTarea(nuevaTarea)
   }
-  //
-  const editarTarea = (posicion, contenido) => {
-  if(editable) {
-    editNuevaTarea(contenido)
-    editSpawn(false) //mostrar editor
-    editEditando(posicion)
-  }
-  }
-  //
+
+  //elimina tarea de la lista
   const borrarTarea = (indice) => {
     const nuevaLista = listaObj.filter(tarea => tarea.indice !== indice)
     editListaObj(nuevaLista)
@@ -93,8 +93,6 @@ function Lista({titulo, editable, datosGuardados, backUpFunc}) {
     listaMarcada.find(tarea => tarea.indice == identificador).completado = completado
     editListaObj(listaMarcada)
   }
-
-
 
   return (
     <>

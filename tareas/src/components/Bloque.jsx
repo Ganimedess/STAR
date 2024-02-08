@@ -34,7 +34,7 @@ function Bloque({titulo, modo, datos}) {
 Bloque.propTypes = {
     titulo: PropTypes.string.isRequired,
     modo: PropTypes.bool.isRequired,
-    datos: PropTypes.object.isRequired,
+    datos: PropTypes.object,
 }
 
 export default Bloque

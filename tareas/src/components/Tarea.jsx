@@ -1,23 +1,18 @@
 import PropTypes from 'prop-types';
 import { useState, useRef } from 'react';
 
-function Tarea({indice, children,completado, pasaInfo, deletea, marcaTarea}) {
+function Tarea({indice, children, completado, pasaInfo, deletea, marcaTarea}) {
+
     const tarea = useRef(null)
-    //almacena si la tarea está marcada o no, para tachar el texto de manera acorde
+    //tarea completada?
     const [marcada, editMarcada] = useState(completado)
+    //tacha tarea cuando la marcas
     const handleCheck = (e) => {
         editMarcada(e.target.checked)
         //pasamos la info a la lista
         marcaTarea(indice, e.target.checked)
     }
-    //función para pasar info hacia 'arriba' (lista)
-    const editarTarea = () => {
-        editMarcada(false)
-        pasaInfo(indice, children)
-    }
-    const borrarTarea = () => {
-        deletea(indice)
-    }
+
     //implementación del 'doble click' pero en móvil
     //sirve para editar una tarea
     let touchStartTime = 0;
@@ -29,6 +24,16 @@ function Tarea({indice, children,completado, pasaInfo, deletea, marcaTarea}) {
         }
         touchStartTime = currentTime;
     };
+    //editar tarea
+    const editarTarea = () => {
+        editMarcada(false)
+        pasaInfo(indice, children)
+    }
+
+    //borrar tarea
+    const borrarTarea = () => {
+        deletea(indice)
+    }
     //devuelve las tareas a su estado original a los 3 seg de hacer scroll
     const handleTouchEnd = () => {
         if (tarea.current && tarea.current.scrollLeft > 0.1 * tarea.current.scrollWidth) setTimeout(() => {
