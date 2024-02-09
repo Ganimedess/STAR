@@ -19,6 +19,7 @@ export function calcularPuntos (datos) {
 
     //recuperamos la fecha del último registro y la normalizamos
     let ultimaFecha = new Date(Date.parse(datos.puntos.fecha))
+    //ultimaFecha = new Date('2024-2-5')
     ultimaFecha = normalizarFecha(ultimaFecha)
 
     //normalizamos la fecha de la consulta actual
@@ -54,7 +55,7 @@ function porcentajeLista(datos, lista) {
 //limpia una lista (desmarca rutinas y borra tareas)
 function limpiaLista (datos, lista) {
     let nuevosDatos = {...datos}
-    nuevosDatos['tareas' + lista] = []
+    nuevosDatos['tareas' + lista] = nuevosDatos['tareas' + lista].filter(tarea => tarea.completado == false)
     nuevosDatos['rutinas' + lista] = nuevosDatos['rutinas' + lista].map(rutina => ({ ...rutina, completado: false }));
     return nuevosDatos
 }
