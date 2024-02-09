@@ -8,6 +8,7 @@ function Bloque({titulo, modo, datos}) {
     const guardaDatos = (tituloLista, objetoLista) => {
         let datosGlobal = JSON.parse(localStorage.getItem('infoTareas'))
         datosGlobal[`${tituloLista}`] = objetoLista
+        datosGlobal.puntos.fecha = new Date()
         //almacenamiento de los datos en caché
         localStorage.setItem('infoTareas', JSON.stringify(datosGlobal))
     }

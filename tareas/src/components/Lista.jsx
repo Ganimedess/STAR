@@ -58,6 +58,7 @@ function Lista({titulo, editable, datosGuardados, backUpFunc}) {
           if (item.indice == editando) {
             let newItem = {...item}
             newItem.tarea = nuevaTarea
+            newItem.completado = false //desmarcar tarea en lista
             return newItem
           }
           return item

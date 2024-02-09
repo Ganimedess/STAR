@@ -26,7 +26,7 @@ function Tarea({indice, children, completado, pasaInfo, deletea, marcaTarea}) {
     };
     //editar tarea
     const editarTarea = () => {
-        editMarcada(false)
+        editMarcada(false) //desmarcar tarea en interfaz
         pasaInfo(indice, children)
     }
 
