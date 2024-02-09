@@ -8,7 +8,7 @@ const MODOS = {
   tareas: false,
 }
 //almacenamiento local de datos
-const datosGuardados = JSON.parse(localStorage.getItem('infoTareas'))
+let datosGuardados = JSON.parse(localStorage.getItem('infoTareas'))
 //arranque inicial
 if(!datosGuardados) {
   console.log('No se han encontrado datos, se procede a crear datos en caché')
@@ -28,6 +28,7 @@ if(!datosGuardados) {
     },
   }
   localStorage.setItem('infoTareas', JSON.stringify(inicio))
+  datosGuardados = inicio
 }
 //datos actualizados para pasarlos a la app
 const datosDisplay = calcularPuntos(datosGuardados)
