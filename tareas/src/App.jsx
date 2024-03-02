@@ -32,7 +32,10 @@ if(!datosGuardados) {
 }
 //datos actualizados para pasarlos a la app
 const datosDisplay = calcularPuntos(datosGuardados)
-
+console.log(datosDisplay.puntos.fecha)
+datosDisplay.puntos.fecha = new Date(datosDisplay.puntos.fecha) //
+console.log(datosDisplay.puntos.fecha)
+localStorage.setItem('infoTareas', JSON.stringify(datosDisplay))
 
 function App() {
 

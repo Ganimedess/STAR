@@ -13,6 +13,7 @@ import { Route, Routes, useLocation  } from 'react-router-dom';
 import OverlayLong from './components/OverlayLong';
 import Overlay from './components/Overlay';
 import NotFound from './components/NotFound';
+import Emojis from './components/Emojis'
 
 function App() {
   const location = useLocation();
@@ -59,6 +60,7 @@ function App() {
             <Route path="/work/freakit!" element={<><Freakit/></>} />
             <Route path="/work/elRoble" element={<><Roble/></>} />
             <Route path='*' element={<NotFound />}/>
+            <Route path='/emojis' element={<Emojis />} />
           </Routes>
         </main>
         <Footer />

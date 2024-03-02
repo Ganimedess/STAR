@@ -19,7 +19,6 @@ export function calcularPuntos (datos) {
 
     //recuperamos la fecha del último registro y la normalizamos
     let ultimaFecha = new Date(Date.parse(datos.puntos.fecha))
-    //ultimaFecha = new Date('2024-2-5')
     ultimaFecha = normalizarFecha(ultimaFecha)
 
     //normalizamos la fecha de la consulta actual

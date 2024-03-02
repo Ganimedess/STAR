@@ -9,7 +9,7 @@ import googleps from './assets/images/google-play-badge.png'
 import flower from './assets/images/flower.png'
 import brain from './assets/images/brain.png'
 import planet from './assets/images/planet.png'
-import videoF from './assets/images/video.mp4'
+import videoF from './assets/images/video.MOV'
 import amanda from './assets/images/amanda-propic.jpeg'
 import alba from './assets/images/alba-propic.jpeg'
 import jon from './assets/images/jon-propic.jpeg'
@@ -23,6 +23,7 @@ import logo4 from './assets/images/logos-media/confidencial-logo.jpeg'
 import logo5 from './assets/images/logos-media/20minutos.png'
 import logo6 from './assets/images/logos-media/elcomercio-logo.jpeg'
 import Carousel from './components/Carousel'
+import iconoMundos from './assets/images/iconos/iconoMundos.png'
 
 function App() {
 
@@ -102,7 +103,7 @@ function App() {
           <img src={mockup} alt="interfaz freakit" className='md:p-10 img-second w-full max-w-[400px] md:max-w-full m-auto' />
           <div className="text-second">
             <h2 className='text-4xl lg:text-5xl font-medium'>¡Haz amigxs con tus mismos intereses!</h2>
-            <p className='py-6 text-xl'>Elige amigxs por su personalidad gracias a nuestro test psicológico.</p>
+            <p className='py-6 text-xl'>Visita nuestros mundos <img className='inline' src={iconoMundos} /> temáticos y encuentra espíritus afines sin límite de kilómetros.</p>
           </div>
           <div className='bg-white rounded-[40px] shadow-xl shadow-primary/30 w-fit px-5 lg:px-7 card-second m-auto md:ml-0'>
             {/*<p className='py-6 text-lg text-center'><b>¡Ya disponible en 4 paises!</b><br />España, México, Chile y Colombia <br />
@@ -187,7 +188,16 @@ function App() {
           <div className="mockup-phone rounded-[40px] lg:rounded-[50px]">
             <div className="camera"></div>
             <div className="display">
-              <div className="artboard artboard-demo lg:w-[284px] lg:h-[600px] w-[213px] h-[450px]"><video autoPlay loop playsInline muted type="video/mp4" ><source src={videoF} /></video></div>
+              <div className="artboard artboard-demo lg:w-[284px] lg:h-[600px] w-[213px] h-[450px] mb-[-15px]">
+                <video
+                autoPlay
+                loop
+                playsInline
+                muted
+                className='mt-[-20px]'
+                type="video/quicktime" >
+                  <source src={videoF} /></video>
+              </div>
             </div>
           </div>
         </div>
