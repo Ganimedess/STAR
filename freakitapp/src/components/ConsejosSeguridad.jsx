@@ -33,7 +33,7 @@ const ConsejosSeguridad = () => {
             </p>
             <p><ul>
                 <li>Sabemos las dificultades y los peligros que pueden suponer pertenecer al colectivo en ciertos países, por eso desde Freakit te aconsejamos que tengas cuidado y te informes de la situación de cada país antes de viajar.</li>
-                <li>En <a href="https://ilga.org/" target="_blank">ILGA World</a>  podrás conocer las diferentes leyes sobre orientación sexual que hay en cada país.</li>
+                <li>En <a rel="noreferrer" href="https://ilga.org/" target="_blank">ILGA World</a>  podrás conocer las diferentes leyes sobre orientación sexual que hay en cada país.</li>
             </ul></p>
             <p className="text-2xl font-bold">
                 Salud sexual y consentimiento

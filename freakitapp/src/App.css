@@ -153,6 +153,21 @@
   max-width: 20px;
 }
 
+.traducirA {
+  display: none;
+}
+.cajaTraduccion:hover .traducirA {
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .traducirA {
+    display: block !important;
+  }
+  .traducirDe {
+    display: none;
+  }
+}
 
 /* efecto de animación en scroll */
 .aparece {

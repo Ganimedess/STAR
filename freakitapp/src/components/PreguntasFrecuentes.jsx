@@ -5,7 +5,7 @@ const PreguntasFrecuentes = () => {
       <section className="textos-legales">
             <h1>Preguntas frecuentes</h1>
             <p className="text-2xl font-bold">¿En qué plataformas está disponible Freakit!?</p>
-            <p>Freakit! está disponible en <a href="https://apps.apple.com/es/app/freakit/id6446035400" target="_blank">AppleStore</a> y <a href="https://play.google.com/store/apps/details?id=com.freakit.dev&hl=es_419&gl=US" target="_blank">PlayStore</a></p>
+            <p>Freakit! está disponible en <a href="https://apps.apple.com/es/app/freakit/id6446035400" rel="noreferrer" target="_blank">AppleStore</a> y <a href="https://play.google.com/store/apps/details?id=com.freakit.dev&hl=es_419&gl=US" target="_blank">PlayStore</a></p>
             <p className="text-2xl font-bold">¿En qué países está disponible?</p>
             <p>Freakit! está disponible actualmente en España, Mexico, Colombia y Chile. Próximamente estará disponible en el resto de Latinoamérica.</p>
             <p className="text-2xl font-bold">¿Pueden entrar menores de edad en Freakit!?</p>
